@@ -6,21 +6,452 @@
 	objectVersion = 55;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C13FC715281D04E300901B80 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C13FC714281D04E300901B80 /* GoogleService-Info.plist */; };
+		C13FC717281D060E00901B80 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C13FC716281D060E00901B80 /* GoogleService-Info.plist */; };
+		C13FC719281D061B00901B80 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C13FC718281D061B00901B80 /* GoogleService-Info.plist */; };
+		C1732737281CFF2400804962 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = C1732736281CFF2400804962 /* FirebaseAnalytics */; };
+		C1732739281CFF2400804962 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C1732738281CFF2400804962 /* FirebaseFirestore */; };
+		C173273B281CFF2400804962 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = C173273A281CFF2400804962 /* FirebaseStorage */; };
+		C173273D281CFF4500804962 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = C173273C281CFF4500804962 /* FirebaseAnalytics */; };
+		C173273F281CFF4500804962 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C173273E281CFF4500804962 /* FirebaseFirestore */; };
+		C1732741281CFF4500804962 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = C1732740281CFF4500804962 /* FirebaseStorage */; };
+		C1732742281CFFDD00804962 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C174B673281CF5230061D171 /* MainViewModel.swift */; };
+		C1732743281CFFDD00804962 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C174B673281CF5230061D171 /* MainViewModel.swift */; };
+		C1732744281CFFE100804962 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C174B672281CF5230061D171 /* MainView.swift */; };
+		C1732745281CFFE200804962 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C174B672281CF5230061D171 /* MainView.swift */; };
+		C1732746281CFFE800804962 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C174B66E281CF4FE0061D171 /* StorageService.swift */; };
+		C1732747281CFFE900804962 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C174B66E281CF4FE0061D171 /* StorageService.swift */; };
+		C1732748281CFFED00804962 /* FirebaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C174B66D281CF4FE0061D171 /* FirebaseError.swift */; };
+		C1732749281CFFEE00804962 /* FirebaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C174B66D281CF4FE0061D171 /* FirebaseError.swift */; };
+		C173274A281CFFFA00804962 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = C174B667281CF4D80061D171 /* Person.swift */; };
+		C173274B281CFFFA00804962 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = C174B667281CF4D80061D171 /* Person.swift */; };
+		C173274C281D000000804962 /* Family.swift in Sources */ = {isa = PBXBuildFile; fileRef = C174B668281CF4D80061D171 /* Family.swift */; };
+		C173274D281D000100804962 /* Family.swift in Sources */ = {isa = PBXBuildFile; fileRef = C174B668281CF4D80061D171 /* Family.swift */; };
+		C173274E281D000500804962 /* Families.swift in Sources */ = {isa = PBXBuildFile; fileRef = C174B666281CF4D80061D171 /* Families.swift */; };
+		C173274F281D000600804962 /* Families.swift in Sources */ = {isa = PBXBuildFile; fileRef = C174B666281CF4D80061D171 /* Families.swift */; };
+		C1732750281D000D00804962 /* Encodable+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C174B661281CF4A40061D171 /* Encodable+Utils.swift */; };
+		C1732751281D000E00804962 /* Encodable+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C174B661281CF4A40061D171 /* Encodable+Utils.swift */; };
+		C1732752281D001200804962 /* DocumentSnapshot+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C174B662281CF4A40061D171 /* DocumentSnapshot+Utils.swift */; };
+		C1732753281D001200804962 /* DocumentSnapshot+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C174B662281CF4A40061D171 /* DocumentSnapshot+Utils.swift */; };
+		C174B5CA281CEFBE0061D171 /* HouseOfYorke_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C174B5C9281CEFBE0061D171 /* HouseOfYorke_iOSApp.swift */; };
+		C174B5CE281CEFBF0061D171 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C174B5CD281CEFBF0061D171 /* Assets.xcassets */; };
+		C174B5D1281CEFBF0061D171 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C174B5D0281CEFBF0061D171 /* Preview Assets.xcassets */; };
+		C174B5DC281CEFEA0061D171 /* HouseOfYorke_macOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C174B5DB281CEFEA0061D171 /* HouseOfYorke_macOSApp.swift */; };
+		C174B5E0281CEFEB0061D171 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C174B5DF281CEFEB0061D171 /* Assets.xcassets */; };
+		C174B5E3281CEFEB0061D171 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C174B5E2281CEFEB0061D171 /* Preview Assets.xcassets */; };
+		C174B5EF281CF00F0061D171 /* HouseOfYorke_tvOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C174B5EE281CF00F0061D171 /* HouseOfYorke_tvOSApp.swift */; };
+		C174B5F3281CF0100061D171 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C174B5F2281CF0100061D171 /* Assets.xcassets */; };
+		C174B5F6281CF0100061D171 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C174B5F5281CF0100061D171 /* Preview Assets.xcassets */; };
+		C174B619281CF1640061D171 /* WhiteRoseOfYork.152.png in Resources */ = {isa = PBXBuildFile; fileRef = C174B5FB281CF1640061D171 /* WhiteRoseOfYork.152.png */; };
+		C174B61A281CF1640061D171 /* WhiteRoseOfYork.1024.png in Resources */ = {isa = PBXBuildFile; fileRef = C174B5FC281CF1640061D171 /* WhiteRoseOfYork.1024.png */; };
+		C174B61B281CF1640061D171 /* WhiteRoseOfYork.29.png in Resources */ = {isa = PBXBuildFile; fileRef = C174B5FD281CF1640061D171 /* WhiteRoseOfYork.29.png */; };
+		C174B61C281CF1640061D171 /* WhiteRoseOfYork.196.png in Resources */ = {isa = PBXBuildFile; fileRef = C174B5FE281CF1640061D171 /* WhiteRoseOfYork.196.png */; };
+		C174B61D281CF1640061D171 /* WhiteRoseOfYork.180.png in Resources */ = {isa = PBXBuildFile; fileRef = C174B5FF281CF1640061D171 /* WhiteRoseOfYork.180.png */; };
+		C174B61E281CF1640061D171 /* WhiteRoseOfYork.16.png in Resources */ = {isa = PBXBuildFile; fileRef = C174B600281CF1640061D171 /* WhiteRoseOfYork.16.png */; };
+		C174B61F281CF1640061D171 /* WhiteRoseOfYork.234.png in Resources */ = {isa = PBXBuildFile; fileRef = C174B601281CF1640061D171 /* WhiteRoseOfYork.234.png */; };
+		C174B620281CF1640061D171 /* WhiteRoseOfYork.58.png in Resources */ = {isa = PBXBuildFile; fileRef = C174B602281CF1640061D171 /* WhiteRoseOfYork.58.png */; };
+		C174B621281CF1640061D171 /* WhiteRoseOfYork.64.png in Resources */ = {isa = PBXBuildFile; fileRef = C174B603281CF1640061D171 /* WhiteRoseOfYork.64.png */; };
+		C174B622281CF1640061D171 /* WhiteRoseOfYork.66.png in Resources */ = {isa = PBXBuildFile; fileRef = C174B604281CF1640061D171 /* WhiteRoseOfYork.66.png */; };
+		C174B623281CF1640061D171 /* WhiteRoseOfYork.76.png in Resources */ = {isa = PBXBuildFile; fileRef = C174B605281CF1640061D171 /* WhiteRoseOfYork.76.png */; };
+		C174B624281CF1640061D171 /* WhiteRoseOfYork.88.png in Resources */ = {isa = PBXBuildFile; fileRef = C174B606281CF1640061D171 /* WhiteRoseOfYork.88.png */; };
+		C174B625281CF1640061D171 /* WhiteRoseOfYork.120.png in Resources */ = {isa = PBXBuildFile; fileRef = C174B607281CF1640061D171 /* WhiteRoseOfYork.120.png */; };
+		C174B626281CF1640061D171 /* WhiteRoseOfYork.256.png in Resources */ = {isa = PBXBuildFile; fileRef = C174B608281CF1640061D171 /* WhiteRoseOfYork.256.png */; };
+		C174B627281CF1640061D171 /* WhiteRoseOfYork.48.png in Resources */ = {isa = PBXBuildFile; fileRef = C174B609281CF1640061D171 /* WhiteRoseOfYork.48.png */; };
+		C174B628281CF1640061D171 /* WhiteRoseOfYork.60.png in Resources */ = {isa = PBXBuildFile; fileRef = C174B60A281CF1640061D171 /* WhiteRoseOfYork.60.png */; };
+		C174B629281CF1640061D171 /* WhiteRoseOfYork.92.png in Resources */ = {isa = PBXBuildFile; fileRef = C174B60B281CF1640061D171 /* WhiteRoseOfYork.92.png */; };
+		C174B62A281CF1640061D171 /* WhiteRoseOfYork.87.png in Resources */ = {isa = PBXBuildFile; fileRef = C174B60C281CF1640061D171 /* WhiteRoseOfYork.87.png */; };
+		C174B62B281CF1640061D171 /* WhiteRoseOfYork.102.png in Resources */ = {isa = PBXBuildFile; fileRef = C174B60D281CF1640061D171 /* WhiteRoseOfYork.102.png */; };
+		C174B62C281CF1640061D171 /* WhiteRoseOfYork.80.png in Resources */ = {isa = PBXBuildFile; fileRef = C174B60E281CF1640061D171 /* WhiteRoseOfYork.80.png */; };
+		C174B62D281CF1640061D171 /* WhiteRoseOfYork.512.png in Resources */ = {isa = PBXBuildFile; fileRef = C174B60F281CF1640061D171 /* WhiteRoseOfYork.512.png */; };
+		C174B62E281CF1640061D171 /* WhiteRoseOfYork.40.png in Resources */ = {isa = PBXBuildFile; fileRef = C174B610281CF1640061D171 /* WhiteRoseOfYork.40.png */; };
+		C174B62F281CF1640061D171 /* WhiteRoseOfYork.55.png in Resources */ = {isa = PBXBuildFile; fileRef = C174B611281CF1640061D171 /* WhiteRoseOfYork.55.png */; };
+		C174B630281CF1640061D171 /* WhiteRoseOfYork.100.png in Resources */ = {isa = PBXBuildFile; fileRef = C174B612281CF1640061D171 /* WhiteRoseOfYork.100.png */; };
+		C174B631281CF1640061D171 /* WhiteRoseOfYork.128.png in Resources */ = {isa = PBXBuildFile; fileRef = C174B613281CF1640061D171 /* WhiteRoseOfYork.128.png */; };
+		C174B632281CF1640061D171 /* WhiteRoseOfYork.167.png in Resources */ = {isa = PBXBuildFile; fileRef = C174B614281CF1640061D171 /* WhiteRoseOfYork.167.png */; };
+		C174B633281CF1640061D171 /* WhiteRoseOfYork.32.png in Resources */ = {isa = PBXBuildFile; fileRef = C174B615281CF1640061D171 /* WhiteRoseOfYork.32.png */; };
+		C174B634281CF1640061D171 /* WhiteRoseOfYork.172.png in Resources */ = {isa = PBXBuildFile; fileRef = C174B616281CF1640061D171 /* WhiteRoseOfYork.172.png */; };
+		C174B635281CF1640061D171 /* WhiteRoseOfYork.20.png in Resources */ = {isa = PBXBuildFile; fileRef = C174B617281CF1640061D171 /* WhiteRoseOfYork.20.png */; };
+		C174B636281CF1640061D171 /* WhiteRoseOfYork.216.png in Resources */ = {isa = PBXBuildFile; fileRef = C174B618281CF1640061D171 /* WhiteRoseOfYork.216.png */; };
+		C174B65F281CF4710061D171 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C174B65E281CF4710061D171 /* Preview Assets.xcassets */; };
+		C174B663281CF4A40061D171 /* Encodable+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C174B661281CF4A40061D171 /* Encodable+Utils.swift */; };
+		C174B664281CF4A40061D171 /* DocumentSnapshot+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C174B662281CF4A40061D171 /* DocumentSnapshot+Utils.swift */; };
+		C174B669281CF4D80061D171 /* Families.swift in Sources */ = {isa = PBXBuildFile; fileRef = C174B666281CF4D80061D171 /* Families.swift */; };
+		C174B66A281CF4D80061D171 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = C174B667281CF4D80061D171 /* Person.swift */; };
+		C174B66B281CF4D80061D171 /* Family.swift in Sources */ = {isa = PBXBuildFile; fileRef = C174B668281CF4D80061D171 /* Family.swift */; };
+		C174B66F281CF4FE0061D171 /* FirebaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C174B66D281CF4FE0061D171 /* FirebaseError.swift */; };
+		C174B670281CF4FE0061D171 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C174B66E281CF4FE0061D171 /* StorageService.swift */; };
+		C174B674281CF5230061D171 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C174B672281CF5230061D171 /* MainView.swift */; };
+		C174B675281CF5230061D171 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C174B673281CF5230061D171 /* MainViewModel.swift */; };
+		C174B67A281CF9440061D171 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = C174B679281CF9440061D171 /* FirebaseAnalytics */; };
+		C174B67C281CF9440061D171 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C174B67B281CF9440061D171 /* FirebaseFirestore */; };
+		C174B67E281CF9440061D171 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = C174B67D281CF9440061D171 /* FirebaseStorage */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C13FC714281D04E300901B80 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C13FC716281D060E00901B80 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C13FC718281D061B00901B80 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C174B5C6281CEFBE0061D171 /* HouseOfYorke-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HouseOfYorke-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C174B5C9281CEFBE0061D171 /* HouseOfYorke_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseOfYorke_iOSApp.swift; sourceTree = "<group>"; };
+		C174B5CD281CEFBF0061D171 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C174B5D0281CEFBF0061D171 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C174B5D9281CEFEA0061D171 /* HouseOfYorke-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HouseOfYorke-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C174B5DB281CEFEA0061D171 /* HouseOfYorke_macOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseOfYorke_macOSApp.swift; sourceTree = "<group>"; };
+		C174B5DF281CEFEB0061D171 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C174B5E2281CEFEB0061D171 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C174B5E4281CEFEB0061D171 /* HouseOfYorke_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HouseOfYorke_macOS.entitlements; sourceTree = "<group>"; };
+		C174B5EC281CF00F0061D171 /* HouseOfYorke-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HouseOfYorke-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C174B5EE281CF00F0061D171 /* HouseOfYorke_tvOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseOfYorke_tvOSApp.swift; sourceTree = "<group>"; };
+		C174B5F2281CF0100061D171 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C174B5F5281CF0100061D171 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C174B5FB281CF1640061D171 /* WhiteRoseOfYork.152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.152.png; sourceTree = "<group>"; };
+		C174B5FC281CF1640061D171 /* WhiteRoseOfYork.1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.1024.png; sourceTree = "<group>"; };
+		C174B5FD281CF1640061D171 /* WhiteRoseOfYork.29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.29.png; sourceTree = "<group>"; };
+		C174B5FE281CF1640061D171 /* WhiteRoseOfYork.196.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.196.png; sourceTree = "<group>"; };
+		C174B5FF281CF1640061D171 /* WhiteRoseOfYork.180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.180.png; sourceTree = "<group>"; };
+		C174B600281CF1640061D171 /* WhiteRoseOfYork.16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.16.png; sourceTree = "<group>"; };
+		C174B601281CF1640061D171 /* WhiteRoseOfYork.234.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.234.png; sourceTree = "<group>"; };
+		C174B602281CF1640061D171 /* WhiteRoseOfYork.58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.58.png; sourceTree = "<group>"; };
+		C174B603281CF1640061D171 /* WhiteRoseOfYork.64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.64.png; sourceTree = "<group>"; };
+		C174B604281CF1640061D171 /* WhiteRoseOfYork.66.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.66.png; sourceTree = "<group>"; };
+		C174B605281CF1640061D171 /* WhiteRoseOfYork.76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.76.png; sourceTree = "<group>"; };
+		C174B606281CF1640061D171 /* WhiteRoseOfYork.88.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.88.png; sourceTree = "<group>"; };
+		C174B607281CF1640061D171 /* WhiteRoseOfYork.120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.120.png; sourceTree = "<group>"; };
+		C174B608281CF1640061D171 /* WhiteRoseOfYork.256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.256.png; sourceTree = "<group>"; };
+		C174B609281CF1640061D171 /* WhiteRoseOfYork.48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.48.png; sourceTree = "<group>"; };
+		C174B60A281CF1640061D171 /* WhiteRoseOfYork.60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.60.png; sourceTree = "<group>"; };
+		C174B60B281CF1640061D171 /* WhiteRoseOfYork.92.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.92.png; sourceTree = "<group>"; };
+		C174B60C281CF1640061D171 /* WhiteRoseOfYork.87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.87.png; sourceTree = "<group>"; };
+		C174B60D281CF1640061D171 /* WhiteRoseOfYork.102.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.102.png; sourceTree = "<group>"; };
+		C174B60E281CF1640061D171 /* WhiteRoseOfYork.80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.80.png; sourceTree = "<group>"; };
+		C174B60F281CF1640061D171 /* WhiteRoseOfYork.512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.512.png; sourceTree = "<group>"; };
+		C174B610281CF1640061D171 /* WhiteRoseOfYork.40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.40.png; sourceTree = "<group>"; };
+		C174B611281CF1640061D171 /* WhiteRoseOfYork.55.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.55.png; sourceTree = "<group>"; };
+		C174B612281CF1640061D171 /* WhiteRoseOfYork.100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.100.png; sourceTree = "<group>"; };
+		C174B613281CF1640061D171 /* WhiteRoseOfYork.128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.128.png; sourceTree = "<group>"; };
+		C174B614281CF1640061D171 /* WhiteRoseOfYork.167.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.167.png; sourceTree = "<group>"; };
+		C174B615281CF1640061D171 /* WhiteRoseOfYork.32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.32.png; sourceTree = "<group>"; };
+		C174B616281CF1640061D171 /* WhiteRoseOfYork.172.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.172.png; sourceTree = "<group>"; };
+		C174B617281CF1640061D171 /* WhiteRoseOfYork.20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.20.png; sourceTree = "<group>"; };
+		C174B618281CF1640061D171 /* WhiteRoseOfYork.216.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.216.png; sourceTree = "<group>"; };
+		C174B65E281CF4710061D171 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C174B661281CF4A40061D171 /* Encodable+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Encodable+Utils.swift"; sourceTree = "<group>"; };
+		C174B662281CF4A40061D171 /* DocumentSnapshot+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DocumentSnapshot+Utils.swift"; sourceTree = "<group>"; };
+		C174B666281CF4D80061D171 /* Families.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Families.swift; sourceTree = "<group>"; };
+		C174B667281CF4D80061D171 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		C174B668281CF4D80061D171 /* Family.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Family.swift; sourceTree = "<group>"; };
+		C174B66D281CF4FE0061D171 /* FirebaseError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseError.swift; sourceTree = "<group>"; };
+		C174B66E281CF4FE0061D171 /* StorageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		C174B672281CF5230061D171 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		C174B673281CF5230061D171 /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C174B5C3281CEFBE0061D171 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C174B67A281CF9440061D171 /* FirebaseAnalytics in Frameworks */,
+				C174B67C281CF9440061D171 /* FirebaseFirestore in Frameworks */,
+				C174B67E281CF9440061D171 /* FirebaseStorage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C174B5D6281CEFEA0061D171 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1732737281CFF2400804962 /* FirebaseAnalytics in Frameworks */,
+				C1732739281CFF2400804962 /* FirebaseFirestore in Frameworks */,
+				C173273B281CFF2400804962 /* FirebaseStorage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C174B5E9281CF00F0061D171 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C173273D281CFF4500804962 /* FirebaseAnalytics in Frameworks */,
+				C173273F281CFF4500804962 /* FirebaseFirestore in Frameworks */,
+				C1732741281CFF4500804962 /* FirebaseStorage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
 /* Begin PBXGroup section */
-		C174B5BB281CEF540061D171 = {
+		C1732735281CFF2400804962 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C174B5BB281CEF540061D171 = {
+			isa = PBXGroup;
+			children = (
+				C1732735281CFF2400804962 /* Frameworks */,
+				C174B5C8281CEFBE0061D171 /* HouseOfYorke-iOS */,
+				C174B5DA281CEFEA0061D171 /* HouseOfYorke-macOS */,
+				C174B5ED281CF00F0061D171 /* HouseOfYorke-tvOS */,
+				C174B5FA281CF1640061D171 /* Icons */,
+				C174B5C7281CEFBE0061D171 /* Products */,
+				C174B637281CF1F10061D171 /* Shared */,
+			);
+			sourceTree = "<group>";
+		};
+		C174B5C7281CEFBE0061D171 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C174B5C6281CEFBE0061D171 /* HouseOfYorke-iOS.app */,
+				C174B5D9281CEFEA0061D171 /* HouseOfYorke-macOS.app */,
+				C174B5EC281CF00F0061D171 /* HouseOfYorke-tvOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C174B5C8281CEFBE0061D171 /* HouseOfYorke-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				C13FC714281D04E300901B80 /* GoogleService-Info.plist */,
+				C174B5C9281CEFBE0061D171 /* HouseOfYorke_iOSApp.swift */,
+				C174B5CD281CEFBF0061D171 /* Assets.xcassets */,
+				C174B5CF281CEFBF0061D171 /* Preview Content */,
+			);
+			path = "HouseOfYorke-iOS";
+			sourceTree = "<group>";
+		};
+		C174B5CF281CEFBF0061D171 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C174B5D0281CEFBF0061D171 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C174B5DA281CEFEA0061D171 /* HouseOfYorke-macOS */ = {
+			isa = PBXGroup;
+			children = (
+				C13FC716281D060E00901B80 /* GoogleService-Info.plist */,
+				C174B5DB281CEFEA0061D171 /* HouseOfYorke_macOSApp.swift */,
+				C174B5DF281CEFEB0061D171 /* Assets.xcassets */,
+				C174B5E4281CEFEB0061D171 /* HouseOfYorke_macOS.entitlements */,
+				C174B5E1281CEFEB0061D171 /* Preview Content */,
+			);
+			path = "HouseOfYorke-macOS";
+			sourceTree = "<group>";
+		};
+		C174B5E1281CEFEB0061D171 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C174B5E2281CEFEB0061D171 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C174B5ED281CF00F0061D171 /* HouseOfYorke-tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				C13FC718281D061B00901B80 /* GoogleService-Info.plist */,
+				C174B5EE281CF00F0061D171 /* HouseOfYorke_tvOSApp.swift */,
+				C174B5F2281CF0100061D171 /* Assets.xcassets */,
+				C174B5F4281CF0100061D171 /* Preview Content */,
+			);
+			path = "HouseOfYorke-tvOS";
+			sourceTree = "<group>";
+		};
+		C174B5F4281CF0100061D171 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C174B5F5281CF0100061D171 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C174B5FA281CF1640061D171 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				C174B600281CF1640061D171 /* WhiteRoseOfYork.16.png */,
+				C174B617281CF1640061D171 /* WhiteRoseOfYork.20.png */,
+				C174B5FD281CF1640061D171 /* WhiteRoseOfYork.29.png */,
+				C174B615281CF1640061D171 /* WhiteRoseOfYork.32.png */,
+				C174B610281CF1640061D171 /* WhiteRoseOfYork.40.png */,
+				C174B609281CF1640061D171 /* WhiteRoseOfYork.48.png */,
+				C174B611281CF1640061D171 /* WhiteRoseOfYork.55.png */,
+				C174B602281CF1640061D171 /* WhiteRoseOfYork.58.png */,
+				C174B60A281CF1640061D171 /* WhiteRoseOfYork.60.png */,
+				C174B603281CF1640061D171 /* WhiteRoseOfYork.64.png */,
+				C174B604281CF1640061D171 /* WhiteRoseOfYork.66.png */,
+				C174B605281CF1640061D171 /* WhiteRoseOfYork.76.png */,
+				C174B60E281CF1640061D171 /* WhiteRoseOfYork.80.png */,
+				C174B60C281CF1640061D171 /* WhiteRoseOfYork.87.png */,
+				C174B606281CF1640061D171 /* WhiteRoseOfYork.88.png */,
+				C174B60B281CF1640061D171 /* WhiteRoseOfYork.92.png */,
+				C174B612281CF1640061D171 /* WhiteRoseOfYork.100.png */,
+				C174B60D281CF1640061D171 /* WhiteRoseOfYork.102.png */,
+				C174B607281CF1640061D171 /* WhiteRoseOfYork.120.png */,
+				C174B613281CF1640061D171 /* WhiteRoseOfYork.128.png */,
+				C174B5FB281CF1640061D171 /* WhiteRoseOfYork.152.png */,
+				C174B614281CF1640061D171 /* WhiteRoseOfYork.167.png */,
+				C174B616281CF1640061D171 /* WhiteRoseOfYork.172.png */,
+				C174B5FF281CF1640061D171 /* WhiteRoseOfYork.180.png */,
+				C174B5FE281CF1640061D171 /* WhiteRoseOfYork.196.png */,
+				C174B618281CF1640061D171 /* WhiteRoseOfYork.216.png */,
+				C174B601281CF1640061D171 /* WhiteRoseOfYork.234.png */,
+				C174B608281CF1640061D171 /* WhiteRoseOfYork.256.png */,
+				C174B60F281CF1640061D171 /* WhiteRoseOfYork.512.png */,
+				C174B5FC281CF1640061D171 /* WhiteRoseOfYork.1024.png */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
+		C174B637281CF1F10061D171 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				C174B660281CF48E0061D171 /* Extensions */,
+				C174B665281CF4B60061D171 /* Models */,
+				C174B65D281CF3E70061D171 /* Preview Content */,
+				C174B66C281CF4E40061D171 /* Utilities */,
+				C174B671281CF50B0061D171 /* Views */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		C174B65D281CF3E70061D171 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C174B65E281CF4710061D171 /* Preview Assets.xcassets */,
+			);
+			name = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C174B660281CF48E0061D171 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C174B662281CF4A40061D171 /* DocumentSnapshot+Utils.swift */,
+				C174B661281CF4A40061D171 /* Encodable+Utils.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		C174B665281CF4B60061D171 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C174B666281CF4D80061D171 /* Families.swift */,
+				C174B668281CF4D80061D171 /* Family.swift */,
+				C174B667281CF4D80061D171 /* Person.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		C174B66C281CF4E40061D171 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C174B66D281CF4FE0061D171 /* FirebaseError.swift */,
+				C174B66E281CF4FE0061D171 /* StorageService.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		C174B671281CF50B0061D171 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C174B672281CF5230061D171 /* MainView.swift */,
+				C174B673281CF5230061D171 /* MainViewModel.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C174B5C5281CEFBE0061D171 /* HouseOfYorke-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C174B5D2281CEFBF0061D171 /* Build configuration list for PBXNativeTarget "HouseOfYorke-iOS" */;
+			buildPhases = (
+				C174B5C2281CEFBE0061D171 /* Sources */,
+				C174B5C3281CEFBE0061D171 /* Frameworks */,
+				C174B5C4281CEFBE0061D171 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HouseOfYorke-iOS";
+			packageProductDependencies = (
+				C174B679281CF9440061D171 /* FirebaseAnalytics */,
+				C174B67B281CF9440061D171 /* FirebaseFirestore */,
+				C174B67D281CF9440061D171 /* FirebaseStorage */,
+			);
+			productName = "HouseOfYorke-iOS";
+			productReference = C174B5C6281CEFBE0061D171 /* HouseOfYorke-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C174B5D8281CEFEA0061D171 /* HouseOfYorke-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C174B5E5281CEFEB0061D171 /* Build configuration list for PBXNativeTarget "HouseOfYorke-macOS" */;
+			buildPhases = (
+				C174B5D5281CEFEA0061D171 /* Sources */,
+				C174B5D6281CEFEA0061D171 /* Frameworks */,
+				C174B5D7281CEFEA0061D171 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HouseOfYorke-macOS";
+			packageProductDependencies = (
+				C1732736281CFF2400804962 /* FirebaseAnalytics */,
+				C1732738281CFF2400804962 /* FirebaseFirestore */,
+				C173273A281CFF2400804962 /* FirebaseStorage */,
+			);
+			productName = "HouseOfYorke-macOS";
+			productReference = C174B5D9281CEFEA0061D171 /* HouseOfYorke-macOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C174B5EB281CF00F0061D171 /* HouseOfYorke-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C174B5F7281CF0100061D171 /* Build configuration list for PBXNativeTarget "HouseOfYorke-tvOS" */;
+			buildPhases = (
+				C174B5E8281CF00F0061D171 /* Sources */,
+				C174B5E9281CF00F0061D171 /* Frameworks */,
+				C174B5EA281CF00F0061D171 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HouseOfYorke-tvOS";
+			packageProductDependencies = (
+				C173273C281CFF4500804962 /* FirebaseAnalytics */,
+				C173273E281CFF4500804962 /* FirebaseFirestore */,
+				C1732740281CFF4500804962 /* FirebaseStorage */,
+			);
+			productName = "HouseOfYorke-tvOS";
+			productReference = C174B5EC281CF00F0061D171 /* HouseOfYorke-tvOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		C174B5BC281CEF540061D171 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
 				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					C174B5C5281CEFBE0061D171 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					C174B5D8281CEFEA0061D171 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					C174B5EB281CF00F0061D171 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
 			};
 			buildConfigurationList = C174B5BF281CEF540061D171 /* Build configuration list for PBXProject "HouseOfYorke" */;
 			compatibilityVersion = "Xcode 13.0";
@@ -31,12 +462,137 @@
 				Base,
 			);
 			mainGroup = C174B5BB281CEF540061D171;
+			packageReferences = (
+				C174B678281CF9440061D171 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = C174B5C7281CEFBE0061D171 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				C174B5C5281CEFBE0061D171 /* HouseOfYorke-iOS */,
+				C174B5D8281CEFEA0061D171 /* HouseOfYorke-macOS */,
+				C174B5EB281CF00F0061D171 /* HouseOfYorke-tvOS */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C174B5C4281CEFBE0061D171 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C174B62F281CF1640061D171 /* WhiteRoseOfYork.55.png in Resources */,
+				C174B65F281CF4710061D171 /* Preview Assets.xcassets in Resources */,
+				C174B627281CF1640061D171 /* WhiteRoseOfYork.48.png in Resources */,
+				C174B621281CF1640061D171 /* WhiteRoseOfYork.64.png in Resources */,
+				C174B629281CF1640061D171 /* WhiteRoseOfYork.92.png in Resources */,
+				C174B620281CF1640061D171 /* WhiteRoseOfYork.58.png in Resources */,
+				C174B636281CF1640061D171 /* WhiteRoseOfYork.216.png in Resources */,
+				C174B61B281CF1640061D171 /* WhiteRoseOfYork.29.png in Resources */,
+				C174B634281CF1640061D171 /* WhiteRoseOfYork.172.png in Resources */,
+				C174B62D281CF1640061D171 /* WhiteRoseOfYork.512.png in Resources */,
+				C174B62C281CF1640061D171 /* WhiteRoseOfYork.80.png in Resources */,
+				C174B62E281CF1640061D171 /* WhiteRoseOfYork.40.png in Resources */,
+				C174B61A281CF1640061D171 /* WhiteRoseOfYork.1024.png in Resources */,
+				C174B628281CF1640061D171 /* WhiteRoseOfYork.60.png in Resources */,
+				C174B61E281CF1640061D171 /* WhiteRoseOfYork.16.png in Resources */,
+				C174B61F281CF1640061D171 /* WhiteRoseOfYork.234.png in Resources */,
+				C174B625281CF1640061D171 /* WhiteRoseOfYork.120.png in Resources */,
+				C174B62B281CF1640061D171 /* WhiteRoseOfYork.102.png in Resources */,
+				C174B61C281CF1640061D171 /* WhiteRoseOfYork.196.png in Resources */,
+				C174B624281CF1640061D171 /* WhiteRoseOfYork.88.png in Resources */,
+				C174B626281CF1640061D171 /* WhiteRoseOfYork.256.png in Resources */,
+				C174B635281CF1640061D171 /* WhiteRoseOfYork.20.png in Resources */,
+				C174B633281CF1640061D171 /* WhiteRoseOfYork.32.png in Resources */,
+				C174B632281CF1640061D171 /* WhiteRoseOfYork.167.png in Resources */,
+				C174B5D1281CEFBF0061D171 /* Preview Assets.xcassets in Resources */,
+				C174B62A281CF1640061D171 /* WhiteRoseOfYork.87.png in Resources */,
+				C174B61D281CF1640061D171 /* WhiteRoseOfYork.180.png in Resources */,
+				C174B630281CF1640061D171 /* WhiteRoseOfYork.100.png in Resources */,
+				C174B619281CF1640061D171 /* WhiteRoseOfYork.152.png in Resources */,
+				C13FC715281D04E300901B80 /* GoogleService-Info.plist in Resources */,
+				C174B623281CF1640061D171 /* WhiteRoseOfYork.76.png in Resources */,
+				C174B631281CF1640061D171 /* WhiteRoseOfYork.128.png in Resources */,
+				C174B5CE281CEFBF0061D171 /* Assets.xcassets in Resources */,
+				C174B622281CF1640061D171 /* WhiteRoseOfYork.66.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C174B5D7281CEFEA0061D171 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C174B5E3281CEFEB0061D171 /* Preview Assets.xcassets in Resources */,
+				C174B5E0281CEFEB0061D171 /* Assets.xcassets in Resources */,
+				C13FC717281D060E00901B80 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C174B5EA281CF00F0061D171 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C174B5F6281CF0100061D171 /* Preview Assets.xcassets in Resources */,
+				C174B5F3281CF0100061D171 /* Assets.xcassets in Resources */,
+				C13FC719281D061B00901B80 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C174B5C2281CEFBE0061D171 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C174B66A281CF4D80061D171 /* Person.swift in Sources */,
+				C174B66F281CF4FE0061D171 /* FirebaseError.swift in Sources */,
+				C174B674281CF5230061D171 /* MainView.swift in Sources */,
+				C174B663281CF4A40061D171 /* Encodable+Utils.swift in Sources */,
+				C174B669281CF4D80061D171 /* Families.swift in Sources */,
+				C174B66B281CF4D80061D171 /* Family.swift in Sources */,
+				C174B664281CF4A40061D171 /* DocumentSnapshot+Utils.swift in Sources */,
+				C174B670281CF4FE0061D171 /* StorageService.swift in Sources */,
+				C174B5CA281CEFBE0061D171 /* HouseOfYorke_iOSApp.swift in Sources */,
+				C174B675281CF5230061D171 /* MainViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C174B5D5281CEFEA0061D171 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1732752281D001200804962 /* DocumentSnapshot+Utils.swift in Sources */,
+				C173274A281CFFFA00804962 /* Person.swift in Sources */,
+				C1732750281D000D00804962 /* Encodable+Utils.swift in Sources */,
+				C174B5DC281CEFEA0061D171 /* HouseOfYorke_macOSApp.swift in Sources */,
+				C1732746281CFFE800804962 /* StorageService.swift in Sources */,
+				C173274E281D000500804962 /* Families.swift in Sources */,
+				C1732744281CFFE100804962 /* MainView.swift in Sources */,
+				C173274C281D000000804962 /* Family.swift in Sources */,
+				C1732742281CFFDD00804962 /* MainViewModel.swift in Sources */,
+				C1732748281CFFED00804962 /* FirebaseError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C174B5E8281CF00F0061D171 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1732753281D001200804962 /* DocumentSnapshot+Utils.swift in Sources */,
+				C173274B281CFFFA00804962 /* Person.swift in Sources */,
+				C1732751281D000E00804962 /* Encodable+Utils.swift in Sources */,
+				C174B5EF281CF00F0061D171 /* HouseOfYorke_tvOSApp.swift in Sources */,
+				C1732747281CFFE900804962 /* StorageService.swift in Sources */,
+				C173274F281D000600804962 /* Families.swift in Sources */,
+				C1732745281CFFE200804962 /* MainView.swift in Sources */,
+				C173274D281D000100804962 /* Family.swift in Sources */,
+				C1732743281CFFDD00804962 /* MainViewModel.swift in Sources */,
+				C1732749281CFFEE00804962 /* FirebaseError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
 		C174B5C0281CEF540061D171 /* Debug */ = {
@@ -48,6 +604,475 @@
 		C174B5C1281CEF540061D171 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+			};
+			name = Release;
+		};
+		C174B5D3281CEFBF0061D171 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_ASSET_PATHS = "\"HouseOfYorke-iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = GA4L9A4FGA;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.storkebrothers.HouseOfYorke-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C174B5D4281CEFBF0061D171 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_ASSET_PATHS = "\"HouseOfYorke-iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = GA4L9A4FGA;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.storkebrothers.HouseOfYorke-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C174B5E6281CEFEB0061D171 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "HouseOfYorke-macOS/HouseOfYorke_macOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_ASSET_PATHS = "\"HouseOfYorke-macOS/Preview Content\"";
+				DEVELOPMENT_TEAM = GA4L9A4FGA;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.storkebrothers.HouseOfYorke-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C174B5E7281CEFEB0061D171 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "HouseOfYorke-macOS/HouseOfYorke_macOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_ASSET_PATHS = "\"HouseOfYorke-macOS/Preview Content\"";
+				DEVELOPMENT_TEAM = GA4L9A4FGA;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.storkebrothers.HouseOfYorke-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		C174B5F8281CF0100061D171 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_ASSET_PATHS = "\"HouseOfYorke-tvOS/Preview Content\"";
+				DEVELOPMENT_TEAM = GA4L9A4FGA;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.storkebrothers.HouseOfYorke-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 15.4;
+			};
+			name = Debug;
+		};
+		C174B5F9281CF0100061D171 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_ASSET_PATHS = "\"HouseOfYorke-tvOS/Preview Content\"";
+				DEVELOPMENT_TEAM = GA4L9A4FGA;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.storkebrothers.HouseOfYorke-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 15.4;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -63,7 +1088,93 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		C174B5D2281CEFBF0061D171 /* Build configuration list for PBXNativeTarget "HouseOfYorke-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C174B5D3281CEFBF0061D171 /* Debug */,
+				C174B5D4281CEFBF0061D171 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C174B5E5281CEFEB0061D171 /* Build configuration list for PBXNativeTarget "HouseOfYorke-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C174B5E6281CEFEB0061D171 /* Debug */,
+				C174B5E7281CEFEB0061D171 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C174B5F7281CF0100061D171 /* Build configuration list for PBXNativeTarget "HouseOfYorke-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C174B5F8281CF0100061D171 /* Debug */,
+				C174B5F9281CF0100061D171 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C174B678281CF9440061D171 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 8.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C1732736281CFF2400804962 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C174B678281CF9440061D171 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		C1732738281CFF2400804962 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C174B678281CF9440061D171 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		C173273A281CFF2400804962 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C174B678281CF9440061D171 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		C173273C281CFF4500804962 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C174B678281CF9440061D171 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		C173273E281CFF4500804962 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C174B678281CF9440061D171 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		C1732740281CFF4500804962 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C174B678281CF9440061D171 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		C174B679281CF9440061D171 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C174B678281CF9440061D171 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		C174B67B281CF9440061D171 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C174B678281CF9440061D171 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		C174B67D281CF9440061D171 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C174B678281CF9440061D171 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C174B5BC281CEF540061D171 /* Project object */;
 }
