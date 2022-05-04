@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Person: Identifiable, Codable {
+struct Person {
     
     var id          = ""
     var name        = ""
@@ -17,3 +17,22 @@ struct Person: Identifiable, Codable {
     var parent      = false
     
 }
+
+// MARK: - extension
+
+extension Person {
+    
+    func dump() {
+        print("* * *  P e r s o n")
+        print("* * *  id       \"\(id)\"")
+        print("* * *  name     \"\(name)\"")
+        print("* * *  photoURL \"\(photoURL)\"")
+        print("* * *  familyID \"\(familyID)\"")
+        print("* * *  admin    \(admin ? "true" : "false")")
+        print("* * *  parent   \(parent ? "true" : "false")")
+    }
+    
+}
+
+extension Person: Identifiable { }
+extension Person: Codable { }

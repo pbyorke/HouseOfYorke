@@ -9,7 +9,7 @@ import SwiftUI
 
 extension MainView {
     
-    class ViewModel: ObservableObject {
+    @MainActor class ViewModel: ObservableObject {
 
         @AppStorage("currentPerson") private var currentPerson: Data = Data()
         @Published var person: Person?

@@ -6,6 +6,7 @@
 //
 
 enum FirebaseError: Error {
+    case noSnapshot
     case encodingError
     case namedError(String)
     case notFound

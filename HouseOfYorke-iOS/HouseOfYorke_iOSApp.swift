@@ -14,7 +14,7 @@ import Firebase
 @main
 struct HouseOfYorke_iOSApp: App {
 
-    @StateObject private var families = Families.shared
+    @StateObject private var repository = Repository.shared
     
     init() {
         configure()
@@ -23,7 +23,7 @@ struct HouseOfYorke_iOSApp: App {
     var body: some Scene {
         WindowGroup {
             MainView()
-                .environmentObject(families)
+                .environmentObject(repository)
         }
     }
     
