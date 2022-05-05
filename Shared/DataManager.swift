@@ -24,6 +24,7 @@ class DataManager: ObservableObject {
     
     var multipleFamilies: Bool { families.count > 1 }
     var oneFamily: Bool { families.count == 1 }
+    var isSignedIn: Bool { person != nil }
 
     var familyFilter: Family? {
         didSet {
