@@ -11,32 +11,49 @@ struct MainView: View {
     
     @EnvironmentObject var dataManager: DataManager
     
-    @StateObject private var viewModel: ViewModel
+//    @StateObject private var viewModel: ViewModel
     
     @State private var familyChosen = false
     @State private var personChosen = false
     
-    init() {
-        _viewModel = StateObject(wrappedValue: ViewModel())
-    }
+//    init() {
+//        _viewModel = StateObject(wrappedValue: ViewModel())
+//    }
     
     var body: some View {
-        NavigationView {
+//        NavigationView {
             VStack(spacing: 10) {
                 
-                if viewModel.person != nil { // someone is already signed in
-                    PersonActionsView()
-                } else { // we need to have them sign in
-                    // if there is only one family, then tell that to Persons and prompt for Person
-                    if dataManager.oneFamily {
-                        ChoosePersonView(personChosen: $personChosen)
-                    }
-                }
+                
+                
+                
+                
+                
+                
+                
+                
+                
+//                if viewModel.person != nil { // someone is already signed in
+//                    PersonActionsView()
+//                } else { // we need to have them sign in
+//                    // if there is only one family, then tell that to Persons and prompt for Person
+//                    if dataManager.oneFamily {
+//                        ChoosePersonView(personChosen: $personChosen)
+//                    }
+//                }
+                
+                
+                
+                
+                
+                
+                
+                
                 Spacer()
             }
             .navigationTitle("Main Screen")
             .padding(.top, 20)
-        }
+//        }
     }
     
 }
@@ -46,11 +63,11 @@ struct MainView: View {
 extension MainView {
 
     private func add() {
-        viewModel.add()
+        dataManager.add()
     }
     
     private func remove() {
-        viewModel.remove()
+        dataManager.remove()
     }
     
 }

@@ -371,9 +371,9 @@
 		C174B66C281CF4E40061D171 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				C1C994DD28216E8A001C4F3C /* DataManager.swift */,
 				C174B66D281CF4FE0061D171 /* FirebaseError.swift */,
 				C110B1CE281FA0C1000B0A1C /* FirestoreType.swift */,
-				C1C994DD28216E8A001C4F3C /* DataManager.swift */,
 				C174B66E281CF4FE0061D171 /* StorageService.swift */,
 			);
 			name = Utilities;

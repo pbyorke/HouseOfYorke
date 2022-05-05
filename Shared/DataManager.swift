@@ -5,7 +5,7 @@
 //  Created by Peter Yorke on 5/3/22.
 //
 
-import Foundation
+import SwiftUI
 import FirebaseFirestore
 
 class DataManager: ObservableObject {
@@ -18,6 +18,7 @@ class DataManager: ObservableObject {
     var family: Family?
     var person: Person?
     
+    @AppStorage("currentPerson") private var currentPerson: Data = Data()
     @Published var families = [Family]()
     @Published var persons = [Person]()
     
@@ -73,4 +74,27 @@ class DataManager: ObservableObject {
         return listener
     }
 
+    private func getCurrentPerson() async -> Person? {
+        let person = try? JSONDecoder().decode(Person.self, from: currentPerson)
+        return person
+    }
+
+    private func save() async {
+        if let personData = try? JSONEncoder().encode(person) {
+            currentPerson = personData
+        }
+    }
+    
+    func add() {
+        Task {
+            person = Person(name: "Bruce", admin: false, parent: false)
+            await save()
+        }
+    }
+    
+    func remove() {
+        currentPerson = Data()
+        person = nil
+    }
+    
 }

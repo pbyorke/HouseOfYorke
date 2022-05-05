@@ -22,8 +22,10 @@ struct HouseOfYorke_iOSApp: App {
     
     var body: some Scene {
         WindowGroup {
-            MainView()
-                .environmentObject(dataManager)
+            NavigationView {
+                MainView()
+                    .environmentObject(dataManager)
+            }
         }
     }
     
