@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ChoosePersonView: View {
     
-    @EnvironmentObject var repository: Repository
+    @EnvironmentObject var dataManager: DataManager
     
     @Binding var personChosen: Bool
     
@@ -18,12 +18,12 @@ struct ChoosePersonView: View {
             Text("Choose your name")
                 .font(.title)
                 .padding(.bottom, 20)
-            ForEach(repository.persons) { person in
+            ForEach(dataManager.persons) { person in
                 Text(person.name)
                     .foregroundColor(.blue)
                     .padding(.bottom, 10)
                     .onTapGesture {
-                        repository.person = person
+                        dataManager.person = person
                         personChosen = true
                     }
             }
@@ -38,6 +38,6 @@ struct ChoosePersonsView_Previews: PreviewProvider {
     @State static private var personChosen = true
     static var previews: some View {
         ChoosePersonView(personChosen: $personChosen)
-            .environmentObject(Repository.shared)
+            .environmentObject(DataManager.shared)
     }
 }

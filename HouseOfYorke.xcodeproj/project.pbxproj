@@ -101,9 +101,9 @@
 		C1BD796F2820AE0E00204EC0 /* ChoosePersonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BD796E2820AE0E00204EC0 /* ChoosePersonsView.swift */; };
 		C1BD79702820AE0E00204EC0 /* ChoosePersonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BD796E2820AE0E00204EC0 /* ChoosePersonsView.swift */; };
 		C1BD79712820AE0E00204EC0 /* ChoosePersonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BD796E2820AE0E00204EC0 /* ChoosePersonsView.swift */; };
-		C1C994DE28216E8A001C4F3C /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C994DD28216E8A001C4F3C /* Repository.swift */; };
-		C1C994DF28216E8A001C4F3C /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C994DD28216E8A001C4F3C /* Repository.swift */; };
-		C1C994E028216E8A001C4F3C /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C994DD28216E8A001C4F3C /* Repository.swift */; };
+		C1C994DE28216E8A001C4F3C /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C994DD28216E8A001C4F3C /* DataManager.swift */; };
+		C1C994DF28216E8A001C4F3C /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C994DD28216E8A001C4F3C /* DataManager.swift */; };
+		C1C994E028216E8A001C4F3C /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C994DD28216E8A001C4F3C /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -168,7 +168,7 @@
 		C174B673281CF5230061D171 /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		C1BD796A2820ADBF00204EC0 /* ChooseFamilyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseFamilyView.swift; sourceTree = "<group>"; };
 		C1BD796E2820AE0E00204EC0 /* ChoosePersonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosePersonsView.swift; sourceTree = "<group>"; };
-		C1C994DD28216E8A001C4F3C /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		C1C994DD28216E8A001C4F3C /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -373,7 +373,7 @@
 			children = (
 				C174B66D281CF4FE0061D171 /* FirebaseError.swift */,
 				C110B1CE281FA0C1000B0A1C /* FirestoreType.swift */,
-				C1C994DD28216E8A001C4F3C /* Repository.swift */,
+				C1C994DD28216E8A001C4F3C /* DataManager.swift */,
 				C174B66E281CF4FE0061D171 /* StorageService.swift */,
 			);
 			name = Utilities;
@@ -590,7 +590,7 @@
 				C174B670281CF4FE0061D171 /* StorageService.swift in Sources */,
 				C174B5CA281CEFBE0061D171 /* HouseOfYorke_iOSApp.swift in Sources */,
 				C174B675281CF5230061D171 /* MainViewModel.swift in Sources */,
-				C1C994DE28216E8A001C4F3C /* Repository.swift in Sources */,
+				C1C994DE28216E8A001C4F3C /* DataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -613,7 +613,7 @@
 				C173274C281D000000804962 /* Family.swift in Sources */,
 				C1732742281CFFDD00804962 /* MainViewModel.swift in Sources */,
 				C1732748281CFFED00804962 /* FirebaseError.swift in Sources */,
-				C1C994DF28216E8A001C4F3C /* Repository.swift in Sources */,
+				C1C994DF28216E8A001C4F3C /* DataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -636,7 +636,7 @@
 				C173274D281D000100804962 /* Family.swift in Sources */,
 				C1732743281CFFDD00804962 /* MainViewModel.swift in Sources */,
 				C1732749281CFFEE00804962 /* FirebaseError.swift in Sources */,
-				C1C994E028216E8A001C4F3C /* Repository.swift in Sources */,
+				C1C994E028216E8A001C4F3C /* DataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

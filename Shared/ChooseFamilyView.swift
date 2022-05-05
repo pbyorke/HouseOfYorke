@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ChooseFamilyView: View {
     
-    @EnvironmentObject var repository: Repository
+    @EnvironmentObject var dataManager: DataManager
     @Binding var familyChosen: Bool
     
     var body: some View {
@@ -17,14 +17,14 @@ struct ChooseFamilyView: View {
             Text("Choose your family")
                 .font(.title)
                 .padding(.bottom, 20)
-            ForEach(repository.families) { family in
+            ForEach(dataManager.families) { family in
                 Text(family.name)
                     .foregroundColor(.blue)
                     .padding(.bottom, 10)
                     .onTapGesture {
-                        repository.family = family
+                        dataManager.family = family
                         familyChosen = true
-                        repository.familyFilter = family
+                        dataManager.familyFilter = family
                     }
             }
         }
@@ -38,6 +38,6 @@ struct ChooseFamilyView_Previews: PreviewProvider {
     @State static private var familyChosen = true
     static var previews: some View {
         ChooseFamilyView(familyChosen: $familyChosen)
-            .environmentObject(Repository.shared)
+            .environmentObject(DataManager.shared)
     }
 }

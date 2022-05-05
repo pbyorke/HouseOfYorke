@@ -9,11 +9,11 @@ import SwiftUI
 
 struct PersonsView: View {
     
-    @EnvironmentObject var repository: Repository
+    @EnvironmentObject var dataManager: DataManager
 
     var body: some View {
         ScrollView {
-            ForEach(repository.persons) { person in
+            ForEach(dataManager.persons) { person in
                 Button(action: { choose(person: person) }, label: { Text(person.name) } )
                     .padding(5)
             }
@@ -38,7 +38,7 @@ struct PersonsView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             PersonsView()
-                .environmentObject(Repository.shared)
+                .environmentObject(DataManager.shared)
         }
     }
 }

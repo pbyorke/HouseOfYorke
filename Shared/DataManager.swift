@@ -1,5 +1,5 @@
 //
-//  Repository.swift
+//  DataManager.swift
 //  HouseOfYorke
 //
 //  Created by Peter Yorke on 5/3/22.
@@ -8,9 +8,9 @@
 import Foundation
 import FirebaseFirestore
 
-class Repository: ObservableObject {
+class DataManager: ObservableObject {
     
-    static var shared = Repository()
+    static var shared = DataManager()
     
     private var familyListener: ListenerRegistration?
     private var personListener: ListenerRegistration?

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MainView: View {
     
-    @EnvironmentObject var repository: Repository
+    @EnvironmentObject var dataManager: DataManager
     
     @StateObject private var viewModel: ViewModel
     
@@ -28,7 +28,7 @@ struct MainView: View {
                     PersonActionsView()
                 } else { // we need to have them sign in
                     // if there is only one family, then tell that to Persons and prompt for Person
-                    if repository.oneFamily {
+                    if dataManager.oneFamily {
                         ChoosePersonView(personChosen: $personChosen)
                     }
                 }
@@ -60,6 +60,6 @@ extension MainView {
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
         MainView()
-            .environmentObject(Repository.shared)
+            .environmentObject(DataManager.shared)
     }
 }

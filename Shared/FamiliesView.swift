@@ -9,7 +9,7 @@ import SwiftUI
 
 struct FamiliesView: View {
     
-    @EnvironmentObject var repository: Repository
+    @EnvironmentObject var dataManager: DataManager
     
     private var action: () -> ()
     
@@ -19,7 +19,7 @@ struct FamiliesView: View {
 
     var body: some View {
         ScrollView {
-            ForEach(repository.families) { family in
+            ForEach(dataManager.families) { family in
                 Button(action: { choose(family: family) }, label: { Text(family.name) } )
                     .padding(5)
             }
@@ -34,7 +34,7 @@ struct FamiliesView: View {
 extension FamiliesView {
 
     private func choose(family: Family) {
-        repository.familyFilter = family
+        dataManager.familyFilter = family
         action()
     }
     
@@ -46,7 +46,7 @@ struct FamiliesView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             FamiliesView { }
-                .environmentObject(Repository.shared)
+                .environmentObject(DataManager.shared)
         }
     }
 }
