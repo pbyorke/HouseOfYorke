@@ -10,34 +10,39 @@ import SwiftUI
 struct ChooseFamilyView: View {
     
     @EnvironmentObject var dataManager: DataManager
-    @Binding var familyChosen: Bool
-    
+
     var body: some View {
         VStack {
             Text("Choose your family")
+                .foregroundColor(.green)
                 .font(.title)
                 .padding(.bottom, 20)
-            ForEach(dataManager.families) { family in
-                Text(family.name)
-                    .foregroundColor(.blue)
-                    .padding(.bottom, 10)
-                    .onTapGesture {
-                        dataManager.family = family
-                        familyChosen = true
-                        dataManager.familyFilter = family
-                    }
+            ScrollView {
+                ForEach(dataManager.families) { family in
+                    Button(action: { choose(family: family) }, label: { Text(family.name) } )
+                        .padding(5)
+                }
             }
         }
         .padding(.horizontal)
     }
 }
 
+// MARK: - extension
+
+extension ChooseFamilyView {
+
+    private func choose(family: Family) {
+        dataManager.family = family
+    }
+
+}
+
 // MARK: - previews
 
 struct ChooseFamilyView_Previews: PreviewProvider {
-    @State static private var familyChosen = true
     static var previews: some View {
-        ChooseFamilyView(familyChosen: $familyChosen)
+        ChooseFamilyView()
             .environmentObject(DataManager.shared)
     }
 }

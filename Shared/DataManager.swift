@@ -15,29 +15,56 @@ class DataManager: ObservableObject {
     private var familyListener: ListenerRegistration?
     private var personListener: ListenerRegistration?
 
-    var family: Family?
-    var person: Person?
-    
     @AppStorage("currentPerson") private var currentPerson: Data = Data()
     @Published var families = [Family]()
     @Published var persons = [Person]()
     
-    var multipleFamilies: Bool { families.count > 1 }
-    var oneFamily: Bool { families.count == 1 }
-    var isSignedIn: Bool { person != nil }
+    var isSignedIn: Bool {
+        return person != nil
+    }
+    
+    var needFamily: Bool {
+        if person != nil {
+            return false
+        }
+        return families.count > 1 && family == nil
+    }
+    
+    var needPerson: Bool {
+        if person != nil {
+            return false
+        }
+        return family != nil
+    }
+    
+    var name: String { person?.name ?? "" }
+    var points: Int { person?.points ?? 0 }
 
-    var familyFilter: Family? {
+    var family: Family? {
         didSet {
-            if let _ = familyFilter {
+            if let family = family {
                 Task {
                     personListener = try await setupListener(collection: .persons, type: Person.self) { array in
-                        self.persons = array
+                        self.persons = [Person]()
+                        for item in array {
+                            if item.familyID == family.id {
+                                self.persons.append(item)
+                            }
+                        }
                     }
                 }
             }
         }
     }
-
+    
+    var person: Person? {
+        didSet {
+            Task {
+                await save()
+            }
+        }
+    }
+    
     private init() {
         setup()
     }
@@ -48,15 +75,12 @@ class DataManager: ObservableObject {
                 familyListener = try await setupListener(collection: .families, type: Family.self) { array in
                     self.families = array
                 }
-                personListener = try await setupListener(collection: .persons, type: Person.self) { array in
-                    self.persons = array
-                }
-            } catch {
-            }
+            } catch { print("* * *  \(error.localizedDescription)") }
         }
     }
 
     private func setupListener<T: Codable>(collection: FirestoreType, type: T.Type, successful: @escaping ([T]) -> Void) async throws -> ListenerRegistration? {
+        await person = getCurrentPerson()
         let listener = FirestoreType.reference(to: collection).addSnapshotListener { snapshot, error in
             if error == nil {
                 if let snapshot = snapshot {
@@ -82,20 +106,18 @@ class DataManager: ObservableObject {
 
     private func save() async {
         if let personData = try? JSONEncoder().encode(person) {
-            currentPerson = personData
+            DispatchQueue.main.async {
+                self.currentPerson = personData
+            }
         }
     }
     
-    func add() {
+    func signOff() {
         Task {
-            person = Person(name: "Bruce", admin: false, parent: false)
+            person = nil
+            family = nil
             await save()
         }
-    }
-    
-    func remove() {
-        currentPerson = Data()
-        person = nil
     }
     
 }

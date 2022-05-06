@@ -11,25 +11,29 @@ struct ChoosePersonView: View {
     
     @EnvironmentObject var dataManager: DataManager
     
-    @Binding var personChosen: Bool
-    
     var body: some View {
         VStack {
             Text("Choose your name")
+                .foregroundColor(.yellow)
                 .font(.title)
                 .padding(.bottom, 20)
             ForEach(dataManager.persons) { person in
-                Text(person.name)
-                    .foregroundColor(.blue)
-                    .padding(.bottom, 10)
-                    .onTapGesture {
-                        dataManager.person = person
-                        personChosen = true
-                    }
+                Button(action: { choose(person: person) }, label: { Text(person.name) } )
+                    .padding(5)
             }
         }
         .padding(.horizontal)
     }
+}
+
+// MARK: - extension
+
+extension ChoosePersonView {
+
+    private func choose(person: Person) {
+        dataManager.person = person
+    }
+
 }
 
 // MARK: - previews
@@ -37,7 +41,7 @@ struct ChoosePersonView: View {
 struct ChoosePersonsView_Previews: PreviewProvider {
     @State static private var personChosen = true
     static var previews: some View {
-        ChoosePersonView(personChosen: $personChosen)
+        ChoosePersonView()
             .environmentObject(DataManager.shared)
     }
 }

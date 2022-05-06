@@ -15,6 +15,7 @@ struct Person {
     var familyID    = ""
     var admin       = false
     var parent      = false
+    var points      = 0
     
 }
 
@@ -30,6 +31,7 @@ extension Person {
         print("* * *  familyID \"\(familyID)\"")
         print("* * *  admin    \(admin ? "true" : "false")")
         print("* * *  parent   \(parent ? "true" : "false")")
+        print("* * *  points   \(points)")
     }
     
 }
