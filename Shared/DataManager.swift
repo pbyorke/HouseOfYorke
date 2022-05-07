@@ -18,6 +18,7 @@ class DataManager: ObservableObject {
     @AppStorage("currentPerson") private var currentPerson: Data = Data()
     @Published var families = [Family]()
     @Published var persons = [Person]()
+    var children: [Person] { persons.filter { $0.parent == false } }
     
     var isSignedIn: Bool {
         return person != nil
@@ -39,6 +40,7 @@ class DataManager: ObservableObject {
     
     var name: String { person?.name ?? "" }
     var points: Int { person?.points ?? 0 }
+    var parent: Bool { person?.parent ?? false }
 
     var family: Family? {
         didSet {
@@ -91,8 +93,7 @@ class DataManager: ObservableObject {
                             objects.append(object)
                         }
                         successful(objects)
-                    } catch {
-                    }
+                    } catch { }
                 }
             }
         }
@@ -120,4 +121,33 @@ class DataManager: ObservableObject {
         }
     }
     
+    func adjust(_ child: Person, _ amount: Int) {
+        let newPerson = Person (
+            id: child.id,
+            name: child.name,
+            photoURL: child.photoURL,
+            familyID: child.familyID,
+            parent: child.parent,
+            points: child.points + amount
+        )
+        do {
+            try update(newPerson, collection: .persons)
+        } catch { print("* * *  \(error.localizedDescription)") }
+    }
+    
+    func zero(_ child: Person) {
+        let amount = child.points * -1
+        adjust(child, amount)
+    }
+    
+    private func update<T: Encodable & Identifiable>(_ object: T, collection: FirestoreType) throws {
+        do {
+            let json = try object.toJson(excluding: ["id"])
+            let id = "\(object.id)"
+            FirestoreType.reference(to: collection).document(id).setData(json)
+        } catch {
+            throw FirebaseError.namedError(error.localizedDescription)
+        }
+    }
+
 }

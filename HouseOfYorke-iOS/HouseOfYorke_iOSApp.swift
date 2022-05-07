@@ -26,6 +26,7 @@ struct HouseOfYorke_iOSApp: App {
                 MainView()
                     .environmentObject(dataManager)
             }
+            .navigationViewStyle(.stack)
         }
     }
     
