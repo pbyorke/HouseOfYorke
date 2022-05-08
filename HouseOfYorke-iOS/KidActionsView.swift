@@ -1,8 +1,8 @@
 //
 //  KidActionsView.swift
-//  HouseOfYorke
+//  HouseOfYorke-iOS
 //
-//  Created by Peter Yorke on 5/5/22.
+//  Created by Peter Yorke on 5/7/22.
 //
 
 import SwiftUI

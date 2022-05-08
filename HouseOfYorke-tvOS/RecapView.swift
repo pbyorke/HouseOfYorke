@@ -1,24 +1,22 @@
 //
-//  ParentActionsView.swift
-//  HouseOfYorke
+//  RecapView.swift
+//  HouseOfYorke-tvOS
 //
-//  Created by Peter Yorke on 5/5/22.
+//  Created by Peter Yorke on 5/7/22.
 //
 
 import SwiftUI
 
-struct ParentActionsView: View {
-    
+struct RecapView: View {
+
     @EnvironmentObject var dataManager: DataManager
 
     var body: some View {
         VStack {
             ForEach(dataManager.children, id: \.id) { person in
                 HStack {
-                    Text("\(person.points)")
                     Text(person.name)
-                    PlusMinusView(child: person)
-                    Spacer()
+                    Text("\(person.points)")
                 }
                 .padding(.horizontal)
                 .padding(.bottom, 5)
@@ -30,7 +28,7 @@ struct ParentActionsView: View {
 
 // MARK: - extension
 
-extension ParentActionsView {
+extension RecapView {
     
     private func signOff() {
         dataManager.signOff()
@@ -40,8 +38,8 @@ extension ParentActionsView {
 
 // MARK: - previews
 
-struct ParentActionsVIew_Previews: PreviewProvider {
+struct RecapView_Previews: PreviewProvider {
     static var previews: some View {
-        ParentActionsView()
+        RecapView()
     }
 }

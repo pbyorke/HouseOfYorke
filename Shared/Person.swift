@@ -14,6 +14,7 @@ struct Person {
     var photoURL    = ""
     var familyID    = ""
     var parent      = false
+    var password    = ""
     var points      = 0
     
 }
@@ -29,6 +30,7 @@ extension Person {
         print("* * *  photoURL \"\(photoURL)\"")
         print("* * *  familyID \"\(familyID)\"")
         print("* * *  parent   \(parent ? "true" : "false")")
+        print("* * *  password \"\(password)\"")
         print("* * *  points   \(points)")
     }
     

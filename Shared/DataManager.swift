@@ -18,6 +18,7 @@ class DataManager: ObservableObject {
     @AppStorage("currentPerson") private var currentPerson: Data = Data()
     @Published var families = [Family]()
     @Published var persons = [Person]()
+    @Published var forceUpdate = false
     var children: [Person] { persons.filter { $0.parent == false } }
     
     var isSignedIn: Bool {
@@ -76,6 +77,9 @@ class DataManager: ObservableObject {
             do {
                 familyListener = try await setupListener(collection: .families, type: Family.self) { array in
                     self.families = array
+                    if self.families.count == 1 {
+                        self.family = self.families[0]
+                    }
                 }
             } catch { print("* * *  \(error.localizedDescription)") }
         }
@@ -115,9 +119,16 @@ class DataManager: ObservableObject {
     
     func signOff() {
         Task {
+            if self.families.count == 1 {
+                self.family = self.families[0]
+            } else {
+                family = nil
+            }
             person = nil
-            family = nil
             await save()
+            DispatchQueue.main.sync {
+                forceUpdate.toggle()
+            }
         }
     }
     

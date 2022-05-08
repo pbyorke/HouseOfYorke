@@ -1,26 +1,22 @@
 //
-//  MainView.swift
-//  HouseOfYorke
+//  MainTVView.swift
+//  HouseOfYorke-tvOS
 //
-//  Created by Peter Yorke on 4/29/22.
+//  Created by Peter Yorke on 5/7/22.
 //
 
 import SwiftUI
 
-struct MainView: View {
+struct MainTVView: View {
     
     @EnvironmentObject var dataManager: DataManager
     
     var body: some View {
         VStack(spacing: 10) {
-            if dataManager.isSignedIn {
-                PersonActionsView()
-            }
             if dataManager.needFamily {
-                ChooseFamilyView()
-            }
-            if dataManager.needPerson {
-                ChoosePersonView()
+                SelectFamilyView()
+            } else {
+                RecapView()
             }
             Spacer()
         }
@@ -31,9 +27,9 @@ struct MainView: View {
 
 // MARK: - previews
 
-struct MainView_Previews: PreviewProvider {
+struct MainTVView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView()
+        MainTVView()
             .environmentObject(DataManager.shared)
     }
 }

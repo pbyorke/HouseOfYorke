@@ -1,8 +1,8 @@
 //
 //  ChooseFamilyView.swift
-//  HouseOfYorke
+//  HouseOfYorke-iOS
 //
-//  Created by Peter Yorke on 5/2/22.
+//  Created by Peter Yorke on 5/7/22.
 //
 
 import SwiftUI
@@ -10,21 +10,20 @@ import SwiftUI
 struct ChooseFamilyView: View {
     
     @EnvironmentObject var dataManager: DataManager
-
+    
     var body: some View {
-        VStack {
-            Text("Choose your family")
-                .foregroundColor(.green)
-                .font(.title)
-                .padding(.bottom, 20)
-            ScrollView {
+        ScrollView {
+            VStack {
+                Text("Choose your family")
+                    .font(.largeTitle)
+                    .padding(.bottom, 20)
                 ForEach(dataManager.families) { family in
                     Button(action: { choose(family: family) }, label: { Text(family.name) } )
+                        .font(.title)
                         .padding(5)
                 }
             }
         }
-        .padding(.horizontal)
     }
 }
 
@@ -35,7 +34,7 @@ extension ChooseFamilyView {
     private func choose(family: Family) {
         dataManager.family = family
     }
-
+    
 }
 
 // MARK: - previews

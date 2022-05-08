@@ -13,17 +13,19 @@ import Firebase
 
 @main
 struct HouseOfYorke_tvOSApp: App {
-
-    @StateObject private var families = Families.shared
-
+    
+    @StateObject private var dataManager = DataManager.shared
+    
     init() {
         configure()
     }
     
     var body: some Scene {
         WindowGroup {
-            MainView()
-                .environmentObject(families)
+            NavigationView {
+                MainTVView()
+                    .environmentObject(dataManager)
+            }
         }
     }
     
