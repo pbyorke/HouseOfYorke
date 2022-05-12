@@ -18,8 +18,8 @@ struct PlusMinusView: View {
     
     var body: some View {
         HStack {
-            Button { plus() } label: { Image(systemName: "plus.circle.fill") }
-            Button { minus() } label: { Image(systemName: "minus.circle.fill") }
+            Button { plus() } label: { Image(systemName: "plus.circle.fill") }.frame(width: 40)
+            Button { minus() } label: { Image(systemName: "minus.circle.fill") }.frame(width: 40)
             Button { zero() } label: { Image(systemName: "plusminus.circle.fill") }
             if showPicker {
                 HStack {

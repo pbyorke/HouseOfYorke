@@ -13,10 +13,16 @@ struct RecapView: View {
 
     var body: some View {
         VStack {
+            Text("Current Scores")
+                .font(.largeTitle)
+                .fontWeight(.bold)
+                .padding(.bottom, 20)
             ForEach(dataManager.children, id: \.id) { person in
                 HStack {
                     Text(person.name)
+                        .font(.largeTitle)
                     Text("\(person.points)")
+                        .font(.largeTitle)
                 }
                 .padding(.horizontal)
                 .padding(.bottom, 5)

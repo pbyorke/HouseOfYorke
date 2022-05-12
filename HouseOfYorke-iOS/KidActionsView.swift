@@ -13,7 +13,6 @@ struct KidActionsView: View {
 
     var body: some View {
         VStack {
-            
             Text("Hi \(dataManager.name), you have")
                 .font(.title)
                 .padding(.bottom, 20)

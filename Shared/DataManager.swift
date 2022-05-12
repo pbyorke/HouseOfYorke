@@ -57,6 +57,9 @@ class DataManager: ObservableObject {
                                 self.persons.append(item)
                             }
                         }
+                        if let item = self.person {
+                            self.person = self.persons.first(where: {$0.id == item.id})
+                        }
                     }
                 }
             }
@@ -82,6 +85,9 @@ class DataManager: ObservableObject {
                 await family = getCurrentFamily()
                 familyListener = try await setupListener(collection: .families, type: Family.self) { array in
                     self.families = array
+                    if let item = self.family {
+                        self.family = self.families.first(where: {$0.id == item.id})
+                    }
                     if self.families.count == 1 {
                         self.family = self.families[0]
                     }
