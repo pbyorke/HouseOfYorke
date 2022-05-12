@@ -118,7 +118,7 @@
 		C174B5DF281CEFEB0061D171 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C174B5E2281CEFEB0061D171 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C174B5E4281CEFEB0061D171 /* HouseOfYorke_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HouseOfYorke_macOS.entitlements; sourceTree = "<group>"; };
-		C174B5EC281CF00F0061D171 /* HouseOfYorke-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HouseOfYorke-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C174B5EC281CF00F0061D171 /* House Of Yorke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "House Of Yorke.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C174B5EE281CF00F0061D171 /* HouseOfYorke_tvOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseOfYorke_tvOSApp.swift; sourceTree = "<group>"; };
 		C174B5F2281CF0100061D171 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C174B5F5281CF0100061D171 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -203,9 +203,9 @@
 				C15BD1772826FA1C003E8B1A /* KidActionsView.swift */,
 				C15BD1792826FA52003E8B1A /* MainView.swift */,
 				C15BD17B2826FA76003E8B1A /* ParentActionsView.swift */,
+				C101E023282CBE3B00762364 /* PasswordView.swift */,
 				C15BD17D2826FA9C003E8B1A /* PersonActionsView.swift */,
 				C15BD17F2826FAC2003E8B1A /* PlusMinusView.swift */,
-				C101E023282CBE3B00762364 /* PasswordView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -245,7 +245,7 @@
 			children = (
 				C174B5C6281CEFBE0061D171 /* HouseOfYorke-iOS.app */,
 				C174B5D9281CEFEA0061D171 /* HouseOfYorke-macOS.app */,
-				C174B5EC281CF00F0061D171 /* HouseOfYorke-tvOS.app */,
+				C174B5EC281CF00F0061D171 /* House Of Yorke.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -460,7 +460,7 @@
 				C1732740281CFF4500804962 /* FirebaseStorage */,
 			);
 			productName = "HouseOfYorke-tvOS";
-			productReference = C174B5EC281CF00F0061D171 /* HouseOfYorke-tvOS.app */;
+			productReference = C174B5EC281CF00F0061D171 /* House Of Yorke.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1027,7 +1027,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.storkebrothers.HouseOfYorke-tvOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "House Of Yorke";
 				SDKROOT = appletvos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1100,7 +1100,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.storkebrothers.HouseOfYorke-tvOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "House Of Yorke";
 				SDKROOT = appletvos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_EMIT_LOC_STRINGS = YES;

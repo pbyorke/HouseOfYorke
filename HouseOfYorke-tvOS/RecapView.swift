@@ -21,7 +21,9 @@ struct RecapView: View {
                 .padding(.horizontal)
                 .padding(.bottom, 5)
             }
-            Button(action: { signOff() }, label: { Text("Signoff") } )
+            if dataManager.multipleFamilies {
+                Button(action: { signOff() }, label: { Text("Signoff") } )
+            }
         }
     }
 }

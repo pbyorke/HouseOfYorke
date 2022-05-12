@@ -16,6 +16,7 @@ class DataManager: ObservableObject {
     private var personListener: ListenerRegistration?
 
     @AppStorage("currentPerson") private var currentPerson: Data = Data()
+    @AppStorage("currentFamily") private var currentFamily: Data = Data()
     @Published var families = [Family]()
     @Published var persons = [Person]()
     @Published var forceUpdate = false
@@ -77,6 +78,8 @@ class DataManager: ObservableObject {
     private func setup() {
         Task {
             do {
+                await person = getCurrentPerson()
+                await family = getCurrentFamily()
                 familyListener = try await setupListener(collection: .families, type: Family.self) { array in
                     self.families = array
                     if self.families.count == 1 {
@@ -86,9 +89,8 @@ class DataManager: ObservableObject {
             } catch { print("* * *  \(error.localizedDescription)") }
         }
     }
-
+    
     private func setupListener<T: Codable>(collection: FirestoreType, type: T.Type, successful: @escaping ([T]) -> Void) async throws -> ListenerRegistration? {
-        await person = getCurrentPerson()
         let listener = FirestoreType.reference(to: collection).addSnapshotListener { snapshot, error in
             if error == nil {
                 if let snapshot = snapshot {
@@ -111,26 +113,30 @@ class DataManager: ObservableObject {
         return person
     }
 
-    private func save() async {
+    private func getCurrentFamily() async -> Family? {
+        let family = try? JSONDecoder().decode(Family.self, from: currentFamily)
+        return family
+    }
+
+    @MainActor private func save() async {
         if let personData = try? JSONEncoder().encode(person) {
-            DispatchQueue.main.async {
-                self.currentPerson = personData
-            }
+            self.currentPerson = personData
+        }
+        if let familyData = try? JSONEncoder().encode(family) {
+            self.currentFamily = familyData
         }
     }
     
-    func signOff() {
+    @MainActor func signOff() {
         Task {
-            if self.families.count == 1 {
-                self.family = self.families[0]
+            if families.count == 1 {
+                family = families[0]
             } else {
                 family = nil
             }
             person = nil
             await save()
-            DispatchQueue.main.sync {
-                forceUpdate.toggle()
-            }
+            forceUpdate.toggle()
         }
     }
     

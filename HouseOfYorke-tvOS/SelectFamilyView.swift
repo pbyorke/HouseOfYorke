@@ -12,19 +12,18 @@ struct SelectFamilyView: View {
     @EnvironmentObject var dataManager: DataManager
 
     var body: some View {
-        VStack {
-            Text("Choose your family")
-                .foregroundColor(.green)
-                .font(.title)
-                .padding(.bottom, 20)
-            ScrollView {
+        ScrollView {
+            VStack {
+                Text("Choose your family")
+                    .font(.title)
+                    .padding(.bottom, 20)
                 ForEach(dataManager.families) { family in
                     Button(action: { choose(family: family) }, label: { Text(family.name) } )
+                        .font(.title)
                         .padding(5)
                 }
             }
         }
-        .padding(.horizontal)
     }
 }
 
