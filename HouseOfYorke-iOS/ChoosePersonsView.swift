@@ -10,6 +10,8 @@ import SwiftUI
 struct ChoosePersonView: View {
     
     @EnvironmentObject var dataManager: DataManager
+    @State private var needPassword = false
+    @State private var person: Person?
     
     var body: some View {
         ScrollView {
@@ -22,8 +24,17 @@ struct ChoosePersonView: View {
                         .font(.title)
                         .padding(5)
                 }
+                if needPassword {
+                    PasswordView(person: person ?? Person())
+                }
             }
-            Button(action: { goBack() }, label: { Text("Cancel") } )
+            if dataManager.multipleFamilies {
+                Button(action: { goBack() }, label: { Text("Cancel") } )
+            }
+        }
+        .onAppear {
+            needPassword = false
+            dataManager.password = ""
         }
     }
 }
@@ -33,7 +44,16 @@ struct ChoosePersonView: View {
 extension ChoosePersonView {
 
     private func choose(person: Person) {
-        dataManager.person = person
+        self.person = person
+        if person.parent {
+            if dataManager.password.isEmpty {
+                needPassword = true
+            } else {
+                dataManager.person = person
+            }
+        } else {
+            dataManager.person = person
+        }
     }
 
     private func goBack() {

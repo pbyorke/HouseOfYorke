@@ -19,7 +19,9 @@ class DataManager: ObservableObject {
     @Published var families = [Family]()
     @Published var persons = [Person]()
     @Published var forceUpdate = false
+    var multipleFamilies: Bool { families.count > 1 }
     var children: [Person] { persons.filter { $0.parent == false } }
+    var password = ""
     
     var isSignedIn: Bool {
         return person != nil

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C101E024282CBE3B00762364 /* PasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C101E023282CBE3B00762364 /* PasswordView.swift */; };
 		C110B1CF281FA0C1000B0A1C /* FirestoreType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C110B1CE281FA0C1000B0A1C /* FirestoreType.swift */; };
 		C110B1D0281FA0C1000B0A1C /* FirestoreType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C110B1CE281FA0C1000B0A1C /* FirestoreType.swift */; };
 		C110B1D1281FA0C1000B0A1C /* FirestoreType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C110B1CE281FA0C1000B0A1C /* FirestoreType.swift */; };
@@ -93,6 +94,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C101E023282CBE3B00762364 /* PasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordView.swift; sourceTree = "<group>"; };
 		C110B1CE281FA0C1000B0A1C /* FirestoreType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreType.swift; sourceTree = "<group>"; };
 		C13FC714281D04E300901B80 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C13FC716281D060E00901B80 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 				C15BD17B2826FA76003E8B1A /* ParentActionsView.swift */,
 				C15BD17D2826FA9C003E8B1A /* PersonActionsView.swift */,
 				C15BD17F2826FAC2003E8B1A /* PlusMinusView.swift */,
+				C101E023282CBE3B00762364 /* PasswordView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -584,6 +587,7 @@
 				C15BD17A2826FA52003E8B1A /* MainView.swift in Sources */,
 				C15BD1802826FAC2003E8B1A /* PlusMinusView.swift in Sources */,
 				C174B66B281CF4D80061D171 /* Family.swift in Sources */,
+				C101E024282CBE3B00762364 /* PasswordView.swift in Sources */,
 				C174B664281CF4A40061D171 /* DocumentSnapshot+Utils.swift in Sources */,
 				C174B5CA281CEFBE0061D171 /* HouseOfYorke_iOSApp.swift in Sources */,
 				C1C994DE28216E8A001C4F3C /* DataManager.swift in Sources */,
