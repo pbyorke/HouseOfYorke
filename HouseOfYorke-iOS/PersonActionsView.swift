@@ -12,11 +12,12 @@ struct PersonActionsView: View {
     @EnvironmentObject var dataManager: DataManager
 
     var body: some View {
-        
-        if dataManager.parent {
-            ParentActionsView()
-        } else {
-            KidActionsView()
+        VStack {
+            if dataManager.parent {
+                ParentActionsView()
+            } else {
+                KidActionsView()
+            }
         }
     }
 }

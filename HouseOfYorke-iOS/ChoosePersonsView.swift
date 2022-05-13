@@ -14,27 +14,29 @@ struct ChoosePersonView: View {
     @State private var person: Person?
     
     var body: some View {
-        ScrollView {
-            VStack {
-                Text("Choose your name")
-                    .font(.largeTitle)
-                    .padding(.bottom, 20)
-                ForEach(dataManager.persons) { person in
-                    Button(action: { choose(person: person) }, label: { Text(person.name) } )
-                        .font(.title)
-                        .padding(5)
+        VStack {
+            ScrollView {
+                VStack {
+                    Text("Choose your name")
+                        .font(.largeTitle)
+                        .padding(.bottom, 20)
+                    ForEach(dataManager.persons) { person in
+                        Button(action: { choose(person: person) }, label: { Text(person.name) } )
+                            .font(.title)
+                            .padding(5)
+                    }
+                    if needPassword {
+                        PasswordView(person: person ?? Person())
+                    }
                 }
-                if needPassword {
-                    PasswordView(person: person ?? Person())
+                if dataManager.multipleFamilies {
+                    Button(action: { goBack() }, label: { Text("Cancel") } )
                 }
             }
-            if dataManager.multipleFamilies {
-                Button(action: { goBack() }, label: { Text("Cancel") } )
+            .onAppear {
+                needPassword = false
+                dataManager.password = ""
             }
-        }
-        .onAppear {
-            needPassword = false
-            dataManager.password = ""
         }
     }
 }

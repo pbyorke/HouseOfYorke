@@ -49,36 +49,7 @@
 		C174B5EF281CF00F0061D171 /* HouseOfYorke_tvOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C174B5EE281CF00F0061D171 /* HouseOfYorke_tvOSApp.swift */; };
 		C174B5F3281CF0100061D171 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C174B5F2281CF0100061D171 /* Assets.xcassets */; };
 		C174B5F6281CF0100061D171 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C174B5F5281CF0100061D171 /* Preview Assets.xcassets */; };
-		C174B619281CF1640061D171 /* WhiteRoseOfYork.152.png in Resources */ = {isa = PBXBuildFile; fileRef = C174B5FB281CF1640061D171 /* WhiteRoseOfYork.152.png */; };
 		C174B61A281CF1640061D171 /* WhiteRoseOfYork.1024.png in Resources */ = {isa = PBXBuildFile; fileRef = C174B5FC281CF1640061D171 /* WhiteRoseOfYork.1024.png */; };
-		C174B61B281CF1640061D171 /* WhiteRoseOfYork.29.png in Resources */ = {isa = PBXBuildFile; fileRef = C174B5FD281CF1640061D171 /* WhiteRoseOfYork.29.png */; };
-		C174B61C281CF1640061D171 /* WhiteRoseOfYork.196.png in Resources */ = {isa = PBXBuildFile; fileRef = C174B5FE281CF1640061D171 /* WhiteRoseOfYork.196.png */; };
-		C174B61D281CF1640061D171 /* WhiteRoseOfYork.180.png in Resources */ = {isa = PBXBuildFile; fileRef = C174B5FF281CF1640061D171 /* WhiteRoseOfYork.180.png */; };
-		C174B61E281CF1640061D171 /* WhiteRoseOfYork.16.png in Resources */ = {isa = PBXBuildFile; fileRef = C174B600281CF1640061D171 /* WhiteRoseOfYork.16.png */; };
-		C174B61F281CF1640061D171 /* WhiteRoseOfYork.234.png in Resources */ = {isa = PBXBuildFile; fileRef = C174B601281CF1640061D171 /* WhiteRoseOfYork.234.png */; };
-		C174B620281CF1640061D171 /* WhiteRoseOfYork.58.png in Resources */ = {isa = PBXBuildFile; fileRef = C174B602281CF1640061D171 /* WhiteRoseOfYork.58.png */; };
-		C174B621281CF1640061D171 /* WhiteRoseOfYork.64.png in Resources */ = {isa = PBXBuildFile; fileRef = C174B603281CF1640061D171 /* WhiteRoseOfYork.64.png */; };
-		C174B622281CF1640061D171 /* WhiteRoseOfYork.66.png in Resources */ = {isa = PBXBuildFile; fileRef = C174B604281CF1640061D171 /* WhiteRoseOfYork.66.png */; };
-		C174B623281CF1640061D171 /* WhiteRoseOfYork.76.png in Resources */ = {isa = PBXBuildFile; fileRef = C174B605281CF1640061D171 /* WhiteRoseOfYork.76.png */; };
-		C174B624281CF1640061D171 /* WhiteRoseOfYork.88.png in Resources */ = {isa = PBXBuildFile; fileRef = C174B606281CF1640061D171 /* WhiteRoseOfYork.88.png */; };
-		C174B625281CF1640061D171 /* WhiteRoseOfYork.120.png in Resources */ = {isa = PBXBuildFile; fileRef = C174B607281CF1640061D171 /* WhiteRoseOfYork.120.png */; };
-		C174B626281CF1640061D171 /* WhiteRoseOfYork.256.png in Resources */ = {isa = PBXBuildFile; fileRef = C174B608281CF1640061D171 /* WhiteRoseOfYork.256.png */; };
-		C174B627281CF1640061D171 /* WhiteRoseOfYork.48.png in Resources */ = {isa = PBXBuildFile; fileRef = C174B609281CF1640061D171 /* WhiteRoseOfYork.48.png */; };
-		C174B628281CF1640061D171 /* WhiteRoseOfYork.60.png in Resources */ = {isa = PBXBuildFile; fileRef = C174B60A281CF1640061D171 /* WhiteRoseOfYork.60.png */; };
-		C174B629281CF1640061D171 /* WhiteRoseOfYork.92.png in Resources */ = {isa = PBXBuildFile; fileRef = C174B60B281CF1640061D171 /* WhiteRoseOfYork.92.png */; };
-		C174B62A281CF1640061D171 /* WhiteRoseOfYork.87.png in Resources */ = {isa = PBXBuildFile; fileRef = C174B60C281CF1640061D171 /* WhiteRoseOfYork.87.png */; };
-		C174B62B281CF1640061D171 /* WhiteRoseOfYork.102.png in Resources */ = {isa = PBXBuildFile; fileRef = C174B60D281CF1640061D171 /* WhiteRoseOfYork.102.png */; };
-		C174B62C281CF1640061D171 /* WhiteRoseOfYork.80.png in Resources */ = {isa = PBXBuildFile; fileRef = C174B60E281CF1640061D171 /* WhiteRoseOfYork.80.png */; };
-		C174B62D281CF1640061D171 /* WhiteRoseOfYork.512.png in Resources */ = {isa = PBXBuildFile; fileRef = C174B60F281CF1640061D171 /* WhiteRoseOfYork.512.png */; };
-		C174B62E281CF1640061D171 /* WhiteRoseOfYork.40.png in Resources */ = {isa = PBXBuildFile; fileRef = C174B610281CF1640061D171 /* WhiteRoseOfYork.40.png */; };
-		C174B62F281CF1640061D171 /* WhiteRoseOfYork.55.png in Resources */ = {isa = PBXBuildFile; fileRef = C174B611281CF1640061D171 /* WhiteRoseOfYork.55.png */; };
-		C174B630281CF1640061D171 /* WhiteRoseOfYork.100.png in Resources */ = {isa = PBXBuildFile; fileRef = C174B612281CF1640061D171 /* WhiteRoseOfYork.100.png */; };
-		C174B631281CF1640061D171 /* WhiteRoseOfYork.128.png in Resources */ = {isa = PBXBuildFile; fileRef = C174B613281CF1640061D171 /* WhiteRoseOfYork.128.png */; };
-		C174B632281CF1640061D171 /* WhiteRoseOfYork.167.png in Resources */ = {isa = PBXBuildFile; fileRef = C174B614281CF1640061D171 /* WhiteRoseOfYork.167.png */; };
-		C174B633281CF1640061D171 /* WhiteRoseOfYork.32.png in Resources */ = {isa = PBXBuildFile; fileRef = C174B615281CF1640061D171 /* WhiteRoseOfYork.32.png */; };
-		C174B634281CF1640061D171 /* WhiteRoseOfYork.172.png in Resources */ = {isa = PBXBuildFile; fileRef = C174B616281CF1640061D171 /* WhiteRoseOfYork.172.png */; };
-		C174B635281CF1640061D171 /* WhiteRoseOfYork.20.png in Resources */ = {isa = PBXBuildFile; fileRef = C174B617281CF1640061D171 /* WhiteRoseOfYork.20.png */; };
-		C174B636281CF1640061D171 /* WhiteRoseOfYork.216.png in Resources */ = {isa = PBXBuildFile; fileRef = C174B618281CF1640061D171 /* WhiteRoseOfYork.216.png */; };
 		C174B65F281CF4710061D171 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C174B65E281CF4710061D171 /* Preview Assets.xcassets */; };
 		C174B663281CF4A40061D171 /* Encodable+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C174B661281CF4A40061D171 /* Encodable+Utils.swift */; };
 		C174B664281CF4A40061D171 /* DocumentSnapshot+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C174B662281CF4A40061D171 /* DocumentSnapshot+Utils.swift */; };
@@ -88,6 +59,22 @@
 		C174B67A281CF9440061D171 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = C174B679281CF9440061D171 /* FirebaseAnalytics */; };
 		C174B67C281CF9440061D171 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C174B67B281CF9440061D171 /* FirebaseFirestore */; };
 		C174B67E281CF9440061D171 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = C174B67D281CF9440061D171 /* FirebaseStorage */; };
+		C1BD89D3282DE68D003221F5 /* WhiteRoseOfYork.white.1024.png in Resources */ = {isa = PBXBuildFile; fileRef = C1BD89D2282DE68D003221F5 /* WhiteRoseOfYork.white.1024.png */; };
+		C1BD89D5282DE6FA003221F5 /* WhiteRoseOfYork.white.40.png in Resources */ = {isa = PBXBuildFile; fileRef = C1BD89D4282DE6FA003221F5 /* WhiteRoseOfYork.white.40.png */; };
+		C1BD89D7282DE72E003221F5 /* WhiteRoseOfYork.white.60.png in Resources */ = {isa = PBXBuildFile; fileRef = C1BD89D6282DE72E003221F5 /* WhiteRoseOfYork.white.60.png */; };
+		C1BD89D9282DE75F003221F5 /* WhiteRoseOfYork.white.58.png in Resources */ = {isa = PBXBuildFile; fileRef = C1BD89D8282DE75F003221F5 /* WhiteRoseOfYork.white.58.png */; };
+		C1BD89DB282DE794003221F5 /* WhiteRoseOfYork.white.87.png in Resources */ = {isa = PBXBuildFile; fileRef = C1BD89DA282DE794003221F5 /* WhiteRoseOfYork.white.87.png */; };
+		C1BD89DD282DE7B7003221F5 /* WhiteRoseOfYork.white.80.png in Resources */ = {isa = PBXBuildFile; fileRef = C1BD89DC282DE7B7003221F5 /* WhiteRoseOfYork.white.80.png */; };
+		C1BD89DF282DE7E3003221F5 /* WhiteRoseOfYork.white.120.png in Resources */ = {isa = PBXBuildFile; fileRef = C1BD89DE282DE7E3003221F5 /* WhiteRoseOfYork.white.120.png */; };
+		C1BD89E1282DE830003221F5 /* WhiteRoseOfYork.white.180.png in Resources */ = {isa = PBXBuildFile; fileRef = C1BD89E0282DE830003221F5 /* WhiteRoseOfYork.white.180.png */; };
+		C1BD89E3282DE884003221F5 /* WhiteRoseOfYork.white.20.png in Resources */ = {isa = PBXBuildFile; fileRef = C1BD89E2282DE884003221F5 /* WhiteRoseOfYork.white.20.png */; };
+		C1BD89E5282DE8A4003221F5 /* WhiteRoseOfYork.white.29.png in Resources */ = {isa = PBXBuildFile; fileRef = C1BD89E4282DE8A4003221F5 /* WhiteRoseOfYork.white.29.png */; };
+		C1BD89E7282DE8C4003221F5 /* WhiteRoseOfYork.white.76.png in Resources */ = {isa = PBXBuildFile; fileRef = C1BD89E6282DE8C4003221F5 /* WhiteRoseOfYork.white.76.png */; };
+		C1BD89E9282DE8E1003221F5 /* WhiteRoseOfYork.white.152.png in Resources */ = {isa = PBXBuildFile; fileRef = C1BD89E8282DE8E1003221F5 /* WhiteRoseOfYork.white.152.png */; };
+		C1BD89EB282DE902003221F5 /* WhiteRoseOfYork.white.167.png in Resources */ = {isa = PBXBuildFile; fileRef = C1BD89EA282DE902003221F5 /* WhiteRoseOfYork.white.167.png */; };
+		C1BD89ED282DE9B0003221F5 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BD89EC282DE9B0003221F5 /* HeaderView.swift */; };
+		C1BD89EE282DF01F003221F5 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BD89EC282DE9B0003221F5 /* HeaderView.swift */; };
+		C1BD89EF282DF01F003221F5 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BD89EC282DE9B0003221F5 /* HeaderView.swift */; };
 		C1C994DE28216E8A001C4F3C /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C994DD28216E8A001C4F3C /* DataManager.swift */; };
 		C1C994DF28216E8A001C4F3C /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C994DD28216E8A001C4F3C /* DataManager.swift */; };
 		C1C994E028216E8A001C4F3C /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C994DD28216E8A001C4F3C /* DataManager.swift */; };
@@ -122,42 +109,27 @@
 		C174B5EE281CF00F0061D171 /* HouseOfYorke_tvOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseOfYorke_tvOSApp.swift; sourceTree = "<group>"; };
 		C174B5F2281CF0100061D171 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C174B5F5281CF0100061D171 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		C174B5FB281CF1640061D171 /* WhiteRoseOfYork.152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.152.png; sourceTree = "<group>"; };
 		C174B5FC281CF1640061D171 /* WhiteRoseOfYork.1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.1024.png; sourceTree = "<group>"; };
-		C174B5FD281CF1640061D171 /* WhiteRoseOfYork.29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.29.png; sourceTree = "<group>"; };
-		C174B5FE281CF1640061D171 /* WhiteRoseOfYork.196.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.196.png; sourceTree = "<group>"; };
-		C174B5FF281CF1640061D171 /* WhiteRoseOfYork.180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.180.png; sourceTree = "<group>"; };
-		C174B600281CF1640061D171 /* WhiteRoseOfYork.16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.16.png; sourceTree = "<group>"; };
-		C174B601281CF1640061D171 /* WhiteRoseOfYork.234.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.234.png; sourceTree = "<group>"; };
-		C174B602281CF1640061D171 /* WhiteRoseOfYork.58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.58.png; sourceTree = "<group>"; };
-		C174B603281CF1640061D171 /* WhiteRoseOfYork.64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.64.png; sourceTree = "<group>"; };
-		C174B604281CF1640061D171 /* WhiteRoseOfYork.66.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.66.png; sourceTree = "<group>"; };
-		C174B605281CF1640061D171 /* WhiteRoseOfYork.76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.76.png; sourceTree = "<group>"; };
-		C174B606281CF1640061D171 /* WhiteRoseOfYork.88.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.88.png; sourceTree = "<group>"; };
-		C174B607281CF1640061D171 /* WhiteRoseOfYork.120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.120.png; sourceTree = "<group>"; };
-		C174B608281CF1640061D171 /* WhiteRoseOfYork.256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.256.png; sourceTree = "<group>"; };
-		C174B609281CF1640061D171 /* WhiteRoseOfYork.48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.48.png; sourceTree = "<group>"; };
-		C174B60A281CF1640061D171 /* WhiteRoseOfYork.60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.60.png; sourceTree = "<group>"; };
-		C174B60B281CF1640061D171 /* WhiteRoseOfYork.92.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.92.png; sourceTree = "<group>"; };
-		C174B60C281CF1640061D171 /* WhiteRoseOfYork.87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.87.png; sourceTree = "<group>"; };
-		C174B60D281CF1640061D171 /* WhiteRoseOfYork.102.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.102.png; sourceTree = "<group>"; };
-		C174B60E281CF1640061D171 /* WhiteRoseOfYork.80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.80.png; sourceTree = "<group>"; };
-		C174B60F281CF1640061D171 /* WhiteRoseOfYork.512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.512.png; sourceTree = "<group>"; };
-		C174B610281CF1640061D171 /* WhiteRoseOfYork.40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.40.png; sourceTree = "<group>"; };
-		C174B611281CF1640061D171 /* WhiteRoseOfYork.55.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.55.png; sourceTree = "<group>"; };
-		C174B612281CF1640061D171 /* WhiteRoseOfYork.100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.100.png; sourceTree = "<group>"; };
-		C174B613281CF1640061D171 /* WhiteRoseOfYork.128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.128.png; sourceTree = "<group>"; };
-		C174B614281CF1640061D171 /* WhiteRoseOfYork.167.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.167.png; sourceTree = "<group>"; };
-		C174B615281CF1640061D171 /* WhiteRoseOfYork.32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.32.png; sourceTree = "<group>"; };
-		C174B616281CF1640061D171 /* WhiteRoseOfYork.172.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.172.png; sourceTree = "<group>"; };
-		C174B617281CF1640061D171 /* WhiteRoseOfYork.20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.20.png; sourceTree = "<group>"; };
-		C174B618281CF1640061D171 /* WhiteRoseOfYork.216.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.216.png; sourceTree = "<group>"; };
 		C174B65E281CF4710061D171 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C174B661281CF4A40061D171 /* Encodable+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Encodable+Utils.swift"; sourceTree = "<group>"; };
 		C174B662281CF4A40061D171 /* DocumentSnapshot+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DocumentSnapshot+Utils.swift"; sourceTree = "<group>"; };
 		C174B667281CF4D80061D171 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		C174B668281CF4D80061D171 /* Family.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Family.swift; sourceTree = "<group>"; };
 		C174B66D281CF4FE0061D171 /* FirebaseError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseError.swift; sourceTree = "<group>"; };
+		C1BD89D2282DE68D003221F5 /* WhiteRoseOfYork.white.1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.white.1024.png; sourceTree = "<group>"; };
+		C1BD89D4282DE6FA003221F5 /* WhiteRoseOfYork.white.40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.white.40.png; sourceTree = "<group>"; };
+		C1BD89D6282DE72E003221F5 /* WhiteRoseOfYork.white.60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.white.60.png; sourceTree = "<group>"; };
+		C1BD89D8282DE75F003221F5 /* WhiteRoseOfYork.white.58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.white.58.png; sourceTree = "<group>"; };
+		C1BD89DA282DE794003221F5 /* WhiteRoseOfYork.white.87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.white.87.png; sourceTree = "<group>"; };
+		C1BD89DC282DE7B7003221F5 /* WhiteRoseOfYork.white.80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.white.80.png; sourceTree = "<group>"; };
+		C1BD89DE282DE7E3003221F5 /* WhiteRoseOfYork.white.120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.white.120.png; sourceTree = "<group>"; };
+		C1BD89E0282DE830003221F5 /* WhiteRoseOfYork.white.180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.white.180.png; sourceTree = "<group>"; };
+		C1BD89E2282DE884003221F5 /* WhiteRoseOfYork.white.20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.white.20.png; sourceTree = "<group>"; };
+		C1BD89E4282DE8A4003221F5 /* WhiteRoseOfYork.white.29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.white.29.png; sourceTree = "<group>"; };
+		C1BD89E6282DE8C4003221F5 /* WhiteRoseOfYork.white.76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.white.76.png; sourceTree = "<group>"; };
+		C1BD89E8282DE8E1003221F5 /* WhiteRoseOfYork.white.152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.white.152.png; sourceTree = "<group>"; };
+		C1BD89EA282DE902003221F5 /* WhiteRoseOfYork.white.167.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.white.167.png; sourceTree = "<group>"; };
+		C1BD89EC282DE9B0003221F5 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		C1C994DD28216E8A001C4F3C /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -200,6 +172,7 @@
 			children = (
 				C15BD1732826F9C7003E8B1A /* ChooseFamilyView.swift */,
 				C15BD1752826F9FB003E8B1A /* ChoosePersonsView.swift */,
+				C1BD89EC282DE9B0003221F5 /* HeaderView.swift */,
 				C15BD1772826FA1C003E8B1A /* KidActionsView.swift */,
 				C15BD1792826FA52003E8B1A /* MainView.swift */,
 				C15BD17B2826FA76003E8B1A /* ParentActionsView.swift */,
@@ -313,36 +286,20 @@
 		C174B5FA281CF1640061D171 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
-				C174B600281CF1640061D171 /* WhiteRoseOfYork.16.png */,
-				C174B617281CF1640061D171 /* WhiteRoseOfYork.20.png */,
-				C174B5FD281CF1640061D171 /* WhiteRoseOfYork.29.png */,
-				C174B615281CF1640061D171 /* WhiteRoseOfYork.32.png */,
-				C174B610281CF1640061D171 /* WhiteRoseOfYork.40.png */,
-				C174B609281CF1640061D171 /* WhiteRoseOfYork.48.png */,
-				C174B611281CF1640061D171 /* WhiteRoseOfYork.55.png */,
-				C174B602281CF1640061D171 /* WhiteRoseOfYork.58.png */,
-				C174B60A281CF1640061D171 /* WhiteRoseOfYork.60.png */,
-				C174B603281CF1640061D171 /* WhiteRoseOfYork.64.png */,
-				C174B604281CF1640061D171 /* WhiteRoseOfYork.66.png */,
-				C174B605281CF1640061D171 /* WhiteRoseOfYork.76.png */,
-				C174B60E281CF1640061D171 /* WhiteRoseOfYork.80.png */,
-				C174B60C281CF1640061D171 /* WhiteRoseOfYork.87.png */,
-				C174B606281CF1640061D171 /* WhiteRoseOfYork.88.png */,
-				C174B60B281CF1640061D171 /* WhiteRoseOfYork.92.png */,
-				C174B612281CF1640061D171 /* WhiteRoseOfYork.100.png */,
-				C174B60D281CF1640061D171 /* WhiteRoseOfYork.102.png */,
-				C174B607281CF1640061D171 /* WhiteRoseOfYork.120.png */,
-				C174B613281CF1640061D171 /* WhiteRoseOfYork.128.png */,
-				C174B5FB281CF1640061D171 /* WhiteRoseOfYork.152.png */,
-				C174B614281CF1640061D171 /* WhiteRoseOfYork.167.png */,
-				C174B616281CF1640061D171 /* WhiteRoseOfYork.172.png */,
-				C174B5FF281CF1640061D171 /* WhiteRoseOfYork.180.png */,
-				C174B5FE281CF1640061D171 /* WhiteRoseOfYork.196.png */,
-				C174B618281CF1640061D171 /* WhiteRoseOfYork.216.png */,
-				C174B601281CF1640061D171 /* WhiteRoseOfYork.234.png */,
-				C174B608281CF1640061D171 /* WhiteRoseOfYork.256.png */,
-				C174B60F281CF1640061D171 /* WhiteRoseOfYork.512.png */,
 				C174B5FC281CF1640061D171 /* WhiteRoseOfYork.1024.png */,
+				C1BD89E2282DE884003221F5 /* WhiteRoseOfYork.white.20.png */,
+				C1BD89E4282DE8A4003221F5 /* WhiteRoseOfYork.white.29.png */,
+				C1BD89D4282DE6FA003221F5 /* WhiteRoseOfYork.white.40.png */,
+				C1BD89D8282DE75F003221F5 /* WhiteRoseOfYork.white.58.png */,
+				C1BD89D6282DE72E003221F5 /* WhiteRoseOfYork.white.60.png */,
+				C1BD89E6282DE8C4003221F5 /* WhiteRoseOfYork.white.76.png */,
+				C1BD89DC282DE7B7003221F5 /* WhiteRoseOfYork.white.80.png */,
+				C1BD89DA282DE794003221F5 /* WhiteRoseOfYork.white.87.png */,
+				C1BD89DE282DE7E3003221F5 /* WhiteRoseOfYork.white.120.png */,
+				C1BD89E8282DE8E1003221F5 /* WhiteRoseOfYork.white.152.png */,
+				C1BD89EA282DE902003221F5 /* WhiteRoseOfYork.white.167.png */,
+				C1BD89E0282DE830003221F5 /* WhiteRoseOfYork.white.180.png */,
+				C1BD89D2282DE68D003221F5 /* WhiteRoseOfYork.white.1024.png */,
 			);
 			path = Icons;
 			sourceTree = "<group>";
@@ -512,40 +469,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C174B62F281CF1640061D171 /* WhiteRoseOfYork.55.png in Resources */,
 				C174B65F281CF4710061D171 /* Preview Assets.xcassets in Resources */,
-				C174B627281CF1640061D171 /* WhiteRoseOfYork.48.png in Resources */,
-				C174B621281CF1640061D171 /* WhiteRoseOfYork.64.png in Resources */,
-				C174B629281CF1640061D171 /* WhiteRoseOfYork.92.png in Resources */,
-				C174B620281CF1640061D171 /* WhiteRoseOfYork.58.png in Resources */,
-				C174B636281CF1640061D171 /* WhiteRoseOfYork.216.png in Resources */,
-				C174B61B281CF1640061D171 /* WhiteRoseOfYork.29.png in Resources */,
-				C174B634281CF1640061D171 /* WhiteRoseOfYork.172.png in Resources */,
-				C174B62D281CF1640061D171 /* WhiteRoseOfYork.512.png in Resources */,
-				C174B62C281CF1640061D171 /* WhiteRoseOfYork.80.png in Resources */,
-				C174B62E281CF1640061D171 /* WhiteRoseOfYork.40.png in Resources */,
 				C174B61A281CF1640061D171 /* WhiteRoseOfYork.1024.png in Resources */,
-				C174B628281CF1640061D171 /* WhiteRoseOfYork.60.png in Resources */,
-				C174B61E281CF1640061D171 /* WhiteRoseOfYork.16.png in Resources */,
-				C174B61F281CF1640061D171 /* WhiteRoseOfYork.234.png in Resources */,
-				C174B625281CF1640061D171 /* WhiteRoseOfYork.120.png in Resources */,
-				C174B62B281CF1640061D171 /* WhiteRoseOfYork.102.png in Resources */,
-				C174B61C281CF1640061D171 /* WhiteRoseOfYork.196.png in Resources */,
-				C174B624281CF1640061D171 /* WhiteRoseOfYork.88.png in Resources */,
-				C174B626281CF1640061D171 /* WhiteRoseOfYork.256.png in Resources */,
-				C174B635281CF1640061D171 /* WhiteRoseOfYork.20.png in Resources */,
-				C174B633281CF1640061D171 /* WhiteRoseOfYork.32.png in Resources */,
-				C174B632281CF1640061D171 /* WhiteRoseOfYork.167.png in Resources */,
 				C174B5D1281CEFBF0061D171 /* Preview Assets.xcassets in Resources */,
-				C174B62A281CF1640061D171 /* WhiteRoseOfYork.87.png in Resources */,
-				C174B61D281CF1640061D171 /* WhiteRoseOfYork.180.png in Resources */,
-				C174B630281CF1640061D171 /* WhiteRoseOfYork.100.png in Resources */,
-				C174B619281CF1640061D171 /* WhiteRoseOfYork.152.png in Resources */,
+				C1BD89D9282DE75F003221F5 /* WhiteRoseOfYork.white.58.png in Resources */,
+				C1BD89DF282DE7E3003221F5 /* WhiteRoseOfYork.white.120.png in Resources */,
 				C13FC715281D04E300901B80 /* GoogleService-Info.plist in Resources */,
-				C174B623281CF1640061D171 /* WhiteRoseOfYork.76.png in Resources */,
-				C174B631281CF1640061D171 /* WhiteRoseOfYork.128.png in Resources */,
+				C1BD89DD282DE7B7003221F5 /* WhiteRoseOfYork.white.80.png in Resources */,
+				C1BD89EB282DE902003221F5 /* WhiteRoseOfYork.white.167.png in Resources */,
+				C1BD89D5282DE6FA003221F5 /* WhiteRoseOfYork.white.40.png in Resources */,
+				C1BD89E3282DE884003221F5 /* WhiteRoseOfYork.white.20.png in Resources */,
+				C1BD89E9282DE8E1003221F5 /* WhiteRoseOfYork.white.152.png in Resources */,
 				C174B5CE281CEFBF0061D171 /* Assets.xcassets in Resources */,
-				C174B622281CF1640061D171 /* WhiteRoseOfYork.66.png in Resources */,
+				C1BD89E5282DE8A4003221F5 /* WhiteRoseOfYork.white.29.png in Resources */,
+				C1BD89D7282DE72E003221F5 /* WhiteRoseOfYork.white.60.png in Resources */,
+				C1BD89D3282DE68D003221F5 /* WhiteRoseOfYork.white.1024.png in Resources */,
+				C1BD89E7282DE8C4003221F5 /* WhiteRoseOfYork.white.76.png in Resources */,
+				C1BD89DB282DE794003221F5 /* WhiteRoseOfYork.white.87.png in Resources */,
+				C1BD89E1282DE830003221F5 /* WhiteRoseOfYork.white.180.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,6 +523,7 @@
 				C174B66F281CF4FE0061D171 /* FirebaseError.swift in Sources */,
 				C15BD17E2826FA9C003E8B1A /* PersonActionsView.swift in Sources */,
 				C174B663281CF4A40061D171 /* Encodable+Utils.swift in Sources */,
+				C1BD89ED282DE9B0003221F5 /* HeaderView.swift in Sources */,
 				C15BD1762826F9FB003E8B1A /* ChoosePersonsView.swift in Sources */,
 				C15BD17C2826FA76003E8B1A /* ParentActionsView.swift in Sources */,
 				C15BD17A2826FA52003E8B1A /* MainView.swift in Sources */,
@@ -600,6 +542,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C110B1D0281FA0C1000B0A1C /* FirestoreType.swift in Sources */,
+				C1BD89EF282DF01F003221F5 /* HeaderView.swift in Sources */,
 				C1732752281D001200804962 /* DocumentSnapshot+Utils.swift in Sources */,
 				C173274A281CFFFA00804962 /* Person.swift in Sources */,
 				C1732750281D000D00804962 /* Encodable+Utils.swift in Sources */,
@@ -621,6 +564,7 @@
 				C15BD1852826FBAD003E8B1A /* SelectFamilyView.swift in Sources */,
 				C1732751281D000E00804962 /* Encodable+Utils.swift in Sources */,
 				C174B5EF281CF00F0061D171 /* HouseOfYorke_tvOSApp.swift in Sources */,
+				C1BD89EE282DF01F003221F5 /* HeaderView.swift in Sources */,
 				C173274D281D000100804962 /* Family.swift in Sources */,
 				C1732749281CFFEE00804962 /* FirebaseError.swift in Sources */,
 				C15BD1872826FE23003E8B1A /* RecapView.swift in Sources */,

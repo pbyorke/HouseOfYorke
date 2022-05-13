@@ -13,6 +13,8 @@ struct MainTVView: View {
     
     var body: some View {
         VStack(spacing: 10) {
+            HeaderView()
+                .padding(.horizontal, 200)
             if dataManager.needFamily {
                 SelectFamilyView()
             } else {

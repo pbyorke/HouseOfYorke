@@ -12,20 +12,22 @@ struct ParentActionsView: View {
     @EnvironmentObject var dataManager: DataManager
 
     var body: some View {
-        ScrollView {
-            VStack {
-                ForEach(dataManager.children, id: \.id) { person in
-                    HStack {
-                        Text("\(person.points)")
-                        Text(person.name)
-                        PlusMinusView(child: person)
-                        Spacer()
+        VStack {
+            ScrollView {
+                VStack {
+                    ForEach(dataManager.children, id: \.id) { person in
+                        HStack {
+                            Text("\(person.points)")
+                            Text(person.name)
+                            PlusMinusView(child: person)
+                            Spacer()
+                        }
+                        .font(.title)
+                        .padding(.horizontal)
+                        .padding(.bottom, 15)
                     }
-                    .font(.title)
-                    .padding(.horizontal)
-                    .padding(.bottom, 15)
+                    Button(action: { signOff() }, label: { Text("Signoff") } )
                 }
-                Button(action: { signOff() }, label: { Text("Signoff") } )
             }
         }
     }

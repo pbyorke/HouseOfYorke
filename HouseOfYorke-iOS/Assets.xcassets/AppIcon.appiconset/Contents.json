@@ -1,109 +1,109 @@
 {
   "images" : [
     {
-      "filename" : "WhiteRoseOfYork.40.png",
+      "filename" : "WhiteRoseOfYork.white.40.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "20x20"
     },
     {
-      "filename" : "WhiteRoseOfYork.60.png",
+      "filename" : "WhiteRoseOfYork.white.60.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "20x20"
     },
     {
-      "filename" : "WhiteRoseOfYork.58.png",
+      "filename" : "WhiteRoseOfYork.white.58.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "29x29"
     },
     {
-      "filename" : "WhiteRoseOfYork.87.png",
+      "filename" : "WhiteRoseOfYork.white.87.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "29x29"
     },
     {
-      "filename" : "WhiteRoseOfYork.80.png",
+      "filename" : "WhiteRoseOfYork.white.80.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "40x40"
     },
     {
-      "filename" : "WhiteRoseOfYork.120.png",
+      "filename" : "WhiteRoseOfYork.white.120.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "40x40"
     },
     {
-      "filename" : "WhiteRoseOfYork.120-1.png",
+      "filename" : "WhiteRoseOfYork.white.120-1.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "60x60"
     },
     {
-      "filename" : "WhiteRoseOfYork.180.png",
+      "filename" : "WhiteRoseOfYork.white.180.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "60x60"
     },
     {
-      "filename" : "WhiteRoseOfYork.20.png",
+      "filename" : "WhiteRoseOfYork.white.20.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "20x20"
     },
     {
-      "filename" : "WhiteRoseOfYork.40-1.png",
+      "filename" : "WhiteRoseOfYork.white.40-1.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "20x20"
     },
     {
-      "filename" : "WhiteRoseOfYork.29.png",
+      "filename" : "WhiteRoseOfYork.white.29.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "29x29"
     },
     {
-      "filename" : "WhiteRoseOfYork.58-1.png",
+      "filename" : "WhiteRoseOfYork.white.58-1.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "29x29"
     },
     {
-      "filename" : "WhiteRoseOfYork.40-2.png",
+      "filename" : "WhiteRoseOfYork.white.40-2.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "40x40"
     },
     {
-      "filename" : "WhiteRoseOfYork.80-1.png",
+      "filename" : "WhiteRoseOfYork.white.80-1.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "40x40"
     },
     {
-      "filename" : "WhiteRoseOfYork.76.png",
+      "filename" : "WhiteRoseOfYork.white.76.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "76x76"
     },
     {
-      "filename" : "WhiteRoseOfYork.152.png",
+      "filename" : "WhiteRoseOfYork.white.152.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "76x76"
     },
     {
-      "filename" : "WhiteRoseOfYork.167.png",
+      "filename" : "WhiteRoseOfYork.white.167.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "83.5x83.5"
     },
     {
-      "filename" : "WhiteRoseOfYork.1024.png",
+      "filename" : "WhiteRoseOfYork.white.1024.png",
       "idiom" : "ios-marketing",
       "scale" : "1x",
       "size" : "1024x1024"

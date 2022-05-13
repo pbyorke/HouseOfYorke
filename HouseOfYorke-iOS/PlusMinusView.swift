@@ -14,7 +14,13 @@ struct PlusMinusView: View {
     @State private var showPicker = false
     @State private var selectedAmount = "0"
     @State private var amounts = [String]()
+    @State private var zeroCount = 0
     var child: Person
+    
+    init(child: Person) {
+        zeroCount = 0
+        self.child = child
+    }
     
     var body: some View {
         HStack {
@@ -36,18 +42,24 @@ struct PlusMinusView: View {
     }
     
     private func plus() {
+        zeroCount = 0
         amounts = ["0", "5", "10", "50"]
         showPicker = true
     }
     
     private func minus() {
+        zeroCount = 0
         amounts = ["0", "-5", "-10", "-50"]
         showPicker = true
     }
     
     private func zero() {
-        showPicker = false
-        dataManager.zero(child)
+        if zeroCount > 1 {
+            zeroCount = 0
+            showPicker = false
+            dataManager.zero(child)
+        }
+        zeroCount += 1
     }
     
     private func save() {
