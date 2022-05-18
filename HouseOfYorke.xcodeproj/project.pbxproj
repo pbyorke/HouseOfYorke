@@ -11,9 +11,22 @@
 		C110B1CF281FA0C1000B0A1C /* FirestoreType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C110B1CE281FA0C1000B0A1C /* FirestoreType.swift */; };
 		C110B1D0281FA0C1000B0A1C /* FirestoreType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C110B1CE281FA0C1000B0A1C /* FirestoreType.swift */; };
 		C110B1D1281FA0C1000B0A1C /* FirestoreType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C110B1CE281FA0C1000B0A1C /* FirestoreType.swift */; };
+		C12C6D0C282F280700D268D3 /* WhiteRoseOfYork.40.png in Resources */ = {isa = PBXBuildFile; fileRef = C12C6D0B282F280700D268D3 /* WhiteRoseOfYork.40.png */; };
+		C12C6D0E282F282400D268D3 /* WhiteRoseOfYork.80.png in Resources */ = {isa = PBXBuildFile; fileRef = C12C6D0D282F282400D268D3 /* WhiteRoseOfYork.80.png */; };
+		C12C6D10282F284200D268D3 /* WhiteRoseOfYork.120.png in Resources */ = {isa = PBXBuildFile; fileRef = C12C6D0F282F284200D268D3 /* WhiteRoseOfYork.120.png */; };
 		C13FC715281D04E300901B80 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C13FC714281D04E300901B80 /* GoogleService-Info.plist */; };
 		C13FC717281D060E00901B80 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C13FC716281D060E00901B80 /* GoogleService-Info.plist */; };
 		C13FC719281D061B00901B80 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C13FC718281D061B00901B80 /* GoogleService-Info.plist */; };
+		C14530E9282EB73E00D00B48 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14530E8282EB73E00D00B48 /* MainView.swift */; };
+		C14530EE282ECAE800D00B48 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14530EC282ECA5800D00B48 /* FirebaseManager.swift */; };
+		C14530EF282ECAE900D00B48 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14530EC282ECA5800D00B48 /* FirebaseManager.swift */; };
+		C14530F0282ECAEB00D00B48 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14530EC282ECA5800D00B48 /* FirebaseManager.swift */; };
+		C14530F4282EDE3700D00B48 /* DefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14530F3282EDE3700D00B48 /* DefaultsManager.swift */; };
+		C14530F5282EDEB500D00B48 /* DefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14530F3282EDE3700D00B48 /* DefaultsManager.swift */; };
+		C14530F6282EDEB600D00B48 /* DefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14530F3282EDE3700D00B48 /* DefaultsManager.swift */; };
+		C14530F7282EDEB600D00B48 /* DefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14530F3282EDE3700D00B48 /* DefaultsManager.swift */; };
+		C14530F8282EDF6900D00B48 /* Family.swift in Sources */ = {isa = PBXBuildFile; fileRef = C174B668281CF4D80061D171 /* Family.swift */; };
+		C14530F9282EDF6E00D00B48 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = C174B667281CF4D80061D171 /* Person.swift */; };
 		C15BD1742826F9C7003E8B1A /* ChooseFamilyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15BD1732826F9C7003E8B1A /* ChooseFamilyView.swift */; };
 		C15BD1762826F9FB003E8B1A /* ChoosePersonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15BD1752826F9FB003E8B1A /* ChoosePersonsView.swift */; };
 		C15BD1782826FA1C003E8B1A /* KidActionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15BD1772826FA1C003E8B1A /* KidActionsView.swift */; };
@@ -24,6 +37,9 @@
 		C15BD1832826FB5B003E8B1A /* MainTVView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15BD1822826FB5B003E8B1A /* MainTVView.swift */; };
 		C15BD1852826FBAD003E8B1A /* SelectFamilyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15BD1842826FBAD003E8B1A /* SelectFamilyView.swift */; };
 		C15BD1872826FE23003E8B1A /* RecapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15BD1862826FE23003E8B1A /* RecapView.swift */; };
+		C15CD07B282F24C000B55602 /* Color+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15CD07A282F24C000B55602 /* Color+Utils.swift */; };
+		C15CD07C282F24C000B55602 /* Color+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15CD07A282F24C000B55602 /* Color+Utils.swift */; };
+		C15CD07D282F24C000B55602 /* Color+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15CD07A282F24C000B55602 /* Color+Utils.swift */; };
 		C1732737281CFF2400804962 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = C1732736281CFF2400804962 /* FirebaseAnalytics */; };
 		C1732739281CFF2400804962 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C1732738281CFF2400804962 /* FirebaseFirestore */; };
 		C173273B281CFF2400804962 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = C173273A281CFF2400804962 /* FirebaseStorage */; };
@@ -59,6 +75,34 @@
 		C174B67A281CF9440061D171 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = C174B679281CF9440061D171 /* FirebaseAnalytics */; };
 		C174B67C281CF9440061D171 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C174B67B281CF9440061D171 /* FirebaseFirestore */; };
 		C174B67E281CF9440061D171 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = C174B67D281CF9440061D171 /* FirebaseStorage */; };
+		C19FAE7F282EA9D1008965A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C19FAE7E282EA9D1008965A9 /* Assets.xcassets */; };
+		C19FAE85282EA9D1008965A9 /* HouseOfYorke-watchOS WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C19FAE84282EA9D1008965A9 /* HouseOfYorke-watchOS WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C19FAE8C282EA9D1008965A9 /* HouseOfYorkeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19FAE8B282EA9D1008965A9 /* HouseOfYorkeApp.swift */; };
+		C19FAE8E282EA9D1008965A9 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19FAE8D282EA9D1008965A9 /* ComplicationController.swift */; };
+		C19FAE90282EA9D2008965A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C19FAE8F282EA9D2008965A9 /* Assets.xcassets */; };
+		C19FAE93282EA9D2008965A9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C19FAE92282EA9D2008965A9 /* Preview Assets.xcassets */; };
+		C19FAE97282EA9D2008965A9 /* HouseOfYorke-watchOS.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C19FAE7C282EA9D0008965A9 /* HouseOfYorke-watchOS.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C19FAEA1282EAB54008965A9 /* WhiteRoseOfYork.white.182.png in Resources */ = {isa = PBXBuildFile; fileRef = C19FAEA0282EAB54008965A9 /* WhiteRoseOfYork.white.182.png */; };
+		C19FAEA3282EABB2008965A9 /* WhiteRoseOfYork.white.32.png in Resources */ = {isa = PBXBuildFile; fileRef = C19FAEA2282EABB2008965A9 /* WhiteRoseOfYork.white.32.png */; };
+		C19FAEA5282EABF7008965A9 /* WhiteRoseOfYork.white.224.png in Resources */ = {isa = PBXBuildFile; fileRef = C19FAEA4282EABF7008965A9 /* WhiteRoseOfYork.white.224.png */; };
+		C19FAEA7282EAC2E008965A9 /* WhiteRoseOfYork.white.94.png in Resources */ = {isa = PBXBuildFile; fileRef = C19FAEA6282EAC2E008965A9 /* WhiteRoseOfYork.white.94.png */; };
+		C19FAEA9282EAC73008965A9 /* WhiteRoseOfYork.white.44.png in Resources */ = {isa = PBXBuildFile; fileRef = C19FAEA8282EAC73008965A9 /* WhiteRoseOfYork.white.44.png */; };
+		C19FAEAB282EACB3008965A9 /* WhiteRoseOfYork.white.206.png in Resources */ = {isa = PBXBuildFile; fileRef = C19FAEAA282EACB3008965A9 /* WhiteRoseOfYork.white.206.png */; };
+		C19FAEAD282EACE0008965A9 /* WhiteRoseOfYork.white.264.png in Resources */ = {isa = PBXBuildFile; fileRef = C19FAEAC282EACE0008965A9 /* WhiteRoseOfYork.white.264.png */; };
+		C19FAEAF282EAD14008965A9 /* WhiteRoseOfYork.white.52.png in Resources */ = {isa = PBXBuildFile; fileRef = C19FAEAE282EAD14008965A9 /* WhiteRoseOfYork.white.52.png */; };
+		C19FAEB1282EAD34008965A9 /* WhiteRoseOfYork.white.64.png in Resources */ = {isa = PBXBuildFile; fileRef = C19FAEB0282EAD34008965A9 /* WhiteRoseOfYork.white.64.png */; };
+		C19FAEB3282EAD6A008965A9 /* WhiteRoseOfYork.white.50.png in Resources */ = {isa = PBXBuildFile; fileRef = C19FAEB2282EAD6A008965A9 /* WhiteRoseOfYork.white.50.png */; };
+		C1AE9EF8282EB22A00C0B81E /* WhiteRoseOfYork.white.48.png in Resources */ = {isa = PBXBuildFile; fileRef = C1AE9EF7282EB22A00C0B81E /* WhiteRoseOfYork.white.48.png */; };
+		C1AE9EFA282EB25800C0B81E /* WhiteRoseOfYork.white.55.png in Resources */ = {isa = PBXBuildFile; fileRef = C1AE9EF9282EB25800C0B81E /* WhiteRoseOfYork.white.55.png */; };
+		C1AE9EFC282EB2C700C0B81E /* WhiteRoseOfYork.white.66.png in Resources */ = {isa = PBXBuildFile; fileRef = C1AE9EFB282EB2C700C0B81E /* WhiteRoseOfYork.white.66.png */; };
+		C1AE9EFE282EB2FF00C0B81E /* WhiteRoseOfYork.white.88.png in Resources */ = {isa = PBXBuildFile; fileRef = C1AE9EFD282EB2FF00C0B81E /* WhiteRoseOfYork.white.88.png */; };
+		C1AE9F00282EB32100C0B81E /* WhiteRoseOfYork.white.92.png in Resources */ = {isa = PBXBuildFile; fileRef = C1AE9EFF282EB32100C0B81E /* WhiteRoseOfYork.white.92.png */; };
+		C1AE9F02282EB34000C0B81E /* WhiteRoseOfYork.white.100.png in Resources */ = {isa = PBXBuildFile; fileRef = C1AE9F01282EB34000C0B81E /* WhiteRoseOfYork.white.100.png */; };
+		C1AE9F04282EB35F00C0B81E /* WhiteRoseOfYork.white.102.png in Resources */ = {isa = PBXBuildFile; fileRef = C1AE9F03282EB35F00C0B81E /* WhiteRoseOfYork.white.102.png */; };
+		C1AE9F06282EB37E00C0B81E /* WhiteRoseOfYork.white.172.png in Resources */ = {isa = PBXBuildFile; fileRef = C1AE9F05282EB37E00C0B81E /* WhiteRoseOfYork.white.172.png */; };
+		C1AE9F08282EB3A000C0B81E /* WhiteRoseOfYork.white.196.png in Resources */ = {isa = PBXBuildFile; fileRef = C1AE9F07282EB3A000C0B81E /* WhiteRoseOfYork.white.196.png */; };
+		C1AE9F0A282EB3F200C0B81E /* WhiteRoseOfYork.white.216.png in Resources */ = {isa = PBXBuildFile; fileRef = C1AE9F09282EB3F200C0B81E /* WhiteRoseOfYork.white.216.png */; };
+		C1AE9F0C282EB43E00C0B81E /* WhiteRoseOfYork.white.234.png in Resources */ = {isa = PBXBuildFile; fileRef = C1AE9F0B282EB43E00C0B81E /* WhiteRoseOfYork.white.234.png */; };
 		C1BD89D3282DE68D003221F5 /* WhiteRoseOfYork.white.1024.png in Resources */ = {isa = PBXBuildFile; fileRef = C1BD89D2282DE68D003221F5 /* WhiteRoseOfYork.white.1024.png */; };
 		C1BD89D5282DE6FA003221F5 /* WhiteRoseOfYork.white.40.png in Resources */ = {isa = PBXBuildFile; fileRef = C1BD89D4282DE6FA003221F5 /* WhiteRoseOfYork.white.40.png */; };
 		C1BD89D7282DE72E003221F5 /* WhiteRoseOfYork.white.60.png in Resources */ = {isa = PBXBuildFile; fileRef = C1BD89D6282DE72E003221F5 /* WhiteRoseOfYork.white.60.png */; };
@@ -80,12 +124,60 @@
 		C1C994E028216E8A001C4F3C /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C994DD28216E8A001C4F3C /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		C19FAE86282EA9D1008965A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C174B5BC281CEF540061D171 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C19FAE83282EA9D1008965A9;
+			remoteInfo = "HouseOfYorke-watchOS WatchKit Extension";
+		};
+		C19FAE95282EA9D2008965A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C174B5BC281CEF540061D171 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C19FAE7B282EA9D0008965A9;
+			remoteInfo = "HouseOfYorke-watchOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C19FAE98282EA9D2008965A9 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				C19FAE97282EA9D2008965A9 /* HouseOfYorke-watchOS.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C19FAE9B282EA9D2008965A9 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C19FAE85282EA9D1008965A9 /* HouseOfYorke-watchOS WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		C101E023282CBE3B00762364 /* PasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordView.swift; sourceTree = "<group>"; };
 		C110B1CE281FA0C1000B0A1C /* FirestoreType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreType.swift; sourceTree = "<group>"; };
+		C12C6D0B282F280700D268D3 /* WhiteRoseOfYork.40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.40.png; sourceTree = "<group>"; };
+		C12C6D0D282F282400D268D3 /* WhiteRoseOfYork.80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.80.png; sourceTree = "<group>"; };
+		C12C6D0F282F284200D268D3 /* WhiteRoseOfYork.120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.120.png; sourceTree = "<group>"; };
 		C13FC714281D04E300901B80 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C13FC716281D060E00901B80 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C13FC718281D061B00901B80 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C14530E8282EB73E00D00B48 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		C14530EC282ECA5800D00B48 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		C14530F3282EDE3700D00B48 /* DefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsManager.swift; sourceTree = "<group>"; };
 		C15BD1732826F9C7003E8B1A /* ChooseFamilyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseFamilyView.swift; sourceTree = "<group>"; };
 		C15BD1752826F9FB003E8B1A /* ChoosePersonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosePersonsView.swift; sourceTree = "<group>"; };
 		C15BD1772826FA1C003E8B1A /* KidActionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KidActionsView.swift; sourceTree = "<group>"; };
@@ -96,6 +188,7 @@
 		C15BD1822826FB5B003E8B1A /* MainTVView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTVView.swift; sourceTree = "<group>"; };
 		C15BD1842826FBAD003E8B1A /* SelectFamilyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectFamilyView.swift; sourceTree = "<group>"; };
 		C15BD1862826FE23003E8B1A /* RecapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecapView.swift; sourceTree = "<group>"; };
+		C15CD07A282F24C000B55602 /* Color+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Utils.swift"; sourceTree = "<group>"; };
 		C174B5C6281CEFBE0061D171 /* HouseOfYorke-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HouseOfYorke-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C174B5C9281CEFBE0061D171 /* HouseOfYorke_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseOfYorke_iOSApp.swift; sourceTree = "<group>"; };
 		C174B5CD281CEFBF0061D171 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -116,6 +209,35 @@
 		C174B667281CF4D80061D171 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		C174B668281CF4D80061D171 /* Family.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Family.swift; sourceTree = "<group>"; };
 		C174B66D281CF4FE0061D171 /* FirebaseError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseError.swift; sourceTree = "<group>"; };
+		C19FAE7C282EA9D0008965A9 /* HouseOfYorke-watchOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HouseOfYorke-watchOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C19FAE7E282EA9D1008965A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C19FAE84282EA9D1008965A9 /* HouseOfYorke-watchOS WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "HouseOfYorke-watchOS WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C19FAE8B282EA9D1008965A9 /* HouseOfYorkeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseOfYorkeApp.swift; sourceTree = "<group>"; };
+		C19FAE8D282EA9D1008965A9 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		C19FAE8F282EA9D2008965A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C19FAE92282EA9D2008965A9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C19FAE94282EA9D2008965A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C19FAEA0282EAB54008965A9 /* WhiteRoseOfYork.white.182.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.white.182.png; sourceTree = "<group>"; };
+		C19FAEA2282EABB2008965A9 /* WhiteRoseOfYork.white.32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.white.32.png; sourceTree = "<group>"; };
+		C19FAEA4282EABF7008965A9 /* WhiteRoseOfYork.white.224.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.white.224.png; sourceTree = "<group>"; };
+		C19FAEA6282EAC2E008965A9 /* WhiteRoseOfYork.white.94.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.white.94.png; sourceTree = "<group>"; };
+		C19FAEA8282EAC73008965A9 /* WhiteRoseOfYork.white.44.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.white.44.png; sourceTree = "<group>"; };
+		C19FAEAA282EACB3008965A9 /* WhiteRoseOfYork.white.206.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.white.206.png; sourceTree = "<group>"; };
+		C19FAEAC282EACE0008965A9 /* WhiteRoseOfYork.white.264.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.white.264.png; sourceTree = "<group>"; };
+		C19FAEAE282EAD14008965A9 /* WhiteRoseOfYork.white.52.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.white.52.png; sourceTree = "<group>"; };
+		C19FAEB0282EAD34008965A9 /* WhiteRoseOfYork.white.64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.white.64.png; sourceTree = "<group>"; };
+		C19FAEB2282EAD6A008965A9 /* WhiteRoseOfYork.white.50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.white.50.png; sourceTree = "<group>"; };
+		C1AE9EF7282EB22A00C0B81E /* WhiteRoseOfYork.white.48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.white.48.png; sourceTree = "<group>"; };
+		C1AE9EF9282EB25800C0B81E /* WhiteRoseOfYork.white.55.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.white.55.png; sourceTree = "<group>"; };
+		C1AE9EFB282EB2C700C0B81E /* WhiteRoseOfYork.white.66.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.white.66.png; sourceTree = "<group>"; };
+		C1AE9EFD282EB2FF00C0B81E /* WhiteRoseOfYork.white.88.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.white.88.png; sourceTree = "<group>"; };
+		C1AE9EFF282EB32100C0B81E /* WhiteRoseOfYork.white.92.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.white.92.png; sourceTree = "<group>"; };
+		C1AE9F01282EB34000C0B81E /* WhiteRoseOfYork.white.100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.white.100.png; sourceTree = "<group>"; };
+		C1AE9F03282EB35F00C0B81E /* WhiteRoseOfYork.white.102.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.white.102.png; sourceTree = "<group>"; };
+		C1AE9F05282EB37E00C0B81E /* WhiteRoseOfYork.white.172.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.white.172.png; sourceTree = "<group>"; };
+		C1AE9F07282EB3A000C0B81E /* WhiteRoseOfYork.white.196.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.white.196.png; sourceTree = "<group>"; };
+		C1AE9F09282EB3F200C0B81E /* WhiteRoseOfYork.white.216.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.white.216.png; sourceTree = "<group>"; };
+		C1AE9F0B282EB43E00C0B81E /* WhiteRoseOfYork.white.234.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.white.234.png; sourceTree = "<group>"; };
 		C1BD89D2282DE68D003221F5 /* WhiteRoseOfYork.white.1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.white.1024.png; sourceTree = "<group>"; };
 		C1BD89D4282DE6FA003221F5 /* WhiteRoseOfYork.white.40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.white.40.png; sourceTree = "<group>"; };
 		C1BD89D6282DE72E003221F5 /* WhiteRoseOfYork.white.60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.white.60.png; sourceTree = "<group>"; };
@@ -164,9 +286,69 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C19FAE81282EA9D1008965A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C14530E3282EB61500D00B48 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				C174B5CD281CEFBF0061D171 /* Assets.xcassets */,
+				C13FC714281D04E300901B80 /* GoogleService-Info.plist */,
+				C174B5C9281CEFBE0061D171 /* HouseOfYorke_iOSApp.swift */,
+				C174B5CF281CEFBF0061D171 /* Preview Content */,
+			);
+			name = Infrastructure;
+			sourceTree = "<group>";
+		};
+		C14530E4282EB64300D00B48 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				C174B5DF281CEFEB0061D171 /* Assets.xcassets */,
+				C13FC716281D060E00901B80 /* GoogleService-Info.plist */,
+				C174B5DB281CEFEA0061D171 /* HouseOfYorke_macOSApp.swift */,
+				C174B5E1281CEFEB0061D171 /* Preview Content */,
+			);
+			name = Infrastructure;
+			sourceTree = "<group>";
+		};
+		C14530E5282EB66A00D00B48 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				C174B5F2281CF0100061D171 /* Assets.xcassets */,
+				C13FC718281D061B00901B80 /* GoogleService-Info.plist */,
+				C174B5EE281CF00F0061D171 /* HouseOfYorke_tvOSApp.swift */,
+				C174B5F4281CF0100061D171 /* Preview Content */,
+			);
+			name = Infrastructure;
+			sourceTree = "<group>";
+		};
+		C14530E6282EB68B00D00B48 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C14530E8282EB73E00D00B48 /* MainView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		C14530E7282EB69400D00B48 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				C19FAE8F282EA9D2008965A9 /* Assets.xcassets */,
+				C19FAE8D282EA9D1008965A9 /* ComplicationController.swift */,
+				C19FAE8B282EA9D1008965A9 /* HouseOfYorkeApp.swift */,
+				C19FAE94282EA9D2008965A9 /* Info.plist */,
+				C19FAE91282EA9D2008965A9 /* Preview Content */,
+			);
+			name = Infrastructure;
+			sourceTree = "<group>";
+		};
 		C15BD1722826F8FD003E8B1A /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,6 +389,8 @@
 				C174B5C8281CEFBE0061D171 /* HouseOfYorke-iOS */,
 				C174B5DA281CEFEA0061D171 /* HouseOfYorke-macOS */,
 				C174B5ED281CF00F0061D171 /* HouseOfYorke-tvOS */,
+				C19FAE7D282EA9D0008965A9 /* HouseOfYorke-watchOS */,
+				C19FAE88282EA9D1008965A9 /* HouseOfYorke-watchOS WatchKit Extension */,
 				C174B5FA281CF1640061D171 /* Icons */,
 				C174B5C7281CEFBE0061D171 /* Products */,
 				C174B637281CF1F10061D171 /* Shared */,
@@ -219,6 +403,8 @@
 				C174B5C6281CEFBE0061D171 /* HouseOfYorke-iOS.app */,
 				C174B5D9281CEFEA0061D171 /* HouseOfYorke-macOS.app */,
 				C174B5EC281CF00F0061D171 /* House Of Yorke.app */,
+				C19FAE7C282EA9D0008965A9 /* HouseOfYorke-watchOS.app */,
+				C19FAE84282EA9D1008965A9 /* HouseOfYorke-watchOS WatchKit Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -226,10 +412,7 @@
 		C174B5C8281CEFBE0061D171 /* HouseOfYorke-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				C174B5CD281CEFBF0061D171 /* Assets.xcassets */,
-				C13FC714281D04E300901B80 /* GoogleService-Info.plist */,
-				C174B5C9281CEFBE0061D171 /* HouseOfYorke_iOSApp.swift */,
-				C174B5CF281CEFBF0061D171 /* Preview Content */,
+				C14530E3282EB61500D00B48 /* Infrastructure */,
 				C15BD1722826F8FD003E8B1A /* Views */,
 			);
 			path = "HouseOfYorke-iOS";
@@ -246,11 +429,8 @@
 		C174B5DA281CEFEA0061D171 /* HouseOfYorke-macOS */ = {
 			isa = PBXGroup;
 			children = (
-				C13FC716281D060E00901B80 /* GoogleService-Info.plist */,
-				C174B5DB281CEFEA0061D171 /* HouseOfYorke_macOSApp.swift */,
-				C174B5DF281CEFEB0061D171 /* Assets.xcassets */,
+				C14530E4282EB64300D00B48 /* Infrastructure */,
 				C174B5E4281CEFEB0061D171 /* HouseOfYorke_macOS.entitlements */,
-				C174B5E1281CEFEB0061D171 /* Preview Content */,
 			);
 			path = "HouseOfYorke-macOS";
 			sourceTree = "<group>";
@@ -266,10 +446,7 @@
 		C174B5ED281CF00F0061D171 /* HouseOfYorke-tvOS */ = {
 			isa = PBXGroup;
 			children = (
-				C174B5F2281CF0100061D171 /* Assets.xcassets */,
-				C13FC718281D061B00901B80 /* GoogleService-Info.plist */,
-				C174B5EE281CF00F0061D171 /* HouseOfYorke_tvOSApp.swift */,
-				C174B5F4281CF0100061D171 /* Preview Content */,
+				C14530E5282EB66A00D00B48 /* Infrastructure */,
 				C15BD1812826FB44003E8B1A /* Views */,
 			);
 			path = "HouseOfYorke-tvOS";
@@ -286,19 +463,43 @@
 		C174B5FA281CF1640061D171 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				C12C6D0B282F280700D268D3 /* WhiteRoseOfYork.40.png */,
+				C12C6D0D282F282400D268D3 /* WhiteRoseOfYork.80.png */,
+				C12C6D0F282F284200D268D3 /* WhiteRoseOfYork.120.png */,
 				C174B5FC281CF1640061D171 /* WhiteRoseOfYork.1024.png */,
 				C1BD89E2282DE884003221F5 /* WhiteRoseOfYork.white.20.png */,
 				C1BD89E4282DE8A4003221F5 /* WhiteRoseOfYork.white.29.png */,
+				C19FAEA2282EABB2008965A9 /* WhiteRoseOfYork.white.32.png */,
 				C1BD89D4282DE6FA003221F5 /* WhiteRoseOfYork.white.40.png */,
+				C19FAEA8282EAC73008965A9 /* WhiteRoseOfYork.white.44.png */,
+				C1AE9EF7282EB22A00C0B81E /* WhiteRoseOfYork.white.48.png */,
+				C19FAEB2282EAD6A008965A9 /* WhiteRoseOfYork.white.50.png */,
+				C19FAEAE282EAD14008965A9 /* WhiteRoseOfYork.white.52.png */,
+				C1AE9EF9282EB25800C0B81E /* WhiteRoseOfYork.white.55.png */,
 				C1BD89D8282DE75F003221F5 /* WhiteRoseOfYork.white.58.png */,
 				C1BD89D6282DE72E003221F5 /* WhiteRoseOfYork.white.60.png */,
+				C19FAEB0282EAD34008965A9 /* WhiteRoseOfYork.white.64.png */,
+				C1AE9EFB282EB2C700C0B81E /* WhiteRoseOfYork.white.66.png */,
 				C1BD89E6282DE8C4003221F5 /* WhiteRoseOfYork.white.76.png */,
 				C1BD89DC282DE7B7003221F5 /* WhiteRoseOfYork.white.80.png */,
 				C1BD89DA282DE794003221F5 /* WhiteRoseOfYork.white.87.png */,
+				C1AE9EFD282EB2FF00C0B81E /* WhiteRoseOfYork.white.88.png */,
+				C1AE9EFF282EB32100C0B81E /* WhiteRoseOfYork.white.92.png */,
+				C19FAEA6282EAC2E008965A9 /* WhiteRoseOfYork.white.94.png */,
+				C1AE9F01282EB34000C0B81E /* WhiteRoseOfYork.white.100.png */,
+				C1AE9F03282EB35F00C0B81E /* WhiteRoseOfYork.white.102.png */,
 				C1BD89DE282DE7E3003221F5 /* WhiteRoseOfYork.white.120.png */,
 				C1BD89E8282DE8E1003221F5 /* WhiteRoseOfYork.white.152.png */,
 				C1BD89EA282DE902003221F5 /* WhiteRoseOfYork.white.167.png */,
+				C1AE9F05282EB37E00C0B81E /* WhiteRoseOfYork.white.172.png */,
 				C1BD89E0282DE830003221F5 /* WhiteRoseOfYork.white.180.png */,
+				C19FAEA0282EAB54008965A9 /* WhiteRoseOfYork.white.182.png */,
+				C1AE9F07282EB3A000C0B81E /* WhiteRoseOfYork.white.196.png */,
+				C19FAEAA282EACB3008965A9 /* WhiteRoseOfYork.white.206.png */,
+				C1AE9F09282EB3F200C0B81E /* WhiteRoseOfYork.white.216.png */,
+				C19FAEA4282EABF7008965A9 /* WhiteRoseOfYork.white.224.png */,
+				C1AE9F0B282EB43E00C0B81E /* WhiteRoseOfYork.white.234.png */,
+				C19FAEAC282EACE0008965A9 /* WhiteRoseOfYork.white.264.png */,
 				C1BD89D2282DE68D003221F5 /* WhiteRoseOfYork.white.1024.png */,
 			);
 			path = Icons;
@@ -326,6 +527,7 @@
 		C174B660281CF48E0061D171 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				C15CD07A282F24C000B55602 /* Color+Utils.swift */,
 				C174B662281CF4A40061D171 /* DocumentSnapshot+Utils.swift */,
 				C174B661281CF4A40061D171 /* Encodable+Utils.swift */,
 			);
@@ -345,10 +547,37 @@
 			isa = PBXGroup;
 			children = (
 				C1C994DD28216E8A001C4F3C /* DataManager.swift */,
+				C14530F3282EDE3700D00B48 /* DefaultsManager.swift */,
 				C174B66D281CF4FE0061D171 /* FirebaseError.swift */,
+				C14530EC282ECA5800D00B48 /* FirebaseManager.swift */,
 				C110B1CE281FA0C1000B0A1C /* FirestoreType.swift */,
 			);
 			name = Utilities;
+			sourceTree = "<group>";
+		};
+		C19FAE7D282EA9D0008965A9 /* HouseOfYorke-watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				C19FAE7E282EA9D1008965A9 /* Assets.xcassets */,
+			);
+			path = "HouseOfYorke-watchOS";
+			sourceTree = "<group>";
+		};
+		C19FAE88282EA9D1008965A9 /* HouseOfYorke-watchOS WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C14530E7282EB69400D00B48 /* Infrastructure */,
+				C14530E6282EB68B00D00B48 /* Views */,
+			);
+			path = "HouseOfYorke-watchOS WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		C19FAE91282EA9D2008965A9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C19FAE92282EA9D2008965A9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,10 +590,12 @@
 				C174B5C2281CEFBE0061D171 /* Sources */,
 				C174B5C3281CEFBE0061D171 /* Frameworks */,
 				C174B5C4281CEFBE0061D171 /* Resources */,
+				C19FAE98282EA9D2008965A9 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C19FAE96282EA9D2008965A9 /* PBXTargetDependency */,
 			);
 			name = "HouseOfYorke-iOS";
 			packageProductDependencies = (
@@ -420,6 +651,40 @@
 			productReference = C174B5EC281CF00F0061D171 /* House Of Yorke.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C19FAE7B282EA9D0008965A9 /* HouseOfYorke-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C19FAE9F282EA9D2008965A9 /* Build configuration list for PBXNativeTarget "HouseOfYorke-watchOS" */;
+			buildPhases = (
+				C19FAE7A282EA9D0008965A9 /* Resources */,
+				C19FAE9B282EA9D2008965A9 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C19FAE87282EA9D1008965A9 /* PBXTargetDependency */,
+			);
+			name = "HouseOfYorke-watchOS";
+			productName = "HouseOfYorke-watchOS";
+			productReference = C19FAE7C282EA9D0008965A9 /* HouseOfYorke-watchOS.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		C19FAE83282EA9D1008965A9 /* HouseOfYorke-watchOS WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C19FAE9E282EA9D2008965A9 /* Build configuration list for PBXNativeTarget "HouseOfYorke-watchOS WatchKit Extension" */;
+			buildPhases = (
+				C19FAE80282EA9D1008965A9 /* Sources */,
+				C19FAE81282EA9D1008965A9 /* Frameworks */,
+				C19FAE82282EA9D1008965A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HouseOfYorke-watchOS WatchKit Extension";
+			productName = "HouseOfYorke-watchOS WatchKit Extension";
+			productReference = C19FAE84282EA9D1008965A9 /* HouseOfYorke-watchOS WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -437,6 +702,12 @@
 						CreatedOnToolsVersion = 13.3.1;
 					};
 					C174B5EB281CF00F0061D171 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					C19FAE7B282EA9D0008965A9 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					C19FAE83282EA9D1008965A9 = {
 						CreatedOnToolsVersion = 13.3.1;
 					};
 				};
@@ -460,6 +731,8 @@
 				C174B5C5281CEFBE0061D171 /* HouseOfYorke-iOS */,
 				C174B5D8281CEFEA0061D171 /* HouseOfYorke-macOS */,
 				C174B5EB281CF00F0061D171 /* HouseOfYorke-tvOS */,
+				C19FAE7B282EA9D0008965A9 /* HouseOfYorke-watchOS */,
+				C19FAE83282EA9D1008965A9 /* HouseOfYorke-watchOS WatchKit Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -470,21 +743,45 @@
 			buildActionMask = 2147483647;
 			files = (
 				C174B65F281CF4710061D171 /* Preview Assets.xcassets in Resources */,
+				C19FAEAB282EACB3008965A9 /* WhiteRoseOfYork.white.206.png in Resources */,
+				C19FAEA7282EAC2E008965A9 /* WhiteRoseOfYork.white.94.png in Resources */,
+				C12C6D0E282F282400D268D3 /* WhiteRoseOfYork.80.png in Resources */,
+				C19FAEB1282EAD34008965A9 /* WhiteRoseOfYork.white.64.png in Resources */,
+				C19FAEA1282EAB54008965A9 /* WhiteRoseOfYork.white.182.png in Resources */,
 				C174B61A281CF1640061D171 /* WhiteRoseOfYork.1024.png in Resources */,
 				C174B5D1281CEFBF0061D171 /* Preview Assets.xcassets in Resources */,
 				C1BD89D9282DE75F003221F5 /* WhiteRoseOfYork.white.58.png in Resources */,
+				C19FAEA3282EABB2008965A9 /* WhiteRoseOfYork.white.32.png in Resources */,
 				C1BD89DF282DE7E3003221F5 /* WhiteRoseOfYork.white.120.png in Resources */,
+				C19FAEAD282EACE0008965A9 /* WhiteRoseOfYork.white.264.png in Resources */,
 				C13FC715281D04E300901B80 /* GoogleService-Info.plist in Resources */,
+				C1AE9F0A282EB3F200C0B81E /* WhiteRoseOfYork.white.216.png in Resources */,
 				C1BD89DD282DE7B7003221F5 /* WhiteRoseOfYork.white.80.png in Resources */,
 				C1BD89EB282DE902003221F5 /* WhiteRoseOfYork.white.167.png in Resources */,
+				C12C6D0C282F280700D268D3 /* WhiteRoseOfYork.40.png in Resources */,
 				C1BD89D5282DE6FA003221F5 /* WhiteRoseOfYork.white.40.png in Resources */,
 				C1BD89E3282DE884003221F5 /* WhiteRoseOfYork.white.20.png in Resources */,
+				C1AE9F0C282EB43E00C0B81E /* WhiteRoseOfYork.white.234.png in Resources */,
+				C1AE9EFE282EB2FF00C0B81E /* WhiteRoseOfYork.white.88.png in Resources */,
 				C1BD89E9282DE8E1003221F5 /* WhiteRoseOfYork.white.152.png in Resources */,
 				C174B5CE281CEFBF0061D171 /* Assets.xcassets in Resources */,
 				C1BD89E5282DE8A4003221F5 /* WhiteRoseOfYork.white.29.png in Resources */,
+				C1AE9F00282EB32100C0B81E /* WhiteRoseOfYork.white.92.png in Resources */,
+				C19FAEA5282EABF7008965A9 /* WhiteRoseOfYork.white.224.png in Resources */,
 				C1BD89D7282DE72E003221F5 /* WhiteRoseOfYork.white.60.png in Resources */,
+				C19FAEB3282EAD6A008965A9 /* WhiteRoseOfYork.white.50.png in Resources */,
+				C1AE9F02282EB34000C0B81E /* WhiteRoseOfYork.white.100.png in Resources */,
+				C1AE9EF8282EB22A00C0B81E /* WhiteRoseOfYork.white.48.png in Resources */,
+				C1AE9F04282EB35F00C0B81E /* WhiteRoseOfYork.white.102.png in Resources */,
 				C1BD89D3282DE68D003221F5 /* WhiteRoseOfYork.white.1024.png in Resources */,
+				C1AE9EFA282EB25800C0B81E /* WhiteRoseOfYork.white.55.png in Resources */,
 				C1BD89E7282DE8C4003221F5 /* WhiteRoseOfYork.white.76.png in Resources */,
+				C1AE9EFC282EB2C700C0B81E /* WhiteRoseOfYork.white.66.png in Resources */,
+				C1AE9F06282EB37E00C0B81E /* WhiteRoseOfYork.white.172.png in Resources */,
+				C19FAEA9282EAC73008965A9 /* WhiteRoseOfYork.white.44.png in Resources */,
+				C1AE9F08282EB3A000C0B81E /* WhiteRoseOfYork.white.196.png in Resources */,
+				C19FAEAF282EAD14008965A9 /* WhiteRoseOfYork.white.52.png in Resources */,
+				C12C6D10282F284200D268D3 /* WhiteRoseOfYork.120.png in Resources */,
 				C1BD89DB282DE794003221F5 /* WhiteRoseOfYork.white.87.png in Resources */,
 				C1BD89E1282DE830003221F5 /* WhiteRoseOfYork.white.180.png in Resources */,
 			);
@@ -510,6 +807,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C19FAE7A282EA9D0008965A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C19FAE7F282EA9D1008965A9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C19FAE82282EA9D1008965A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C19FAE93282EA9D2008965A9 /* Preview Assets.xcassets in Resources */,
+				C19FAE90282EA9D2008965A9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -517,6 +831,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C14530F5282EDEB500D00B48 /* DefaultsManager.swift in Sources */,
 				C110B1CF281FA0C1000B0A1C /* FirestoreType.swift in Sources */,
 				C15BD1782826FA1C003E8B1A /* KidActionsView.swift in Sources */,
 				C174B66A281CF4D80061D171 /* Person.swift in Sources */,
@@ -527,8 +842,10 @@
 				C15BD1762826F9FB003E8B1A /* ChoosePersonsView.swift in Sources */,
 				C15BD17C2826FA76003E8B1A /* ParentActionsView.swift in Sources */,
 				C15BD17A2826FA52003E8B1A /* MainView.swift in Sources */,
+				C15CD07B282F24C000B55602 /* Color+Utils.swift in Sources */,
 				C15BD1802826FAC2003E8B1A /* PlusMinusView.swift in Sources */,
 				C174B66B281CF4D80061D171 /* Family.swift in Sources */,
+				C14530EE282ECAE800D00B48 /* FirebaseManager.swift in Sources */,
 				C101E024282CBE3B00762364 /* PasswordView.swift in Sources */,
 				C174B664281CF4A40061D171 /* DocumentSnapshot+Utils.swift in Sources */,
 				C174B5CA281CEFBE0061D171 /* HouseOfYorke_iOSApp.swift in Sources */,
@@ -543,13 +860,16 @@
 			files = (
 				C110B1D0281FA0C1000B0A1C /* FirestoreType.swift in Sources */,
 				C1BD89EF282DF01F003221F5 /* HeaderView.swift in Sources */,
+				C14530EF282ECAE900D00B48 /* FirebaseManager.swift in Sources */,
 				C1732752281D001200804962 /* DocumentSnapshot+Utils.swift in Sources */,
 				C173274A281CFFFA00804962 /* Person.swift in Sources */,
 				C1732750281D000D00804962 /* Encodable+Utils.swift in Sources */,
 				C174B5DC281CEFEA0061D171 /* HouseOfYorke_macOSApp.swift in Sources */,
 				C173274C281D000000804962 /* Family.swift in Sources */,
+				C14530F6282EDEB600D00B48 /* DefaultsManager.swift in Sources */,
 				C1732748281CFFED00804962 /* FirebaseError.swift in Sources */,
 				C1C994DF28216E8A001C4F3C /* DataManager.swift in Sources */,
+				C15CD07C282F24C000B55602 /* Color+Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -557,8 +877,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C14530F0282ECAEB00D00B48 /* FirebaseManager.swift in Sources */,
 				C110B1D1281FA0C1000B0A1C /* FirestoreType.swift in Sources */,
 				C15BD1832826FB5B003E8B1A /* MainTVView.swift in Sources */,
+				C14530F7282EDEB600D00B48 /* DefaultsManager.swift in Sources */,
 				C1732753281D001200804962 /* DocumentSnapshot+Utils.swift in Sources */,
 				C173274B281CFFFA00804962 /* Person.swift in Sources */,
 				C15BD1852826FBAD003E8B1A /* SelectFamilyView.swift in Sources */,
@@ -566,13 +888,40 @@
 				C174B5EF281CF00F0061D171 /* HouseOfYorke_tvOSApp.swift in Sources */,
 				C1BD89EE282DF01F003221F5 /* HeaderView.swift in Sources */,
 				C173274D281D000100804962 /* Family.swift in Sources */,
+				C15CD07D282F24C000B55602 /* Color+Utils.swift in Sources */,
 				C1732749281CFFEE00804962 /* FirebaseError.swift in Sources */,
 				C15BD1872826FE23003E8B1A /* RecapView.swift in Sources */,
 				C1C994E028216E8A001C4F3C /* DataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C19FAE80282EA9D1008965A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C14530F9282EDF6E00D00B48 /* Person.swift in Sources */,
+				C14530F8282EDF6900D00B48 /* Family.swift in Sources */,
+				C19FAE8C282EA9D1008965A9 /* HouseOfYorkeApp.swift in Sources */,
+				C14530E9282EB73E00D00B48 /* MainView.swift in Sources */,
+				C19FAE8E282EA9D1008965A9 /* ComplicationController.swift in Sources */,
+				C14530F4282EDE3700D00B48 /* DefaultsManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C19FAE87282EA9D1008965A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C19FAE83282EA9D1008965A9 /* HouseOfYorke-watchOS WatchKit Extension */;
+			targetProxy = C19FAE86282EA9D1008965A9 /* PBXContainerItemProxy */;
+		};
+		C19FAE96282EA9D2008965A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C19FAE7B282EA9D0008965A9 /* HouseOfYorke-watchOS */;
+			targetProxy = C19FAE95282EA9D2008965A9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		C174B5C0281CEF540061D171 /* Debug */ = {
@@ -1056,6 +1405,316 @@
 			};
 			name = Release;
 		};
+		C19FAE99282EA9D2008965A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = GA4L9A4FGA;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = HouseOfYorke_watchOS_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "HouseOfYorke-watchOS";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.storkebrothers.HouseOfYorke-iOS";
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.storkebrothers.HouseOfYorke-iOS.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		C19FAE9A282EA9D2008965A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = GA4L9A4FGA;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = HouseOfYorke_watchOS_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "HouseOfYorke-watchOS";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.storkebrothers.HouseOfYorke-iOS";
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.storkebrothers.HouseOfYorke-iOS.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		C19FAE9C282EA9D2008965A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_ASSET_PATHS = "\"HouseOfYorke-watchOS WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = GA4L9A4FGA;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "HouseOfYorke-watchOS WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "HouseOfYorke-watchOS WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.storkebrothers.HouseOfYorke-iOS.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		C19FAE9D282EA9D2008965A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_ASSET_PATHS = "\"HouseOfYorke-watchOS WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = GA4L9A4FGA;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "HouseOfYorke-watchOS WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "HouseOfYorke-watchOS WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.storkebrothers.HouseOfYorke-iOS.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1091,6 +1750,24 @@
 			buildConfigurations = (
 				C174B5F8281CF0100061D171 /* Debug */,
 				C174B5F9281CF0100061D171 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C19FAE9E282EA9D2008965A9 /* Build configuration list for PBXNativeTarget "HouseOfYorke-watchOS WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C19FAE9C282EA9D2008965A9 /* Debug */,
+				C19FAE9D282EA9D2008965A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C19FAE9F282EA9D2008965A9 /* Build configuration list for PBXNativeTarget "HouseOfYorke-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C19FAE99282EA9D2008965A9 /* Debug */,
+				C19FAE9A282EA9D2008965A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

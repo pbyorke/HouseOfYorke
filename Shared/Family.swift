@@ -14,17 +14,5 @@ struct Family {
     
 }
 
-// MARK: - extension
-
-extension Family {
-    
-    func dump() {
-        print("* * *  F a m i l y")
-        print("* * *  id   \"\(id)\"")
-        print("* * *  name \"\(name)\"")
-    }
-    
-}
-
 extension Family: Identifiable { }
 extension Family: Codable { }

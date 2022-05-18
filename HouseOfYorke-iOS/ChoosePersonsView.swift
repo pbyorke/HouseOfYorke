@@ -19,6 +19,8 @@ struct ChoosePersonView: View {
                 VStack {
                     Text("Choose your name")
                         .font(.largeTitle)
+                    Text("(family: \(dataManager.family?.name ?? ""))")
+                        .font(.callout)
                         .padding(.bottom, 20)
                     ForEach(dataManager.persons) { person in
                         Button(action: { choose(person: person) }, label: { Text(person.name) } )
@@ -51,15 +53,15 @@ extension ChoosePersonView {
             if dataManager.password.isEmpty {
                 needPassword = true
             } else {
-                dataManager.person = person
+                dataManager.signon(person: person)
             }
         } else {
-            dataManager.person = person
+            dataManager.signon(person: person)
         }
     }
 
     private func goBack() {
-        dataManager.signOff()
+        dataManager.signoff()
     }
 
 }
@@ -70,6 +72,6 @@ struct ChoosePersonsView_Previews: PreviewProvider {
     @State static private var personChosen = true
     static var previews: some View {
         ChoosePersonView()
-            .environmentObject(DataManager.shared)
+            .environmentObject(DataManager())
     }
 }

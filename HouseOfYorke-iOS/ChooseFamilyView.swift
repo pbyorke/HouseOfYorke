@@ -34,7 +34,7 @@ struct ChooseFamilyView: View {
 extension ChooseFamilyView {
 
     private func choose(family: Family) {
-        dataManager.family = family
+        dataManager.signon(family: family)
     }
     
 }
@@ -44,6 +44,6 @@ extension ChooseFamilyView {
 struct ChooseFamilyView_Previews: PreviewProvider {
     static var previews: some View {
         ChooseFamilyView()
-            .environmentObject(DataManager.shared)
+            .environmentObject(DataManager())
     }
 }

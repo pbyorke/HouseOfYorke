@@ -30,7 +30,7 @@ struct KidActionsView: View {
 extension KidActionsView {
     
     private func signOff() {
-        dataManager.signOff()
+        dataManager.signoff()
     }
     
 }

@@ -38,7 +38,7 @@ struct ParentActionsView: View {
 extension ParentActionsView {
     
     private func signOff() {
-        dataManager.signOff()
+        dataManager.signoff()
     }
     
 }

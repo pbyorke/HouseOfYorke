@@ -10,20 +10,18 @@ import FirebaseFirestore
 
 class DataManager: ObservableObject {
     
-    static var shared = DataManager()
+    let defaultsManager = DefaultsManager()
     
     private var familyListener: ListenerRegistration?
     private var personListener: ListenerRegistration?
 
-    @AppStorage("currentPerson") private var currentPerson: Data = Data()
-    @AppStorage("currentFamily") private var currentFamily: Data = Data()
-    @Published var families = [Family]()
-    @Published var persons = [Person]()
-    @Published var forceUpdate = false
     var multipleFamilies: Bool { families.count > 1 }
     var children: [Person] { persons.filter { $0.parent == false } }
     var password = ""
-    
+    var name: String { person?.name ?? "" }
+    var points: Int { person?.points ?? 0 }
+    var parent: Bool { person?.parent ?? false }
+
     var isSignedIn: Bool {
         return person != nil
     }
@@ -41,111 +39,89 @@ class DataManager: ObservableObject {
         }
         return family != nil
     }
-    
-    var name: String { person?.name ?? "" }
-    var points: Int { person?.points ?? 0 }
-    var parent: Bool { person?.parent ?? false }
 
-    var family: Family? {
-        didSet {
-            if let family = family {
-                Task {
-                    personListener = try await setupListener(collection: .persons, type: Person.self) { array in
-                        self.persons = [Person]()
-                        for item in array {
-                            if item.familyID == family.id {
-                                self.persons.append(item)
-                            }
-                        }
-                        if let item = self.person {
-                            self.person = self.persons.first(where: {$0.id == item.id})
-                        }
-                    }
-                }
-            }
-        }
+    @Published var families = [Family]()
+    @Published var persons = [Person]()
+    @Published var family: Family?
+    @Published var person: Person?
+
+    func signon(family: Family) {
+        self.family = family
+        defaultsManager.setCurrentFamily(family)
     }
     
-    var person: Person? {
-        didSet {
-            Task {
-                await save()
-            }
-        }
+    func signon(person: Person) {
+        self.person = person
+        defaultsManager.setCurrentPerson(person)
     }
     
-    private init() {
+    func signoff() {
+        family = nil
+        defaultsManager.setCurrentFamily(family)
+        person = nil
+        defaultsManager.setCurrentPerson(person)
+    }
+
+    init() {
         setup()
     }
-
+    
     private func setup() {
-        Task {
-            do {
-                await person = getCurrentPerson()
-                await family = getCurrentFamily()
-                familyListener = try await setupListener(collection: .families, type: Family.self) { array in
-                    self.families = array
-                    if let item = self.family {
-                        self.family = self.families.first(where: {$0.id == item.id})
-                    }
-                    if self.families.count == 1 {
-                        self.family = self.families[0]
-                    }
-                }
-            } catch { print("* * *  \(error.localizedDescription)") }
-        }
+        self.family = self.defaultsManager.getCurrentFamily()
+        self.person = self.defaultsManager.getCurrentPerson()
+        setupFamilies()
+        setupPersons()
     }
     
-    private func setupListener<T: Codable>(collection: FirestoreType, type: T.Type, successful: @escaping ([T]) -> Void) async throws -> ListenerRegistration? {
-        let listener = FirestoreType.reference(to: collection).addSnapshotListener { snapshot, error in
+    private func setupFamilies() {
+        familyListener = FirestoreType.reference(to: .families).addSnapshotListener { snapshot, error in
             if error == nil {
                 if let snapshot = snapshot {
                     do {
-                        var objects = [T]()
+                        var array: [Family] = []
                         for document in snapshot.documents {
-                            let object = try document.decode(as: T.self, includingId: true)
-                            objects.append(object)
+                            let entry = try document.decode(as: Family.self, includingId: true)
+                            array.append(entry)
                         }
-                        successful(objects)
+                        // do whatever
+                        self.families = array
+                        if self.families.count == 1 {
+                            self.family = self.families[0]
+                        }
+                        // do whatever
                     } catch { }
                 }
             }
         }
-        return listener
     }
 
-    private func getCurrentPerson() async -> Person? {
-        let person = try? JSONDecoder().decode(Person.self, from: currentPerson)
-        return person
-    }
-
-    private func getCurrentFamily() async -> Family? {
-        let family = try? JSONDecoder().decode(Family.self, from: currentFamily)
-        return family
-    }
-
-    @MainActor private func save() async {
-        if let personData = try? JSONEncoder().encode(person) {
-            self.currentPerson = personData
-        }
-        if let familyData = try? JSONEncoder().encode(family) {
-            self.currentFamily = familyData
-        }
-    }
-    
-    @MainActor func signOff() {
-        Task {
-            if families.count == 1 {
-                family = families[0]
-            } else {
-                family = nil
+    private func setupPersons() {
+        personListener = FirestoreType.reference(to: .persons).addSnapshotListener { snapshot, error in
+            if error == nil {
+                if let snapshot = snapshot {
+                    do {
+                        var array: [Person] = []
+                        for document in snapshot.documents {
+                            let entry = try document.decode(as: Person.self, includingId: true)
+                            array.append(entry)
+                        }
+                        // do whatever
+                        var filteredArray: [Person] = []
+                        if self.family != nil {
+                            for item in array {
+                                if item.familyID == self.family!.id {
+                                    filteredArray.append(item)
+                                }
+                            }
+                        }
+                        self.persons = filteredArray
+                        // do whatever
+                    } catch { }
+                }
             }
-            person = nil
-            await save()
-            forceUpdate.toggle()
         }
     }
-    
+
     func adjust(_ child: Person, _ amount: Int) {
         let newPerson = Person (
             id: child.id,

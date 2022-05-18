@@ -7,6 +7,8 @@
 // https://www.youtube.com/watch?v=qKL5jJGi_HI
 // https://github.com/firebase/firebase-ios-sdk
 //
+// Product→Archive→Distribute App→Copy App and move to application folder.
+//
 
 import SwiftUI
 import Firebase

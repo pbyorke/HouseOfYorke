@@ -14,7 +14,7 @@ import Firebase
 @main
 struct HouseOfYorke_iOSApp: App {
 
-    @StateObject private var dataManager = DataManager.shared
+    @StateObject private var dataManager = DataManager()
     
     init() {
         configure()
