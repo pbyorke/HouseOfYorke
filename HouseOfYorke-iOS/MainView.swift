@@ -12,20 +12,23 @@ struct MainView: View {
     @EnvironmentObject var dataManager: DataManager
     
     var body: some View {
-        VStack(spacing: 10) {
-            HeaderView()
-            if dataManager.isSignedIn {
-                PersonActionsView()
+        ZStack {
+            Color.peacefulBackground.ignoresSafeArea()
+            VStack(spacing: 10) {
+                HeaderView()
+                if dataManager.isSignedIn {
+                    PersonActionsView()
+                }
+                if dataManager.needFamily {
+                    ChooseFamilyView()
+                }
+                if dataManager.needPerson {
+                    ChoosePersonView()
+                }
+                Spacer()
             }
-            if dataManager.needFamily {
-                ChooseFamilyView()
-            }
-            if dataManager.needPerson {
-                ChoosePersonView()
-            }
-            Spacer()
+            .padding(.top, 20)
         }
-        .padding(.top, 20)
     }
     
 }
@@ -35,6 +38,6 @@ struct MainView: View {
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
         MainView()
-            .environmentObject(DataManager.shared)
+            .environmentObject(DataManager())
     }
 }

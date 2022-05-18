@@ -19,22 +19,5 @@ struct Person {
     
 }
 
-// MARK: - extension
-
-extension Person {
-    
-    func dump() {
-        print("* * *  P e r s o n")
-        print("* * *  id       \"\(id)\"")
-        print("* * *  name     \"\(name)\"")
-        print("* * *  photoURL \"\(photoURL)\"")
-        print("* * *  familyID \"\(familyID)\"")
-        print("* * *  parent   \(parent ? "true" : "false")")
-        print("* * *  password \"\(password)\"")
-        print("* * *  points   \(points)")
-    }
-    
-}
-
 extension Person: Identifiable { }
 extension Person: Codable { }

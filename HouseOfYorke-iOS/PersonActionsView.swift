@@ -27,6 +27,6 @@ struct PersonActionsView: View {
 struct PersonActionsView_Previews: PreviewProvider {
     static var previews: some View {
         PersonActionsView()
-            .environmentObject(DataManager.shared)
+            .environmentObject(DataManager())
     }
 }
