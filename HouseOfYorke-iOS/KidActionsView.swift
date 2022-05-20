@@ -9,14 +9,14 @@ import SwiftUI
 
 struct KidActionsView: View {
     
-    @EnvironmentObject var dataManager: DataManager
+    @EnvironmentObject private var vm: MainViewModel
 
     var body: some View {
         VStack {
-            Text("Hi \(dataManager.name), you have")
+            Text("Hi \(vm.name), you have")
                 .font(.title)
                 .padding(.bottom, 20)
-            Text("\(dataManager.points) points")
+            Text("\(vm.points) points")
                 .font(.largeTitle)
                 .fontWeight(.bold)
                 .padding(.bottom, 40)
@@ -30,7 +30,7 @@ struct KidActionsView: View {
 extension KidActionsView {
     
     private func signOff() {
-        dataManager.signoff()
+        vm.signoff()
     }
     
 }

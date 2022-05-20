@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ChoosePersonView: View {
     
-    @EnvironmentObject var dataManager: DataManager
+    @EnvironmentObject private var vm: MainViewModel
     @State private var needPassword = false
     @State private var person: Person?
     
@@ -19,10 +19,10 @@ struct ChoosePersonView: View {
                 VStack {
                     Text("Choose your name")
                         .font(.largeTitle)
-                    Text("(family: \(dataManager.family?.name ?? ""))")
+                    Text("(family: \(vm.family?.name ?? ""))")
                         .font(.callout)
                         .padding(.bottom, 20)
-                    ForEach(dataManager.persons) { person in
+                    ForEach(vm.filteredPersons) { person in
                         Button(action: { choose(person: person) }, label: { Text(person.name) } )
                             .font(.title)
                             .padding(5)
@@ -31,13 +31,13 @@ struct ChoosePersonView: View {
                         PasswordView(person: person ?? Person())
                     }
                 }
-                if dataManager.multipleFamilies {
+                if vm.multipleFamilies {
                     Button(action: { goBack() }, label: { Text("Cancel") } )
                 }
             }
             .onAppear {
                 needPassword = false
-                dataManager.password = ""
+                vm.password = ""
             }
         }
     }
@@ -50,18 +50,18 @@ extension ChoosePersonView {
     private func choose(person: Person) {
         self.person = person
         if person.parent {
-            if dataManager.password.isEmpty {
+            if vm.password.isEmpty {
                 needPassword = true
             } else {
-                dataManager.signon(person: person)
+                vm.signon(person: person)
             }
         } else {
-            dataManager.signon(person: person)
+            vm.signon(person: person)
         }
     }
 
     private func goBack() {
-        dataManager.signoff()
+        vm.signoff()
     }
 
 }
@@ -72,6 +72,6 @@ struct ChoosePersonsView_Previews: PreviewProvider {
     @State static private var personChosen = true
     static var previews: some View {
         ChoosePersonView()
-            .environmentObject(DataManager())
+            .environmentObject(MainViewModel())
     }
 }

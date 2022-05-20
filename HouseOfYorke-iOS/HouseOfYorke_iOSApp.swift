@@ -14,22 +14,23 @@ import Firebase
 @main
 struct HouseOfYorke_iOSApp: App {
 
-    @StateObject private var dataManager = DataManager()
+    @StateObject private var vm = MainViewModel()
     
     init() {
         configure()
     }
-    
+
     var body: some Scene {
         WindowGroup {
             NavigationView {
                 MainView()
-                    .environmentObject(dataManager)
+                    .navigationBarHidden(true)
             }
             .navigationViewStyle(.stack)
+            .environmentObject(vm)
         }
     }
-    
+
     private func configure() {
         FirebaseApp.configure()
     }

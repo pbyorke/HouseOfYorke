@@ -9,12 +9,13 @@ import SwiftUI
 
 struct PlusMinusView: View {
     
-    @EnvironmentObject var dataManager: DataManager
+    @EnvironmentObject private var vm: MainViewModel
 
     @State private var showPicker = false
     @State private var selectedAmount = "0"
     @State private var amounts = [String]()
     @State private var zeroCount = 0
+
     var child: Person
     
     init(child: Person) {
@@ -57,7 +58,7 @@ struct PlusMinusView: View {
         if zeroCount > 1 {
             zeroCount = 0
             showPicker = false
-            dataManager.zero(child)
+            vm.zero(child)
         }
         zeroCount += 1
     }
@@ -65,7 +66,7 @@ struct PlusMinusView: View {
     private func save() {
         showPicker = false
         let amount = Int(selectedAmount) ?? 0
-        dataManager.adjust(child, amount)
+        vm.adjust(child, amount)
     }
 }
 

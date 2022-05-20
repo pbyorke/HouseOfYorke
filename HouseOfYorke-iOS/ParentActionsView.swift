@@ -9,13 +9,13 @@ import SwiftUI
 
 struct ParentActionsView: View {
     
-    @EnvironmentObject var dataManager: DataManager
+    @EnvironmentObject private var vm: MainViewModel
 
     var body: some View {
         VStack {
             ScrollView {
                 VStack {
-                    ForEach(dataManager.children, id: \.id) { person in
+                    ForEach(vm.children, id: \.id) { person in
                         HStack {
                             Text("\(person.points)")
                             Text(person.name)
@@ -38,7 +38,7 @@ struct ParentActionsView: View {
 extension ParentActionsView {
     
     private func signOff() {
-        dataManager.signoff()
+        vm.signoff()
     }
     
 }

@@ -9,8 +9,8 @@ import SwiftUI
 
 struct PasswordView: View {
     
-    @EnvironmentObject var dataManager: DataManager
-    
+    @EnvironmentObject private var vm: MainViewModel
+
     var person: Person
     @State private var password = ""
     
@@ -36,7 +36,7 @@ extension PasswordView {
     
     private func press() {
         if password == person.password {
-            dataManager.person = person
+            vm.person = person
         }
     }
     

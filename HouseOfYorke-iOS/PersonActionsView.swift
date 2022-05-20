@@ -9,11 +9,11 @@ import SwiftUI
 
 struct PersonActionsView: View {
     
-    @EnvironmentObject var dataManager: DataManager
+    @EnvironmentObject private var vm: MainViewModel
 
     var body: some View {
         VStack {
-            if dataManager.parent {
+            if vm.parent {
                 ParentActionsView()
             } else {
                 KidActionsView()
@@ -27,6 +27,6 @@ struct PersonActionsView: View {
 struct PersonActionsView_Previews: PreviewProvider {
     static var previews: some View {
         PersonActionsView()
-            .environmentObject(DataManager())
+            .environmentObject(MainViewModel())
     }
 }
