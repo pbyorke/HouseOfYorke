@@ -14,8 +14,8 @@ import Firebase
 @main
 struct HouseOfYorke_tvOSApp: App {
     
-    @StateObject private var dataManager = DataManager.shared
-    
+    @StateObject private var vm = MainViewModel()
+
     init() {
         configure()
     }
@@ -24,7 +24,7 @@ struct HouseOfYorke_tvOSApp: App {
         WindowGroup {
             NavigationView {
                 MainTVView()
-                    .environmentObject(dataManager)
+                    .environmentObject(vm)
             }
         }
     }

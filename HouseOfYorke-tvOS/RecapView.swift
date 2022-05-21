@@ -9,7 +9,7 @@ import SwiftUI
 
 struct RecapView: View {
 
-    @EnvironmentObject var dataManager: DataManager
+    @EnvironmentObject private var vm: MainViewModel
 
     var body: some View {
         VStack {
@@ -17,7 +17,7 @@ struct RecapView: View {
                 .font(.largeTitle)
                 .fontWeight(.bold)
                 .padding(.bottom, 20)
-            ForEach(dataManager.children, id: \.id) { person in
+            ForEach(vm.filteredKids) { person in
                 HStack {
                     Text(person.name)
                         .font(.largeTitle)
@@ -27,7 +27,7 @@ struct RecapView: View {
                 .padding(.horizontal)
                 .padding(.bottom, 5)
             }
-            if dataManager.multipleFamilies {
+            if vm.multipleFamilies {
                 Button(action: { signOff() }, label: { Text("Signoff") } )
             }
         }
@@ -39,7 +39,7 @@ struct RecapView: View {
 extension RecapView {
     
     private func signOff() {
-        dataManager.signOff()
+        vm.signoff()
     }
     
 }

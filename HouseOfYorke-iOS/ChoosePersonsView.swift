@@ -22,7 +22,7 @@ struct ChoosePersonView: View {
                     Text("(family: \(vm.family?.name ?? ""))")
                         .font(.callout)
                         .padding(.bottom, 20)
-                    ForEach(vm.filteredPersons) { person in
+                    ForEach(vm.personsInAFamily) { person in
                         Button(action: { choose(person: person) }, label: { Text(person.name) } )
                             .font(.title)
                             .padding(5)
@@ -31,7 +31,7 @@ struct ChoosePersonView: View {
                         PasswordView(person: person ?? Person())
                     }
                 }
-                if vm.multipleFamilies {
+                if vm.areThereMultipleFamilies {
                     Button(action: { goBack() }, label: { Text("Cancel") } )
                 }
             }

@@ -9,13 +9,13 @@ import SwiftUI
 
 struct MainTVView: View {
     
-    @EnvironmentObject var dataManager: DataManager
-    
+    @EnvironmentObject private var vm: MainViewModel
+
     var body: some View {
         VStack(spacing: 10) {
             HeaderView()
                 .padding(.horizontal, 200)
-            if dataManager.needFamily {
+            if vm.needFamily {
                 SelectFamilyView()
             } else {
                 RecapView()
@@ -32,6 +32,6 @@ struct MainTVView: View {
 struct MainTVView_Previews: PreviewProvider {
     static var previews: some View {
         MainTVView()
-            .environmentObject(DataManager.shared)
+            .environmentObject(MainViewModel())
     }
 }

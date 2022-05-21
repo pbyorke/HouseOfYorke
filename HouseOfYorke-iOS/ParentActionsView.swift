@@ -15,16 +15,8 @@ struct ParentActionsView: View {
         VStack {
             ScrollView {
                 VStack {
-                    ForEach(vm.children, id: \.id) { person in
-                        HStack {
-                            Text("\(person.points)")
-                            Text(person.name)
-                            PlusMinusView(child: person)
-                            Spacer()
-                        }
-                        .font(.title)
-                        .padding(.horizontal)
-                        .padding(.bottom, 15)
+                    ForEach(vm.childrenInAFamily, id: \.id) { person in
+                        displayAPerson(person: person)
                     }
                     Button(action: { signOff() }, label: { Text("Signoff") } )
                 }
@@ -39,6 +31,27 @@ extension ParentActionsView {
     
     private func signOff() {
         vm.signoff()
+    }
+    
+    private func displayAPerson(person: Person) -> some View {
+        HStack {
+            VStack {
+                Text("\(person.points)")
+            }
+            VStack {
+                HStack {
+                    Text(person.name)
+                    Spacer()
+                }
+                HStack {
+                    PlusMinusView(child: person)
+                    Spacer()
+                }
+            }
+        }
+        .font(.title)
+        .padding(.horizontal)
+        .padding(.bottom, 15)
     }
     
 }

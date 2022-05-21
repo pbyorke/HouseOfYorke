@@ -21,10 +21,10 @@ struct MainView: View {
                     if vm.isSignedIn {
                         PersonActionsView()
                     }
-                    if vm.needFamily {
+                    if vm.needFamilySection {
                         ChooseFamilyView()
                     }
-                    if vm.needPerson {
+                    if vm.needPersonSection {
                         ChoosePersonView()
                     }
                     Spacer()
@@ -90,7 +90,7 @@ private struct DebugHeader: View {
                 Text("Filtered Persons")
                     .bold()
                     .underline()
-                ForEach(vm.filteredPersons) { Text($0.name) }
+                ForEach(vm.personsInAFamily) { Text($0.name) }
             }
             .padding()
             .border(Color.black)

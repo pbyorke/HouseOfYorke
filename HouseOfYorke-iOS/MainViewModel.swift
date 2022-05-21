@@ -5,7 +5,6 @@
 //  Created by Peter Yorke on 5/17/22.
 //
 
-import Foundation
 import Combine
 
 class MainViewModel: ObservableObject {
@@ -15,17 +14,16 @@ class MainViewModel: ObservableObject {
     @Published var family: Family? = nil
     @Published var person: Person? = nil
     
-    var filteredPersons: [Person] = []
-    var multipleFamilies: Bool { allFamilies.count > 1 }
+    var personsInAFamily: [Person] = []
+    var childrenInAFamily: [Person] = []
+    var areThereMultipleFamilies: Bool { allFamilies.count > 1 }
     var isSignedIn: Bool { person != nil }
-    var needFamily: Bool { person != nil ? false : allFamilies.count > 1 && family == nil }
-    var needPerson: Bool { person != nil ? false : family != nil }
+    var needFamilySection: Bool { person != nil ? false : allFamilies.count > 1 && family == nil }
+    var needPersonSection: Bool { person != nil ? false : family != nil }
     var password = ""
     var name: String { person?.name ?? "" }
     var points: Int { person?.points ?? 0 }
-    var children: [Person] { allPersons.filter { $0.parent == false } }
-    var parent: Bool { person?.parent ?? false }
-    let defaultsManager = DefaultsManager()
+    var isAParent: Bool { person?.parent ?? false }
 
     private let familyDataService = FamilyDataService()
     private let personDataService = PersonDataService()
@@ -37,18 +35,14 @@ class MainViewModel: ObservableObject {
         addSubscribers()
     }
     
-    func saveCurrentPerson(person: Person) {
-        
-    }
-    
     func signon(family: Family) {
         self.family = family
-        defaultsManager.setCurrentFamily(family)
+        dm.setCurrentFamily(family)
     }
     
     func signon(person: Person) {
         self.person = person
-        defaultsManager.setCurrentPerson(person)
+        dm.setCurrentPerson(person)
     }
     
     func signoff() {
@@ -57,9 +51,9 @@ class MainViewModel: ObservableObject {
         } else {
             family = nil
         }
-        defaultsManager.setCurrentFamily(family)
+        dm.setCurrentFamily(family)
         person = nil
-        defaultsManager.setCurrentPerson(person)
+        dm.setCurrentPerson(person)
     }
 
     private func getDefaults() {
@@ -69,6 +63,7 @@ class MainViewModel: ObservableObject {
     
     private func addSubscribers() {
         
+        // subscrption to get all families
         familyDataService
             .$allFamilies
             .sink { [weak self] families in
@@ -79,6 +74,7 @@ class MainViewModel: ObservableObject {
             }
             .store(in: &cancellables)
         
+        // subscription to get all persons
         personDataService
             .$allPersons
             .combineLatest($allFamilies)
@@ -87,6 +83,7 @@ class MainViewModel: ObservableObject {
             }
             .store(in: &cancellables)
         
+        // subscription to get all persons in selected family
         $family
             .combineLatest($allPersons)
             .map { chosenFamily, startingPersons -> [Person] in
@@ -95,7 +92,20 @@ class MainViewModel: ObservableObject {
                 }
             }
             .sink { [weak self] chosenPersons in
-                self?.filteredPersons = chosenPersons
+                    self?.personsInAFamily = chosenPersons
+            }
+            .store(in: &cancellables)
+
+        // subscription to get all children in selected family
+        $family
+            .combineLatest($allPersons)
+            .map { chosenFamily, startingPersons -> [Person] in
+                return startingPersons.filter { onePerson -> Bool in
+                    return onePerson.familyID == chosenFamily?.id && !onePerson.parent
+                }
+            }
+            .sink { [weak self] chosenPersons in
+                    self?.childrenInAFamily = chosenPersons
             }
             .store(in: &cancellables)
 

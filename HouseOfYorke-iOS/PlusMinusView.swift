@@ -27,7 +27,7 @@ struct PlusMinusView: View {
         HStack {
             Button { plus() } label: { Image(systemName: "plus.circle.fill") }.frame(width: 40)
             Button { minus() } label: { Image(systemName: "minus.circle.fill") }.frame(width: 40)
-            Button { zero() } label: { Image(systemName: "plusminus.circle.fill") }
+            Button { zero() } label: { Image(systemName: "0.circle.fill") }
             if showPicker {
                 HStack {
                     Picker("Amount", selection: $selectedAmount) {
@@ -36,7 +36,8 @@ struct PlusMinusView: View {
                         }
                     }
                     .border(Color.cyan)
-                    Button { save() } label: { Image(systemName: "square.and.arrow.down.on.square") }
+//                    Button { save() } label: { Image(systemName: "square.and.arrow.down.on.square") }
+                    Button { save() } label: { Text("SAVE") }
                 }
             }
         }

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SelectFamilyView: View {
     
-    @EnvironmentObject var dataManager: DataManager
+    @EnvironmentObject private var vm: MainViewModel
 
     var body: some View {
         ScrollView {
@@ -17,7 +17,7 @@ struct SelectFamilyView: View {
                 Text("Choose your family")
                     .font(.title)
                     .padding(.bottom, 20)
-                ForEach(dataManager.families) { family in
+                ForEach(vm.allFamilies) { family in
                     Button(action: { choose(family: family) }, label: { Text(family.name) } )
                         .font(.title)
                         .padding(5)
@@ -32,7 +32,8 @@ struct SelectFamilyView: View {
 extension SelectFamilyView {
 
     private func choose(family: Family) {
-        dataManager.family = family
+        vm.family = family
+        vm.signon(family: family)
     }
 
 }
@@ -42,6 +43,6 @@ extension SelectFamilyView {
 struct SelectFamilyView_Previews: PreviewProvider {
     static var previews: some View {
         SelectFamilyView()
-            .environmentObject(DataManager.shared)
+            .environmentObject(MainViewModel())
     }
 }

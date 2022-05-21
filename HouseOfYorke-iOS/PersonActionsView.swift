@@ -13,7 +13,7 @@ struct PersonActionsView: View {
 
     var body: some View {
         VStack {
-            if vm.parent {
+            if vm.isAParent {
                 ParentActionsView()
             } else {
                 KidActionsView()
