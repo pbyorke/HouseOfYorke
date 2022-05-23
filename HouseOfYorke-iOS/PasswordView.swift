@@ -12,6 +12,7 @@ struct PasswordView: View {
     @EnvironmentObject private var vm: MainViewModel
 
     var person: Person
+    @Binding var needPassword: Bool
     @State private var password = ""
     
     var body: some View {
@@ -21,7 +22,13 @@ struct PasswordView: View {
                 SecureField("", text: $password)
                     .autocapitalization(.none)
                     .textFieldStyle(.roundedBorder)
-                Button { press() } label: { Text("Sign in") }
+                HStack {
+                    Spacer()
+                    Button { press() } label: { Text("Sign in") }
+                    Text("-")
+                    Button { cancel() } label: { Text("Cancel") }
+                    Spacer()
+                }
             }
             .padding()
             .border(Color.black)
@@ -40,12 +47,16 @@ extension PasswordView {
         }
     }
     
+    private func cancel() {
+        needPassword = false
+    }
+    
 }
 
 // MARK: - previews
 
 struct PasswordView_Previews: PreviewProvider {
     static var previews: some View {
-        PasswordView(person: Person())
+        PasswordView(person: Person(), needPassword: .constant(false))
     }
 }

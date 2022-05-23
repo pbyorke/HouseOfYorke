@@ -82,33 +82,24 @@ class MainViewModel: ObservableObject {
                 self?.allPersons = persons
             }
             .store(in: &cancellables)
-        
-        // subscription to get all persons in selected family
+
+        // subscription to get all persons and all children in selected family
         $family
             .combineLatest($allPersons)
-            .map { chosenFamily, startingPersons -> [Person] in
-                return startingPersons.filter { onePerson -> Bool in
+            .map { chosenFamily, startingPersons -> ([Person], [Person]) in
+                let persons = startingPersons.filter { onePerson -> Bool in
                     return onePerson.familyID == chosenFamily?.id
                 }
-            }
-            .sink { [weak self] chosenPersons in
-                    self?.personsInAFamily = chosenPersons
-            }
-            .store(in: &cancellables)
-
-        // subscription to get all children in selected family
-        $family
-            .combineLatest($allPersons)
-            .map { chosenFamily, startingPersons -> [Person] in
-                return startingPersons.filter { onePerson -> Bool in
+                let children = startingPersons.filter { onePerson -> Bool in
                     return onePerson.familyID == chosenFamily?.id && !onePerson.parent
                 }
+                return (persons, children)
             }
-            .sink { [weak self] chosenPersons in
-                    self?.childrenInAFamily = chosenPersons
+            .sink { [weak self] persons, children in
+                self?.personsInAFamily = persons
+                self?.childrenInAFamily = children
             }
             .store(in: &cancellables)
-
     }
     
     func adjust(_ child: Person, _ amount: Int) {

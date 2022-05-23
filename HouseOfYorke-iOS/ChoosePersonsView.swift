@@ -28,7 +28,7 @@ struct ChoosePersonView: View {
                             .padding(5)
                     }
                     if needPassword {
-                        PasswordView(person: person ?? Person())
+                        PasswordView(person: person ?? Person(), needPassword: $needPassword)
                     }
                 }
                 if vm.areThereMultipleFamilies {
