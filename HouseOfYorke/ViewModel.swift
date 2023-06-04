@@ -20,6 +20,7 @@ class ViewModel: ObservableObject {
     @Published var allPersons   = [Person]()
     @Published var page         = PageType.choose
     @Published var password     = ""
+    @Published var badPassword  = false
     @Published var selectedPerson: Person?
     @Published var updatePerson: Person?
     
@@ -34,15 +35,24 @@ class ViewModel: ObservableObject {
             for await value in personManager.$persons.values {
                 await MainActor.run(body: {
                     self.allPersons = value
+                    if let person = self.selectedPerson {
+                        selectedPerson = self.allPersons.first { $0.id == person.id  }
+                    }
+                    if let person = self.updatePerson {
+                        updatePerson = self.allPersons.first { $0.id == person.id  }
+                    }
                 })
             }
         }
     }
     
     func validate() {
+        badPassword = false
         if let person = selectedPerson {
             if person.password == password {
                 page = .parent
+            } else {
+                badPassword = true
             }
         }
     }

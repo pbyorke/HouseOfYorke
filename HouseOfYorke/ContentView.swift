@@ -43,6 +43,7 @@ struct ContentView: View {
                 ForEach(vm.allPersons, id: \.id) { person in
                     Button {
                         vm.selectedPerson = person
+                        vm.password = ""
                         vm.page = person.parent ? .password : .person
                     } label: {
                         Text(person.name)
@@ -102,6 +103,11 @@ struct ContentView: View {
                             lineWidth: 1
                         )
                 )
+            if vm.badPassword {
+                Text("Whoops")
+                    .foregroundColor(.red)
+                    .font(.system(size: 30, weight: .medium))
+            }
             Button {
                 vm.validate()
             } label: {
