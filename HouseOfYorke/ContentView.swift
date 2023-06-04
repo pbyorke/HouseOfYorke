@@ -125,6 +125,7 @@ struct ContentView: View {
                 Spacer()
             }
             .padding(.horizontal, 20)
+            .padding(.top, 20)
             HStack {
                 Updater(image: "5.circle", amount: -5)
                 Updater(image: "10.circle", amount: -10)
@@ -132,6 +133,7 @@ struct ContentView: View {
                 Spacer()
             }
             .padding(.horizontal, 20)
+            .padding(.top, 20)
         }
     }
     
