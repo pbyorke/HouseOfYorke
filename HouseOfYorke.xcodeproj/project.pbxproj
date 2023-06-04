@@ -11,6 +11,22 @@
 		C1D90F9B2A2C50ED00837429 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D90F9A2A2C50ED00837429 /* ContentView.swift */; };
 		C1D90F9D2A2C50EE00837429 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1D90F9C2A2C50EE00837429 /* Assets.xcassets */; };
 		C1D90FA02A2C50EE00837429 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1D90F9F2A2C50EE00837429 /* Preview Assets.xcassets */; };
+		C1D90FA82A2C527900837429 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = C1D90FA72A2C527900837429 /* FirebaseAnalytics */; };
+		C1D90FAA2A2C527900837429 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C1D90FA92A2C527900837429 /* FirebaseFirestore */; };
+		C1D90FAD2A2C534500837429 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1D90FAC2A2C534500837429 /* GoogleService-Info.plist */; };
+		C1D90FB02A2C54C100837429 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D90FAF2A2C54C100837429 /* ViewModel.swift */; };
+		C1D90FB72A2C573B00837429 /* WhiteRoseOfYork.white.1024.png in Resources */ = {isa = PBXBuildFile; fileRef = C1D90FB32A2C573B00837429 /* WhiteRoseOfYork.white.1024.png */; };
+		C1D90FB82A2C573B00837429 /* WhiteRoseOfYork.40.png in Resources */ = {isa = PBXBuildFile; fileRef = C1D90FB42A2C573B00837429 /* WhiteRoseOfYork.40.png */; };
+		C1D90FB92A2C573B00837429 /* WhiteRoseOfYork.80.png in Resources */ = {isa = PBXBuildFile; fileRef = C1D90FB52A2C573B00837429 /* WhiteRoseOfYork.80.png */; };
+		C1D90FBA2A2C573B00837429 /* WhiteRoseOfYork.120.png in Resources */ = {isa = PBXBuildFile; fileRef = C1D90FB62A2C573B00837429 /* WhiteRoseOfYork.120.png */; };
+		C1D90FBC2A2C589C00837429 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D90FBB2A2C589C00837429 /* HeaderView.swift */; };
+		C1D90FBF2A2C5BB600837429 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D90FBE2A2C5BB600837429 /* Person.swift */; };
+		C1D90FC42A2C71E300837429 /* Updater.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D90FC32A2C71E300837429 /* Updater.swift */; };
+		C1D90FC72A2C7BC800837429 /* PersonDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D90FC62A2C7BC800837429 /* PersonDataManager.swift */; };
+		C1D90FCA2A2C7C3200837429 /* FirestoreType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D90FC92A2C7C3200837429 /* FirestoreType.swift */; };
+		C1D90FCD2A2C7CC500837429 /* DocumentSnapshotExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D90FCC2A2C7CC500837429 /* DocumentSnapshotExtension.swift */; };
+		C1D90FCF2A2C7D0100837429 /* FirebaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D90FCE2A2C7D0100837429 /* FirebaseError.swift */; };
+		C1D90FD12A2C7F7D00837429 /* EncodableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D90FD02A2C7F7D00837429 /* EncodableExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +35,20 @@
 		C1D90F9A2A2C50ED00837429 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C1D90F9C2A2C50EE00837429 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1D90F9F2A2C50EE00837429 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C1D90FAC2A2C534500837429 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		C1D90FAF2A2C54C100837429 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		C1D90FB32A2C573B00837429 /* WhiteRoseOfYork.white.1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.white.1024.png; sourceTree = "<group>"; };
+		C1D90FB42A2C573B00837429 /* WhiteRoseOfYork.40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.40.png; sourceTree = "<group>"; };
+		C1D90FB52A2C573B00837429 /* WhiteRoseOfYork.80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.80.png; sourceTree = "<group>"; };
+		C1D90FB62A2C573B00837429 /* WhiteRoseOfYork.120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteRoseOfYork.120.png; sourceTree = "<group>"; };
+		C1D90FBB2A2C589C00837429 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		C1D90FBE2A2C5BB600837429 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		C1D90FC32A2C71E300837429 /* Updater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Updater.swift; sourceTree = "<group>"; };
+		C1D90FC62A2C7BC800837429 /* PersonDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDataManager.swift; sourceTree = "<group>"; };
+		C1D90FC92A2C7C3200837429 /* FirestoreType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreType.swift; sourceTree = "<group>"; };
+		C1D90FCC2A2C7CC500837429 /* DocumentSnapshotExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentSnapshotExtension.swift; sourceTree = "<group>"; };
+		C1D90FCE2A2C7D0100837429 /* FirebaseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseError.swift; sourceTree = "<group>"; };
+		C1D90FD02A2C7F7D00837429 /* EncodableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodableExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +56,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1D90FA82A2C527900837429 /* FirebaseAnalytics in Frameworks */,
+				C1D90FAA2A2C527900837429 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,10 +83,14 @@
 		C1D90F972A2C50ED00837429 /* HouseOfYorke */ = {
 			isa = PBXGroup;
 			children = (
-				C1D90F982A2C50ED00837429 /* HouseOfYorkeApp.swift */,
-				C1D90F9A2A2C50ED00837429 /* ContentView.swift */,
-				C1D90F9C2A2C50EE00837429 /* Assets.xcassets */,
-				C1D90F9E2A2C50EE00837429 /* Preview Content */,
+				C1D90FCB2A2C7CAB00837429 /* Extensions */,
+				C1D90FB22A2C56B200837429 /* Images */,
+				C1D90FAB2A2C52EC00837429 /* Infrastructure */,
+				C1D90FC52A2C7BB400837429 /* Managers */,
+				C1D90FBD2A2C5B9E00837429 /* Models */,
+				C1D90FC82A2C7C0E00837429 /* Utilities */,
+				C1D90FB12A2C54D000837429 /* ViewModels */,
+				C1D90FAE2A2C535300837429 /* Views */,
 			);
 			path = HouseOfYorke;
 			sourceTree = "<group>";
@@ -65,6 +101,80 @@
 				C1D90F9F2A2C50EE00837429 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C1D90FAB2A2C52EC00837429 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				C1D90F9C2A2C50EE00837429 /* Assets.xcassets */,
+				C1D90FAC2A2C534500837429 /* GoogleService-Info.plist */,
+				C1D90F982A2C50ED00837429 /* HouseOfYorkeApp.swift */,
+				C1D90F9E2A2C50EE00837429 /* Preview Content */,
+			);
+			name = Infrastructure;
+			sourceTree = "<group>";
+		};
+		C1D90FAE2A2C535300837429 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C1D90F9A2A2C50ED00837429 /* ContentView.swift */,
+				C1D90FBB2A2C589C00837429 /* HeaderView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		C1D90FB12A2C54D000837429 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C1D90FAF2A2C54C100837429 /* ViewModel.swift */,
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		C1D90FB22A2C56B200837429 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C1D90FB42A2C573B00837429 /* WhiteRoseOfYork.40.png */,
+				C1D90FB52A2C573B00837429 /* WhiteRoseOfYork.80.png */,
+				C1D90FB62A2C573B00837429 /* WhiteRoseOfYork.120.png */,
+				C1D90FB32A2C573B00837429 /* WhiteRoseOfYork.white.1024.png */,
+			);
+			path = Images;
+			sourceTree = SOURCE_ROOT;
+		};
+		C1D90FBD2A2C5B9E00837429 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C1D90FBE2A2C5BB600837429 /* Person.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		C1D90FC52A2C7BB400837429 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				C1D90FC62A2C7BC800837429 /* PersonDataManager.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		C1D90FC82A2C7C0E00837429 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C1D90FCE2A2C7D0100837429 /* FirebaseError.swift */,
+				C1D90FC92A2C7C3200837429 /* FirestoreType.swift */,
+				C1D90FC32A2C71E300837429 /* Updater.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		C1D90FCB2A2C7CAB00837429 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C1D90FCC2A2C7CC500837429 /* DocumentSnapshotExtension.swift */,
+				C1D90FD02A2C7F7D00837429 /* EncodableExtension.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +193,10 @@
 			dependencies = (
 			);
 			name = HouseOfYorke;
+			packageProductDependencies = (
+				C1D90FA72A2C527900837429 /* FirebaseAnalytics */,
+				C1D90FA92A2C527900837429 /* FirebaseFirestore */,
+			);
 			productName = HouseOfYorke;
 			productReference = C1D90F952A2C50ED00837429 /* HouseOfYorke.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +225,9 @@
 				Base,
 			);
 			mainGroup = C1D90F8C2A2C50ED00837429;
+			packageReferences = (
+				C1D90FA62A2C527900837429 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = C1D90F962A2C50ED00837429 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,8 +242,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1D90FB82A2C573B00837429 /* WhiteRoseOfYork.40.png in Resources */,
+				C1D90FB92A2C573B00837429 /* WhiteRoseOfYork.80.png in Resources */,
 				C1D90FA02A2C50EE00837429 /* Preview Assets.xcassets in Resources */,
+				C1D90FB72A2C573B00837429 /* WhiteRoseOfYork.white.1024.png in Resources */,
+				C1D90FBA2A2C573B00837429 /* WhiteRoseOfYork.120.png in Resources */,
 				C1D90F9D2A2C50EE00837429 /* Assets.xcassets in Resources */,
+				C1D90FAD2A2C534500837429 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +259,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1D90FBF2A2C5BB600837429 /* Person.swift in Sources */,
 				C1D90F9B2A2C50ED00837429 /* ContentView.swift in Sources */,
+				C1D90FC72A2C7BC800837429 /* PersonDataManager.swift in Sources */,
+				C1D90FCA2A2C7C3200837429 /* FirestoreType.swift in Sources */,
+				C1D90FB02A2C54C100837429 /* ViewModel.swift in Sources */,
 				C1D90F992A2C50ED00837429 /* HouseOfYorkeApp.swift in Sources */,
+				C1D90FCD2A2C7CC500837429 /* DocumentSnapshotExtension.swift in Sources */,
+				C1D90FBC2A2C589C00837429 /* HeaderView.swift in Sources */,
+				C1D90FC42A2C71E300837429 /* Updater.swift in Sources */,
+				C1D90FCF2A2C7D0100837429 /* FirebaseError.swift in Sources */,
+				C1D90FD12A2C7F7D00837429 /* EncodableExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +470,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C1D90FA62A2C527900837429 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C1D90FA72A2C527900837429 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C1D90FA62A2C527900837429 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		C1D90FA92A2C527900837429 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C1D90FA62A2C527900837429 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C1D90F8D2A2C50ED00837429 /* Project object */;
 }

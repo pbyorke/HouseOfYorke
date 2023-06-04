@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>295593896479-ig04q2gtk853fk702esk929qmjgp7frm.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.295593896479-ig04q2gtk853fk702esk929qmjgp7frm</string>
+	<key>API_KEY</key>
+	<string>AIzaSyASAC-KR6S6IxXW2EiOa4jGo4ByNJf38IE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>295593896479</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.storkebrothers.HouseOfYorke</string>
+	<key>PROJECT_ID</key>
+	<string>house-of-yorke</string>
+	<key>STORAGE_BUCKET</key>
+	<string>house-of-yorke.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:295593896479:ios:5387ec269a0510cdc6432a</string>
+</dict>
+</plist>
