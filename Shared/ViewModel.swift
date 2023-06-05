@@ -13,6 +13,7 @@ enum PageType {
     case parent
     case password
     case update
+    case tv
 }
 
 class ViewModel: ObservableObject {
@@ -28,6 +29,9 @@ class ViewModel: ObservableObject {
 
     init() {
         addSubscribers()
+        #if os(tvOS)
+        page = .tv
+        #endif
     }
     
     private func addSubscribers() {

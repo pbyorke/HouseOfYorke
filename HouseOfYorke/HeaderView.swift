@@ -12,7 +12,11 @@ struct HeaderView: View {
         HStack {
             Image("badge")
                 .resizable()
+#if os(tvOS)
+                .frame(width: 200, height: 200)
+#else
                 .frame(width: 100, height: 100)
+#endif
             Spacer()
         }
         .padding(20)

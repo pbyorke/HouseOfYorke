@@ -15,6 +15,7 @@ struct ContentView: View {
         VStack {
             HeaderView()
             Text("House of Yorke")
+                .foregroundColor(.black)
                 .font(.largeTitle)
                 .fontWeight(.medium)
             switch vm.page {
@@ -23,8 +24,10 @@ struct ContentView: View {
             case .parent:   parentPage
             case .password: passwordPage
             case .update:   updatePage
+            case .tv:       tvPage
             }
             Spacer()
+#if !os(tvOS)
             if vm.page != .choose {
                 Button {
                     vm.page = .choose
@@ -32,6 +35,21 @@ struct ContentView: View {
                     Text("Done")
                 }
             }
+#endif
+        }
+    }
+    
+    // MARK: - tvPage
+    
+    private var tvPage: some View {
+        VStack {
+            List {
+                ForEach(vm.allPersons.filter { !$0.parent }) { person in
+                    Text("\(person.name) - \(person.points)")
+                        .foregroundColor(.black)
+                }
+            }
+            .listStyle(.plain)
         }
     }
     
@@ -49,7 +67,9 @@ struct ContentView: View {
                         Text(person.name)
                             .font(.title)
                     }
+#if !os(tvOS)
                     .listRowSeparator(.hidden)
+#endif
                 }
             }
             .listStyle(.plain)
@@ -79,7 +99,9 @@ struct ContentView: View {
                         Text(person.name)
                             .font(.title)
                     }
+                    #if !os(tvOS)
                     .listRowSeparator(.hidden)
+                    #endif
                 }
             }
             .listStyle(.plain)
@@ -107,6 +129,8 @@ struct ContentView: View {
                 Text("Whoops")
                     .foregroundColor(.red)
                     .font(.system(size: 30, weight: .medium))
+
+
             }
             Button {
                 vm.validate()
